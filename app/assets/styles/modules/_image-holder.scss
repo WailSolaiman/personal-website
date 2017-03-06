@@ -1,0 +1,26 @@
+.image-holder {
+    background-color:#FFF;
+
+    @include desktop {
+        background-image: url('../../../assets/images/aboutmebggaming.jpg');
+        background-position: center top;
+        background-size: cover;
+    }
+
+    &--padding-all {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @include tablet {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        @include desktop {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+    }
+}

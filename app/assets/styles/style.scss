@@ -1,0 +1,16 @@
+/* import normalize */
+@import 'normalize';
+/*import base partials */
+@import "base/_variables";
+@import "base/_global";
+@import "base/_mixins";
+/*import modules partials */
+@import "modules/_image-holder";
+@import "modules/_block";
+@import "modules/_infos-container";
+@import "modules/_flex-container";
+@import "modules/_boxes";
+@import "modules/_form-container";
+@import "modules/_fields";
+@import "modules/_site-footer";
+@import "modules/_parallax";

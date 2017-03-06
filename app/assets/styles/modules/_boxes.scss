@@ -1,0 +1,40 @@
+.boxes {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    .row > div {
+        padding: 100px;
+    }
+
+    &__icon {
+        color: #FFF;
+        font-size: 4.5rem;
+    }
+
+    &__header {
+
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 1.5rem;
+        padding-top: 20px;
+        line-height: 1.5;
+    }
+
+    &--blue {
+        background-color: #01a8d2;
+    }
+
+    &--green {
+        background-color: #1da158;
+    }
+
+    &--yellow {
+        background-color: #eab646;
+    }
+
+    &--red {
+        background-color: #e8534f;
+    }
+}

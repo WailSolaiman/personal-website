@@ -1,0 +1,13 @@
+.form-container {
+    padding-left: 20%;
+    padding-right: 20%;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+}

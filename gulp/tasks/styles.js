@@ -1,17 +1,20 @@
 var gulp = require('gulp');
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var cssvars = require('postcss-simple-vars');
-var nested = require('postcss-nested');
-var cssImport = require('postcss-import');
-var mixins = require('postcss-mixins');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var plumber = require('gulp-plumber');
+var wait = require('gulp-wait');
 
 gulp.task('styles', function() {
-    return gulp.src('./app/assets/styles/style.css')
-        .pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
-        .on('error', function(errorInfos) {
-            console.log(errorInfos.toString());
-            this.emit('end');
-        })
+    gulp.src('./app/assets/styles/style.scss')
+        .pipe(wait(500))
+        .pipe(plumber())
+        .pipe(autoprefixer({
+            browsers: ['last 4 versions', 'ie 8', 'ie 9'],
+            cascade: false
+        }))
+        .pipe(sass({
+            includePaths: [require('node-normalize-scss').includePaths]
+        }))   
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./app/temp/styles'));
 });
