@@ -1,0 +1,149 @@
+ .site-header {
+     &__toggle-menu {
+         position: absolute;
+         top: 1%;
+         right: 2%;
+         margin: 10px;
+         cursor: pointer;
+         color: $elementsColor;
+         z-index: 50;
+         font-size: 2.5rem;
+         opacity: 1;
+         transition: all .3s ease-in-out .15s;
+         @include tablet {
+             top: 20px;
+             right: 30px;
+             font-size: 3rem;
+         }
+         @include desktop {
+             top: 20px;
+             right: 30px;
+             font-size: 3.5rem;
+         }
+     }
+     &__sidebar-menu {
+         position: fixed;
+         right: 0;
+         width: 100%;
+         overflow: hidden;
+         height: 100vh;
+         max-height: 100vh;
+         background-color: rgba(17, 17, 17, 0.9);
+         opacity: 1;
+         z-index: 100;
+         transition: all .3s ease-in-out;
+         @include tablet {
+             width: 50%;
+         }
+         @include desktop {
+             width: 25%;
+         }
+         .fa-times {
+             position: absolute;
+             left: 10px;
+             top: 10px;
+             opacity: 0.8;
+             cursor: pointer;
+             color: $elementsColor;
+             font-size: 2rem;
+             transition: all .3s ease-in-out;
+             &:hover {
+                 opacity: 1;
+             }
+         }
+     }
+     &__title {
+         display: flex;
+         justify-content: center;
+         border: 2px solid #FFF;
+         margin: 50px 20px 5px 20px;
+         &--logo {
+             align-self: center;
+             width: 40%;
+             margin: 0;
+             float: left;
+             img {
+                 display: block;
+                 max-width: 90%;
+                 margin: 0 auto;
+                 @include tablet {
+                     max-width: 90%;
+                 }
+                 @include desktop {
+                     max-width: 85%;
+                 }
+             }
+         }
+         &--label {
+             width: 60%;
+             margin: 0;
+             float: left;
+             color: #FFF;
+             font-size: 5rem;
+             box-sizing: border-box;
+             text-align: center;
+             span {
+                 color: $elementsColor;
+                 font-size: 4.5rem;
+                 @include tablet {
+                     font-size: 5rem;
+                 }
+                 @include desktop {
+                     font-size: 5.8rem;
+                 }
+             }
+         }
+     }
+     &__subtitle {
+         font-size: 2.5rem;
+         color: #FFF;
+         text-align: center;
+         padding: 5px;
+         @include tablet {
+             font-size: 3rem;
+         }
+         @include desktop {
+             font-size: 3.5rem;
+         }
+     }
+     .navigation-selection {
+         padding: 0;
+         margin: 0 auto;
+         display: block;
+         width: 250px;
+         list-style: none;
+         @include tablet {
+             width: 300px;
+         }
+         @include desktop {
+             width: 360px;
+         }
+         .navigation-item {
+             padding: 15px 0;
+             box-sizing: border-box;
+             border-bottom: 1px solid $elementsColor;
+             a {
+                 transition: all .3s ease-in-out;
+                 &:hover {
+                     color: $elementsColor;
+                 }
+                 &:focus {
+                     color: $elementsColor;
+                 }
+                 .fa {
+                     font-size: 3rem;
+                     span {
+                         padding-left: 15px;
+                     }
+                 }
+             }
+         }
+     }
+     .hide-menu {
+         margin-right: -100%;
+     }
+     .opacity-zero {
+         opacity: 0;
+         transition: all .3s ease-in-out;
+     }
+ }

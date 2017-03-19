@@ -1,29 +1,27 @@
 footer {
-    background-color: #0c1a1e;
+    background-color: $primaryColor;
     min-height: 350px;
-    margin-top: 50px;
 }
 
 .footerleft {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 0 36px;
     p {
-        color: #fff;
-        font-size: 12px !important;
-        font-family: 'Open Sans', sans-serif;
+        color: #FFF;
+        font-size: 1.5rem;
         margin-bottom: 15px;
         i {
             width: 20px;
-            color: #999;
+            color: $elementsColor;
         }
     }
 }
 
 .logofooter {
-    margin-bottom: 10px;
-    font-size: 25px;
-    color: #fff;
-    font-weight: 700;
+    margin-bottom: 30px;
+    img {
+        width: 40%;
+    }
 }
 
 .paddingtop-bottom {
@@ -36,13 +34,15 @@ footer {
     margin-left: 2px;
     li {
         line-height: 29px;
-        font-size: 12px;
+        font-size: 1.3rem;
         a {
-            color: #a0a3a4;
+            color: #FFF;
             transition: color 0.2s linear 0s, background 0.2s linear 0s;
+            text-decoration: none;
             &:hover {
                 transition: color 0.2s linear 0s, background 0.2s linear 0s;
-                color: #ff670f;
+                color: $elementsColor;
+                text-decoration: none;
             }
         }
     }
@@ -79,19 +79,19 @@ footer {
         color: #FFF;
         padding: 10px 0;
         margin-bottom: 0px;
+        font-size: 2rem;
     }
 }
 
 .heading7 {
-    font-size: 21px;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #d9d6d6;
+    color: $elementsColor;
     margin-bottom: 22px;
 }
 
 .post {
     p {
-        font-size: 12px;
         color: #FFF;
         line-height: 20px;
         span {
@@ -110,13 +110,33 @@ footer {
         line-height: 40px;
         &:after {
             content: "/";
-            color: #FFF;
+            color: $elementsColor;
             margin-right: 8px;
             margin-left: 8px;
         }
         a {
             color: #FFF;
-            font-size: 12px;
+            font-size: 1.7rem;
+            @include desktop {
+                font-size: 2rem;
+            }
+            &:hover {
+                text-decoration: none;
+                color: $elementsColor;
+            }
+            &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.fb-page {
+    a {
+        transition: color .3s ease;
+        &:hover {
+            color: $elementsColor;
+            text-decoration: none;
         }
     }
 }

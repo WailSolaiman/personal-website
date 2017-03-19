@@ -1,0 +1,14 @@
+.btn {
+    font-family: 'Keania One', cursive;
+    color: $primaryColor;
+    border: 3px solid #FFF;
+    transition: all .3s ease;
+    &:hover {
+        color: #FFF;
+        border: 3px solid #FFF;
+        background-color: $elementsColor;
+    }
+    &--with-shadow {
+        box-shadow: 0 0 5px 0px black;
+    }
+}

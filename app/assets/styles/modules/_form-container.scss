@@ -1,11 +1,17 @@
 .form-container {
-    padding-left: 20%;
-    padding-right: 20%;
-
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    @include desktop {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
     &__header {
         text-align: center;
     }
-
     &__text {
         text-align: center;
         padding-bottom: 5%;

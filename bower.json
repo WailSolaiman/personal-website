@@ -1,0 +1,15 @@
+{
+  "name": "personal-website",
+  "description": "My Personal Website",
+  "main": "index.js",
+  "authors": [
+    "Wail Solaiman"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/WailSolaiman/personal-website",
+  "dependencies": {
+    "alertify": "^0.3.10",
+    "animate.css": "^3.5.2",
+    "scrollmagic": "^2.0.5"
+  }
+}

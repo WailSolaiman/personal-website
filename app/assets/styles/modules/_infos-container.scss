@@ -2,4 +2,140 @@
     background: rgba(17, 0, 173, 1);
     background: linear-gradient(to bottom, rgba(17, 0, 173, 1) 0%, rgba(0, 7, 36, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1100ad', endColorstr='#000724', GradientType=0);
+    height: 100%;
+    @include tablet {
+        height: 100%;
+    }
+    @include desktop {
+        height: 100vh;
+    }
+    &-inner {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        &__profile-image {
+            max-width: 45%;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border: 5px solid #FFF;
+            @include tablet {
+                margin-top: 7%;
+                max-width: 35%;
+            }
+            @include desktop {
+                margin-top: 8%;
+                max-width: 20%;
+            }
+        }
+        &__social {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 3%;
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    padding-right: 15px;
+                    a {
+                        &:focus {
+                            color: $elementsColor;
+                            text-decoration: none;
+                        }
+                        .fa {
+                            font-size: 2rem;
+                            transition: color .3s ease;
+                            &:hover {
+                                color: $elementsColor;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+            @include tablet {
+                width: 20%;
+            }
+            @include desktop {
+                width: 20%;
+            }
+        }
+        &__infos-content {
+            width: 90%;
+            display: block;
+            margin: 0 auto;
+            @include tablet {
+                width: 60%;
+            }
+            @include desktop {
+                width: 50%;
+            }
+        }
+        &__header {
+            font-size: 2rem;
+            span {
+                color: $elementsColor;
+                font-size: 3rem;
+                font-weight: 700;
+            }
+            @include tablet {
+                font-size: 3rem;
+                span {
+                    font-size: 3.5rem;
+                }
+            }
+            @include desktop {
+                font-size: 3.2rem;
+                span {
+                    font-size: 5rem;
+                }
+            }
+        }
+        &__small-header {
+            font-size: 1.8rem;
+            @include tablet {
+                font-size: 2.8rem;
+            }
+            @include desktop {
+                font-size: 3rem;
+            }
+        }
+        &__smaller-header {
+            @include tablet {
+                font-size: 2.5rem;
+            }
+            @include desktop {
+                font-size: 3rem;
+            }
+        }
+        &--center-content {
+            text-align: center;
+        }
+        &--padding-top-bottom {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+        &--text-white {
+            color: #FFF;
+        }
+        &--text-center {
+            text-align: center;
+        }
+        &--padding-top-bottom-narrow {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        &--vertical-line {
+            margin-top: 10%;
+            a {
+                .fa {
+                    font-size: 3rem;
+                    color: #FFF;
+                }
+            }
+        }
+    }
 }

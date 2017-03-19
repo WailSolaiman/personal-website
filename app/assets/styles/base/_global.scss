@@ -1,6 +1,6 @@
-body {
-  // font-family: 'Libre Franklin', sans-serif;
-  // color: #333;
+ ///////////////////MOBILE///////////////////////
+#main-content {
+  position: relative;
 }
 
 img {
@@ -14,10 +14,10 @@ img {
 }
 
 h1 {
-  font-family: 'Keania One', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
   color: $primaryColor;
-  font-size: 3.25rem;
-  letter-spacing: 1px;
+  font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -25,25 +25,82 @@ h1 {
 h2 {
   font-family: 'Keania One', cursive;
   color: #FFF;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 1px;
-  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: 'Keania One', cursive;
+  color: $elementsColor;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
 }
 
 p {
-  font-family: 'Monda', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: $primaryColor;
-  font-size: 1.7rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 2rem;
+  border-left: 5px solid #FFF;
+}
+
+a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 label {
-  font-family: 'Monda', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
   font-size: 1.7rem;
-  margin-bottom: 20px;
+  color: $primaryColor;
 }
 
-input {
+input,
+textarea {
   margin-bottom: 30px;
+}
+
+input,
+textarea {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+}
+
+span {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+///////////////////TABLET///////////////////////
+@include tablet {
+}
+
+//////////////////DESKTOP////////////////////////
+@include desktop {
+  h1 {
+    font-size: 3.25rem;
+  }
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  h3 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 2.5rem;
+  }
 }
