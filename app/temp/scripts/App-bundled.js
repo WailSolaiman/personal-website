@@ -10937,12 +10937,14 @@ var ScrollMagicAnimation = function () {
                     (0, _jquery2.default)('.block').removeClass('animated fadeOut').addClass('animated fadeIn');
                 }).on('leave', function () {
                     (0, _jquery2.default)('.block').removeClass('animated fadeIn').addClass('animated fadeOut');
-                }).addIndicators({
-                    name: 'block',
-                    colorTrigger: 'yellow',
-                    colorStart: 'green',
-                    colorEnd: 'red'
-                }).addTo(this.controller);
+                })
+                // .addIndicators({
+                //     name: 'block',
+                //     colorTrigger: 'yellow',
+                //     colorStart: 'green',
+                //     colorEnd: 'red'
+                // })
+                .addTo(this.controller);
             }
         }
     }, {
