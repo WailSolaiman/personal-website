@@ -40,12 +40,12 @@ class ScrollMagicAnimation {
                         .removeClass('animated fadeIn')
                         .addClass('animated fadeOut');
                 })
-                .addIndicators({
-                    name: 'block',
-                    colorTrigger: 'yellow',
-                    colorStart: 'green',
-                    colorEnd: 'red'
-                })
+                // .addIndicators({
+                //     name: 'block',
+                //     colorTrigger: 'yellow',
+                //     colorStart: 'green',
+                //     colorEnd: 'red'
+                // })
                 .addTo(this.controller);
         }
     }
