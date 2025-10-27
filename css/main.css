@@ -1406,7 +1406,9 @@ header .logo a {
   width: 100%;
   height: 100%;
   min-height: 720px;
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   text-align: center;
 }
@@ -1421,12 +1423,32 @@ header .logo a {
 }
 
 .intro-content {
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  -webkit-transform: translateY(-2.1rem);
-  -ms-transform: translateY(-2.1rem);
-  transform: translateY(-2.1rem);
+  position: relative;
+  z-index: 500;
+}
+
+.intro-content .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-content .col-twelve {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
 }
 .intro-content h1 {
   color: #ffffff;
@@ -1564,29 +1586,57 @@ header .logo a {
 }
 @media only screen and (max-width: 600px) {
   #intro {
-    min-height: 600px;
+    min-height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-content {
+    padding-top: 0;
+    margin-top: 0;
   }
   .intro-content h1 {
-    font-size: 4.6rem;
-    margin-bottom: 0.6rem;
+    font-size: 3.8rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
   }
   .intro-content h5 {
-    font-size: 1.5rem;
-    margin-bottom: 0.3rem;
-    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.15rem;
   }
   .intro-content .intro-position {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
   .intro-content .intro-position span {
-    padding: 0 0.6rem;
+    padding: 0 0.4rem;
   }
   .intro-content .intro-position span::before,
   .intro-content .intro-position span::after {
     display: none !important;
   }
+  .intro-content .button {
+    margin-top: 1rem;
+    height: 5rem !important;
+    line-height: 4.4rem !important;
+    padding: 0 2.5rem 0 2rem !important;
+    font-size: 1.2rem;
+  }
   .intro-social {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    bottom: 3rem;
+  }
+
+  /* Ensure logo and content are properly centered */
+  .header-container {
+    height: 80px;
+    padding-top: 2rem;
+  }
+  .header-container img {
+    width: 70px;
   }
 }
 
@@ -1720,6 +1770,20 @@ header .logo a {
     padding-left: 0;
     text-align: center;
   }
+
+  /* Center align about section content on mobile */
+  .about-content {
+    text-align: center;
+  }
+  .about-content .info-list {
+    text-align: center;
+  }
+  .about-content .info-list li {
+    text-align: center;
+  }
+  .about-content .skill-bars {
+    text-align: center;
+  }
 }
 
 /** 
@@ -1742,6 +1806,7 @@ header .logo a {
 
 #resume .resume-timeline {
   max-width: 980px;
+  margin-bottom: 4.8rem;
 }
 #resume .timeline-wrap {
   position: relative;
@@ -1758,16 +1823,6 @@ header .logo a {
 	left: 35%;
 	top: 0;
 } */
-#resume .timeline-wrap-2::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  position: absolute;
-  left: 35%;
-  top: 0;
-}
 #resume .timeline-block {
   position: relative;
   padding-top: 1.5rem;
@@ -1862,17 +1917,20 @@ header .logo a {
   }
   #resume .timeline-header h3 {
     font-size: 2rem;
+    margin-bottom: 0.3rem;
   }
   #resume .timeline-header p {
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
-  #resume .timeline-content {
+  #resume .timeline-content,
+  #resume .timeline-content-2 {
     margin: 0;
+    padding-left: 4rem;
   }
   #resume .timeline-content h4 {
     padding-bottom: 0;
-    padding-top: 2.1rem;
+    padding-top: 1rem;
     margin-bottom: 0.6rem;
     font-size: 1.7rem;
   }
@@ -1880,9 +1938,12 @@ header .logo a {
     bottom: auto;
     top: 0;
   }
-  #resume .timeline-header,
-  #resume .timeline-content {
-    padding-left: 7rem;
+  #resume .timeline-header {
+    padding-left: 4rem;
+  }
+  #resume .timeline-block {
+    padding-top: 0.8rem;
+    margin-bottom: 1.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1901,8 +1962,17 @@ header .logo a {
     font-size: 1.5rem;
   }
   #resume .timeline-header,
-  #resume .timeline-content {
-    padding-left: 5.5rem;
+  #resume .timeline-content,
+  #resume .timeline-content-2 {
+    padding-left: 4rem;
+  }
+  #resume .timeline-block {
+    padding-top: 0.6rem;
+    margin-bottom: 1.2rem;
+  }
+  #resume .timeline-content h4 {
+    padding-top: 0.8rem;
+    margin-bottom: 0.3rem;
   }
 }
 
