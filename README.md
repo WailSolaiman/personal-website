@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing the work of Wail Solaiman, a f
 
 ## 🚀 Live Demo
 
-[View Live Website](https://wailsolaiman.online/)
+[View Live Website](https://wailsolaiman.com/)
 
 ## 📋 Project Overview
 
