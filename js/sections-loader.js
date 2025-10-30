@@ -12,6 +12,7 @@
     "sections/intro.html",
     "sections/about.html",
     "sections/resume.html",
+    "sections/education.html",
     "sections/portfolio.html",
     "sections/services.html",
     "sections/stats.html",
