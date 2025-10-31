@@ -67,10 +67,8 @@
   function initPageFunctionality() {
     // Reinitialize all the functionality from main.js
     if (typeof $ !== "undefined") {
-      // Preloader - hide the loading animation
-      $("#loader").fadeOut("slow", function () {
-        $("#preloader").delay(300).fadeOut("slow")
-      })
+      // Show the sections container after everything is loaded
+      $("#sections-container").fadeIn("slow")
 
       // Smooth scrolling
       $(".smoothscroll").on("click", function (e) {

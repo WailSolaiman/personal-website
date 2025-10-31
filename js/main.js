@@ -12,11 +12,21 @@
   /* Preloader
 	------------------------------------------------------ */
   $(window).load(function () {
-    // will first fade out the loading animation
-    $("#loader").fadeOut("slow", function () {
-      // will fade out the whole DIV that covers the website.
-      $("#preloader").delay(300).fadeOut("slow")
-    })
+    // Wait for Pace.js to complete before showing the page
+    if (typeof Pace !== "undefined") {
+      Pace.on("done", function () {
+        // will first fade out the loading animation
+        $("#loader").fadeOut("slow", function () {
+          // will fade out the whole DIV that covers the website.
+          $("#preloader").delay(300).fadeOut("slow")
+        })
+      })
+    } else {
+      // Fallback if Pace.js is not available
+      $("#loader").fadeOut("slow", function () {
+        $("#preloader").delay(300).fadeOut("slow")
+      })
+    }
   })
 
   /*---------------------------------------------------- */
