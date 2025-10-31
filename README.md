@@ -98,7 +98,7 @@ WAILSOL25WEB/
 
 - **Technology**: React, Create React App, Crypto API
 - **Description**: Cryptocurrency tracking application
-- **Live Demo**: [react-crypto-universe-wsolaiman.netlify.app](https://react-crypto-universe-wsolaiman.netlify.app/)
+- **Live Demo**: [crypto-universe-gamma.vercel.app](https://crypto-universe-gamma.vercel.app/)
 
 ### 7. Web Agency React Template
 
