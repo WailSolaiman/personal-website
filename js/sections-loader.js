@@ -70,6 +70,22 @@
       // Show the sections container after everything is loaded
       $("#sections-container").fadeIn("slow")
 
+      // Initialize preloader after all sections are loaded
+      if (typeof Pace !== "undefined") {
+        Pace.on("done", function () {
+          // will first fade out the loading animation
+          $("#loader").fadeOut("slow", function () {
+            // will fade out the whole DIV that covers the website.
+            $("#preloader").delay(300).fadeOut("slow")
+          })
+        })
+      } else {
+        // Fallback if Pace.js is not available
+        $("#loader").fadeOut("slow", function () {
+          $("#preloader").delay(300).fadeOut("slow")
+        })
+      }
+
       // Smooth scrolling
       $(".smoothscroll").on("click", function (e) {
         e.preventDefault()
