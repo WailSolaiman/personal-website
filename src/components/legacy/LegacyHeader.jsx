@@ -37,7 +37,7 @@ function LegacyHeader() {
       </h2>
       <div className="w-16 h-0.5 retro-bg-border mx-auto mb-8"></div>
 
-      <p className="text-lg text-text-secondary/80 max-w-2xl mx-auto font-mono text-sm">
+      <p className="text-text-secondary/80 max-w-2xl mx-auto font-mono text-sm">
         {`/* Digital relics from past endeavors */`}
         <br />
         <span className="retro-text-medium">{`// Websites built for former clients & employers`}</span>
