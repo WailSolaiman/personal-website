@@ -13,8 +13,8 @@ function Resume() {
       period: "2020–Present",
       role: "Full-stack Web Developer",
       description:
-        "Working as a freelance web developer specializing in websites and web applications using HTML/CSS/JS, React/Next.js, and WordPress. Integrated AI tools for enhanced development.",
-      skills: ["React", "Next.js", "TypeScript", "WordPress"],
+        "Working as a freelance web developer for websites and web applications using HTML/CSS/JS, React/Next.js, and WordPress. Recently, I have been integrating AI tools and LLM APIs to accelerate development and enhance functionality. My AI-assisted development environment includes VS Code with GitHub Copilot and Cline extensions, as well as Cursor as an AI-first IDE.",
+      skills: ["React", "Next.js", "AI-powered Tools"],
       icon: "💻",
       current: true,
     },
@@ -24,7 +24,7 @@ function Resume() {
       period: "2018–2019",
       role: "Frontend Developer",
       description:
-        "Created high-quality client websites using HTML, CSS, and JavaScript with responsive Contao templates.",
+        "Responsible for creating high-quality client websites using HTML, CSS, and JavaScript. Developed responsive themes/templates based on Contao Content Management System and managed backends, including database and server integration.",
       skills: ["HTML", "CSS", "JavaScript", "Contao", "PHP"],
       icon: "🚀",
     },
@@ -34,8 +34,8 @@ function Resume() {
       period: "2017–2018",
       role: "WordPress Developer",
       description:
-        "Developed responsive WordPress themes and monitored/maintained WordPress sites.",
-      skills: ["WordPress", "PHP", "MySQL"],
+        "Focused on developing responsive WordPress themes with HTML, CSS, JavaScript, and PHP. Conducted ongoing monitoring and performance optimization of live WordPress sites to ensure a positive user experience, along with maintaining and enhancing existing themes.",
+      skills: ["HTML", "CSS", "JavaScript", "WordPress"],
       icon: "🔧",
     },
     {
@@ -44,8 +44,8 @@ function Resume() {
       period: "2014–2016",
       role: "Junior Web Developer",
       description:
-        "Built websites using HTML/CSS with a focus on WordPress and Vanilla JS projects.",
-      skills: ["HTML", "CSS", "JavaScript", "WordPress"],
+        "Started as a Junior Frontend Developer, building websites based on HTML/CSS with a focus on WordPress and Vanilla JavaScript/jQuery projects",
+      skills: ["HTML", "CSS", "jQuery", "JavaScript"],
       icon: "🌱",
     },
   ]

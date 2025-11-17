@@ -38,7 +38,7 @@ function HeroContent() {
         transition={{ delay: 0.5, duration: 0.7 }}
       >
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-800 dark:text-gray-200 mb-4">
-          Frontend & Web Apps Specialist
+          Freelancer, Frontend Developer
         </h2>
         <div
           className={`w-16 h-1 mx-auto rounded-full mb-6 ${

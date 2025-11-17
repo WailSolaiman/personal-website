@@ -51,16 +51,17 @@ function AvailabilityCard() {
 
         {/* Action buttons */}
         <div className="space-y-3">
-          <motion.button
-            className="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold py-3 px-6 rounded-xl shadow-soft"
+          <motion.a
+            href="mailto:me@wailsolaiman.com"
+            className="block w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold py-3 px-6 rounded-xl shadow-soft text-center no-underline hover:opacity-90 transition-opacity duration-200"
             whileTap={{ scale: 0.98 }}
           >
             💬 Let's Talk
-          </motion.button>
+          </motion.a>
 
           <motion.a
-            href="#contact"
-            className="inline-block text-sm text-green-600 font-medium"
+            href="#footer"
+            className="inline-block text-sm text-green-600 font-medium hover:text-green-700 transition-colors duration-200"
           >
             View contact details →
           </motion.a>

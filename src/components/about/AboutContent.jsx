@@ -18,7 +18,7 @@ function AboutContent() {
               Hello, I'm Wail
             </h3>
             <p className="text-text-secondary/70 text-sm">
-              Full-Stack Developer
+              Frontend Web Developer
             </p>
           </div>
         </div>

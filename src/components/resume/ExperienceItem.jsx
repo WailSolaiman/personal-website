@@ -57,7 +57,7 @@ function ExperienceItem({ experience, index }) {
           </div>
 
           {/* Description */}
-          <p className="text-text-secondary mb-6 leading-relaxed">
+          <p className="text-text-secondary mb-6 leading-relaxed text-left">
             {description}
           </p>
 
