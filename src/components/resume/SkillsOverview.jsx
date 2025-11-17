@@ -5,17 +5,20 @@ function SkillsOverview() {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: "React, Next.js, Vue.js, TypeScript, Tailwind CSS",
+      skills: "React, Next.js, TypeScript, Tailwind",
     },
     {
       title: "Backend",
-      skills: "Node.js, Express, PHP, MySQL, REST APIs",
+      skills: "Node.js, PHP, MySQL, REST APIs",
     },
     {
       title: "CMS & Tools",
       skills: "WordPress, Contao, Git, AI Integration",
     },
-    { title: "Deployment", skills: "Vercel, Netlify, Heroku, AWS" },
+    {
+      title: "AI-powered Tools",
+      skills: "v0, Lovabale, Cursor, VS-Code Cline",
+    },
   ]
 
   return (
