@@ -37,7 +37,7 @@ function FooterBottom() {
         aria-label="Back to top"
       >
         <svg
-          className="w-5 h-5 text-text-secondary/70 group-hover:text-primary transition-colors duration-300"
+          className="w-5 h-5 text-primary transition-colors duration-300"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

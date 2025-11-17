@@ -9,11 +9,9 @@ function FooterHeader() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <div className="inline-flex items-center gap-2 px-4 py-2 bg-card/70 backdrop-blur-sm rounded-full border border-border/20 mb-8">
-        <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-        <span className="text-xs font-medium text-text-accent">
-          GET IN TOUCH
-        </span>
+      <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500 rounded-full border border-purple-400 mb-8">
+        <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+        <span className="text-xs font-medium text-white">GET IN TOUCH</span>
       </div>
 
       <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">

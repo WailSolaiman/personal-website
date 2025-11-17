@@ -1,7 +1,6 @@
 import FooterHeader from "./FooterHeader"
 import SocialLinksGrid from "./SocialLinksGrid"
 import QuickStats from "./QuickStats"
-import NewsletterCTA from "./NewsletterCTA"
 import FooterBottom from "./FooterBottom"
 
 function Footer() {
@@ -17,7 +16,6 @@ function Footer() {
         <FooterHeader />
         <SocialLinksGrid />
         <QuickStats />
-        <NewsletterCTA />
         <FooterBottom />
       </div>
     </footer>

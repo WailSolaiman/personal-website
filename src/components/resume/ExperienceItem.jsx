@@ -9,18 +9,12 @@ function ExperienceItem({ experience, index }) {
 
   return (
     <motion.div
-      className={`relative mb-12`}
+      className={`relative mb-12 ${index === 0 ? "mt-8" : ""}`}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
     >
-      {/* Timeline dot */}
-      <motion.div
-        className={`absolute left-8 md:left-1/2 top-8 w-4 h-4 bg-primary rounded-full border-4 border-card transform -translate-x-1/2 z-10`}
-        whileHover={{ scale: 1.2, backgroundColor: "#581c87" }}
-        transition={{ type: "spring", stiffness: 400 }}
-      />
       {/* Card container for positioning */}
       <div
         className={`relative ${
