@@ -1,6 +1,9 @@
 import { motion } from "framer-motion"
+import { useTheme } from "../../contexts/ThemeContext"
 
 function FooterBottom() {
+  const { theme } = useTheme()
+  const isLightTheme = theme === "light"
   const currentYear = new Date().getFullYear()
 
   return (
@@ -33,22 +36,33 @@ function FooterBottom() {
       {/* Back to top button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="mb-6 p-3 bg-card/50 hover:bg-card border border-border/30 rounded-full transition-all duration-300 group"
+        className={`mb-6 p-3 bg-card/50 hover:bg-card border ${
+          isLightTheme ? "border-black/20" : "border-border/30"
+        } rounded-full transition-all duration-300 group`}
         aria-label="Back to top"
       >
-        <svg
-          className="w-5 h-5 text-text-secondary/70 group-hover:text-primary transition-colors duration-300"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+        <motion.div
+          animate={{ y: [0, -4, 0] }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M5 10l7-7m0 0l7 7m-7-7v18"
-          />
-        </svg>
+          <svg
+            className="w-5 h-5 text-text-secondary/70 group-hover:text-primary transition-colors duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 10l7-7m0 0l7 7m-7-7v18"
+            />
+          </svg>
+        </motion.div>
       </button>
 
       {/* Copyright */}
