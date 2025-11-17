@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Initial theme setup */
+html {
+  color-scheme: dark light; /* Support both themes */
+  --accent-purple: #581c87; /* Dark purple for light mode */
+}
+
+/* Define primary colors for buttons */
+:root {
+  --color-primary: #7c3aed; /* Purple-600 */
+  --color-primary-dark: #6d28d9; /* Purple-700 */
+}
+
+/* Apply colors based on theme */
+html.dark {
+  color-scheme: dark;
+  background-color: #030712; /* Softer dark background fallback */
+  --accent-purple: #c084fc; /* Light purple for dark mode */
+}
+
+html.light {
+  color-scheme: light;
+  background-color: #f8fafc; /* Soft light background fallback */
+  --accent-purple: #581c87; /* Dark purple for light mode */
+}
+
+/* Theme-aware retro colors for Legacy section */
+html.dark {
+  --retro-green-dark: #00ff00;
+  --retro-green-medium: #00ff00; /* Same as title dark */
+  --retro-green-light: #88ff88; /* Same as title light */
+  --retro-border-dark: #00ff00; /* Same as title dark */
+  --retro-border-light: #88ff88; /* Same as title light */
+  --retro-shadow: rgba(0, 255, 0, 0.2);
+}
+
+html:not(.dark) {
+  --retro-green-dark: #14532d;
+  --retro-green-medium: #15803d;
+  --retro-green-light: #16a34a;
+  --retro-border-dark: #16a34a;
+  --retro-border-light: #14532d;
+  --retro-shadow: rgba(22, 163, 74, 0.2);
+}
+
+/* Custom classes for theme-aware retro colors */
+.retro-text-medium {
+  color: var(--retro-green-medium);
+}
+
+.retro-bg-border {
+  background-color: var(--retro-border-light);
+}
+
+.group:hover .group-hover-retro-text {
+  color: var(--retro-green-medium);
+}
+
+.text-retro-medium {
+  color: var(--retro-green-medium);
+}
+
+/* Custom hover class using theme-aware color */
+.hover-accent:hover {
+  color: var(--accent-purple) !important;
+}
+
+/* Hide scrollbar for horizontal scrolling nav */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
