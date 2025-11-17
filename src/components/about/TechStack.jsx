@@ -52,7 +52,7 @@ function TechStack() {
 
   return (
     <motion.div
-      className="bg-card/60 backdrop-blur-sm rounded-2xl p-4 border border-border/20 shadow-soft"
+      className="bg-card/60 backdrop-blur-sm rounded-2xl p-4 xl:p-6 border border-border/20 shadow-soft w-full max-w-xs xl:max-w-sm mx-auto"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.9 }}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 function AvailabilityCard() {
   return (
     <motion.div
-      className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 backdrop-blur-sm rounded-2xl p-6 border border-green-200/50 dark:border-green-800/30 max-w-sm mx-auto shadow-soft min-h-[220px] flex flex-col justify-center"
+      className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 backdrop-blur-sm rounded-2xl p-6 xl:p-8 border border-green-200/50 dark:border-green-800/30 w-full max-w-xs xl:max-w-sm mx-auto shadow-soft min-h-[220px] xl:min-h-[240px] flex flex-col justify-center"
       initial={{ opacity: 0, y: 30, scale: 0.9 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ delay: 1.2, duration: 0.8, type: "spring", stiffness: 200 }}

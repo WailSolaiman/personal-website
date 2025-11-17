@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 function HeroButtons() {
   return (
     <motion.div
-      className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+      className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 xl:mb-8"
       initial={{ y: 40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.6 }}

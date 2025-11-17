@@ -9,7 +9,7 @@ function About() {
   return (
     <section
       id="about"
-      className="py-20 lg:py-28 px-6 bg-gradient-to-br from-background via-surface/20 to-background relative overflow-hidden"
+      className="py-16 xl:py-28 px-6 lg:px-8 xl:px-12 bg-gradient-to-br from-background via-surface/20 to-background relative overflow-hidden"
     >
       {/* Background effects */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -35,7 +35,7 @@ function About() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid xl:grid-cols-2 gap-8 xl:gap-16">
           <div className="space-y-10">
             <AboutContent />
             <SkillsStats />
@@ -63,7 +63,7 @@ function About() {
 
           <div className="flex flex-col items-center space-y-8">
             <ProfileImage />
-            <div className="flex gap-8 w-full justify-center">
+            <div className="flex flex-col lg:flex-row gap-4 xl:gap-8 w-full justify-center items-center">
               <AvailabilityCard />
               <TechStack />
             </div>
