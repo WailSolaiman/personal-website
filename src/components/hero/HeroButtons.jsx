@@ -16,12 +16,10 @@ function HeroButtons() {
       </a>
 
       <a
-        href="https://drive.google.com/file/d/1YXhX9obY3KQz25NEoEIpXZFnyfoyHASb/view?usp=sharing"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="#footer"
         className="px-8 py-4 bg-white text-gray-800 font-semibold rounded-xl border border-purple-300/50 backdrop-blur-sm hover:border-purple-600 hover:text-purple-900 transition-all duration-300"
       >
-        Download CV
+        Contact me
       </a>
     </motion.div>
   )
