@@ -2,6 +2,7 @@ import { ThemeProvider } from "./contexts/ThemeContext"
 import Header from "./components/header"
 import Hero from "./components/hero"
 import About from "./components/about"
+import Education from "./components/education"
 import Resume from "./components/resume"
 import Portfolio from "./components/portfolio"
 import Legacy from "./components/legacy"
@@ -15,6 +16,7 @@ function App() {
         <Header />
         <Hero />
         <About />
+        <Education />
         <Resume />
         <Portfolio portfolioItems={portfolioItems} />
         <Legacy legacySites={legacySites} />

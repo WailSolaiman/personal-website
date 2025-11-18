@@ -38,16 +38,6 @@ function Resume() {
       skills: ["HTML", "CSS", "JavaScript", "WordPress"],
       icon: "🔧",
     },
-    {
-      id: 4,
-      title: "eTailers ISS GmbH",
-      period: "2014–2016",
-      role: "Junior Web Developer",
-      description:
-        "Started as a Junior Frontend Developer, building websites based on HTML/CSS with a focus on WordPress and Vanilla JavaScript/jQuery projects",
-      skills: ["HTML", "CSS", "jQuery", "JavaScript"],
-      icon: "🌱",
-    },
   ]
 
   return (
