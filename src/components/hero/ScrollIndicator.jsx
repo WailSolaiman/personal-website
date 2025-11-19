@@ -6,7 +6,7 @@ function ScrollIndicator() {
 
   return (
     <motion.div
-      className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:block"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1.2, duration: 1 }}
