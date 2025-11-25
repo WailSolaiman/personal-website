@@ -90,14 +90,14 @@ export const portfolioItems = [
   },
   {
     id: 9,
-    image: "/images/portfolio/wail-solaiman-online.png",
-    title: "Wail Solaiman Portfolio",
-    tech: "WordPress | Web Agency",
+    image: "/images/portfolio/webbly.jpeg",
+    title: "Webbly",
+    tech: "React | Web Agency",
     description:
-      "My second portfolio built with WordPress and Elementor, delivering comprehensive website solutions. Features Arabic RTL design, SEO optimization, and responsive layouts tailored for digital agencies and businesses.",
-    techList: "WordPress | Elementor | SEO | Web Agency",
-    link: "https://wailsolaiman.online/portfolio/",
-    alt: "Wail Solaiman Portfolio",
+      "Webbly is a sleek, one-page website showcasing web development and design services (Web Agency). Built with cutting-edge technologies for speed, responsiveness, and accessibility.",
+    techList: "React | Vite | JavaScript | Framer Motion",
+    link: "https://webbly-ws.vercel.app/",
+    alt: "Webbly",
   },
 ]
 
