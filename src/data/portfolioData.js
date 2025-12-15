@@ -99,6 +99,17 @@ export const portfolioItems = [
     link: "https://webbly-ws.vercel.app/",
     alt: "Webbly",
   },
+  {
+    id: 10,
+    image: "/images/portfolio/ws-space.jpg",
+    title: "Arabic Portfolio",
+    tech: "WordPress | Framer | Arabic Portfolio",
+    description:
+      "Comprehensive Arabic portfolio website showcasing web development services for Arabic-speaking clients. Built with WordPress and Framer, featuring Arabic RTL support and modern design.",
+    techList: "WordPress | Framer | Elementor | Arabic RTL",
+    link: "https://wailsolaiman.space/portfolio/",
+    alt: "Arabic Portfolio",
+  },
 ]
 
 export const legacySites = [
