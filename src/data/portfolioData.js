@@ -101,12 +101,23 @@ export const portfolioItems = [
   },
   {
     id: 10,
+    image: "/images/portfolio/atlantis.jpg",
+    title: "Atlantis Bistro",
+    tech: "WordPress Template | Restaurant",
+    description:
+      "Professional restaurant website for Atlantis Bistro in Germany, showcasing culinary excellence and dining experiences. Built with WordPress, featuring modern design and German language content for local customers.",
+    techList: "WordPress | Elementor | PHP | MySQL",
+    link: "https://t3.wailsolaiman.online/",
+    alt: "Atlantis Bistro",
+  },
+  {
+    id: 11,
     image: "/images/portfolio/ws-space.jpg",
     title: "Arabic Portfolio",
     tech: "WordPress | Framer | Arabic Portfolio",
     description:
       "Comprehensive Arabic portfolio website showcasing web development services for Arabic-speaking clients. Built with WordPress and Framer, featuring Arabic RTL support and modern design.",
-    techList: "WordPress | Framer | Elementor | Arabic RTL",
+    techList: "WordPress | Framer",
     link: "https://wailsolaiman.space/portfolio/",
     alt: "Arabic Portfolio",
   },
