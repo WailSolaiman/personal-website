@@ -134,7 +134,7 @@ function ExperienceItem({ experience, index }) {
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
           title="Employment Certificate"
-          imageSrc="/public/images/Arbeitszeugnis-bjoerk-page.jpg"
+          imageSrc="/images/arbeitszeugnis-bjoerk.jpg"
           imageAlt="Anders Björk GmbH Certificate"
           translationContent={andersBjorkTranslation}
           translationTitle="English Translation"

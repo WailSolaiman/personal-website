@@ -125,7 +125,7 @@ function Education() {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         title="Bachelor Certificate"
-        imageSrc="/public/images/bachelor-urkunde_page.jpg"
+        imageSrc="/images/bachelor-urkunde-page.jpg"
         imageAlt="Bachelor Certificate"
         translationContent={certificateTranslation}
         translationTitle="English Translation"
