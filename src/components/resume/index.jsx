@@ -1,11 +1,8 @@
-import { useTheme } from "../../contexts/ThemeContext"
 import ResumeSectionHeader from "./ResumeSectionHeader"
 import ExperienceTimeline from "./ExperienceTimeline"
 import SkillsOverview from "./SkillsOverview"
 
 function Resume() {
-  const { theme } = useTheme()
-
   const experiences = [
     {
       id: 1,
@@ -37,6 +34,7 @@ function Resume() {
         "Focused on developing responsive WordPress themes with HTML, CSS, JavaScript, and PHP. Conducted ongoing monitoring and performance optimization of live WordPress sites to ensure a positive user experience, along with maintaining and enhancing existing themes.",
       skills: ["HTML", "CSS", "JavaScript", "WordPress"],
       icon: "🔧",
+      hasCertificate: true,
     },
   ]
 

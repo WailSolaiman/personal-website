@@ -1,7 +1,12 @@
 import { motion } from "framer-motion"
-import { FaGraduationCap } from "react-icons/fa"
+import { FaGraduationCap, FaFilePdf } from "react-icons/fa"
+import { useState } from "react"
+import DocumentModal from "../common/DocumentModal"
+import { certificateTranslation } from "../../data/educationData"
 
 function Education() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <section
       id="education"
@@ -71,7 +76,7 @@ function Education() {
               </motion.p>
 
               <motion.span
-                className="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium"
+                className="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium mb-4"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
@@ -79,10 +84,52 @@ function Education() {
               >
                 B.Eng. • Completed in 2013
               </motion.span>
+
+              <motion.button
+                onClick={() => setIsModalOpen(true)}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-purple-200/30 hover:bg-purple-200/50 text-primary rounded-lg transition-all duration-300 ease-out hover:scale-105 active:scale-95"
+                initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{
+                  duration: 0.6,
+                  delay: 0.9,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                viewport={{ once: true }}
+                style={{ color: "var(--accent-purple)" }}
+              >
+                <motion.span
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 1.1 }}
+                >
+                  <FaFilePdf className="w-4 h-4" />
+                </motion.span>
+                <motion.span
+                  initial={{ opacity: 0, x: 10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 1.2 }}
+                  className="font-medium"
+                >
+                  View Certificate
+                </motion.span>
+              </motion.button>
             </div>
           </motion.div>
         </motion.div>
       </div>
+
+      <DocumentModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Bachelor Certificate"
+        imageSrc="/public/images/bachelor-urkunde_page.jpg"
+        imageAlt="Bachelor Certificate"
+        translationContent={certificateTranslation}
+        translationTitle="English Translation"
+      />
     </section>
   )
 }
