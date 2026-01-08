@@ -128,7 +128,7 @@ function Education() {
         imageSrc="/images/bachelor-urkunde-page.jpg"
         imageAlt="Bachelor Certificate"
         translationContent={certificateTranslation}
-        translationTitle="English Translation"
+        translationTitle=""
       />
     </section>
   )

@@ -1,6 +1,8 @@
 import ResumeSectionHeader from "./ResumeSectionHeader"
 import ExperienceTimeline from "./ExperienceTimeline"
 import SkillsOverview from "./SkillsOverview"
+import { andersBjorkTranslation } from "../../data/andersBjorkData"
+import { viconTranslation } from "../../data/viconData"
 
 function Resume() {
   const experiences = [
@@ -24,6 +26,13 @@ function Resume() {
         "Responsible for creating high-quality client websites using HTML, CSS, and JavaScript. Developed responsive themes/templates based on Contao Content Management System and managed backends, including database and server integration.",
       skills: ["HTML", "CSS", "JavaScript", "Contao", "PHP"],
       icon: "🚀",
+      hasCertificate: true,
+      certificate: {
+        imageSrc: "/images/zeugnis-vicon.jpg",
+        imageAlt: "VICON Web Business Certificate",
+        translationContent: viconTranslation,
+        translationTitle: "",
+      },
     },
     {
       id: 3,
@@ -35,6 +44,12 @@ function Resume() {
       skills: ["HTML", "CSS", "JavaScript", "WordPress"],
       icon: "🔧",
       hasCertificate: true,
+      certificate: {
+        imageSrc: "/images/arbeitszeugnis-bjoerk.jpg",
+        imageAlt: "Anders Björk GmbH Certificate",
+        translationContent: andersBjorkTranslation,
+        translationTitle: "",
+      },
     },
   ]
 
