@@ -1,0 +1,40 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "resume": "Resume",
+    "portfolio": "Portfolio",
+    "legacy": "Legacy"
+  },
+  "buttons": {
+    "viewWork": "View My Work",
+    "contact": "Contact me",
+    "viewCertificate": "View Certificate",
+    "viewProject": "View Project",
+    "backToTop": "Back to top"
+  },
+  "labels": {
+    "current": "Current",
+    "getInTouch": "GET IN TOUCH",
+    "closeModal": "Close modal"
+  },
+  "stats": {
+    "projectsCompleted": "Projects Completed",
+    "yearsExperience": "Years Experience",
+    "clientSatisfaction": "Client Satisfaction",
+    "years": "Years",
+    "experience": "Experience",
+    "projects": "Projects",
+    "completed": "Completed",
+    "clients": "Clients",
+    "happy": "Happy"
+  },
+  "modals": {
+    "document": "Document",
+    "documentImage": "Document Image",
+    "certificate": "Certificate",
+    "certificateImage": "Certificate Image",
+    "englishTranslation": "English Translation",
+    "noImageAvailable": "No image available"
+  }
+}

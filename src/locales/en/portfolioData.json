@@ -1,0 +1,49 @@
+{
+  "projects": {
+    "1": {
+      "title": "EchoRealm",
+      "tech": "React | VR Website",
+      "description": "EchoRealm is a VR website for creating immersive environments with modern web tools. Built with React 18, TailwindCSS, and Vite, it ensures fast performance and clean code with ESLint."
+    },
+    "2": {
+      "title": "Restaura Paris",
+      "tech": "React | Restaurant Website",
+      "description": "Restaura Paris creates dining experiences where design meets performance. Built with React 18, TailwindCSS, and Vite, it features smooth animations via Framer Motion and clean code with ESLint."
+    },
+    "3": {
+      "title": "Metaverse World",
+      "tech": "React | Next.js Webapp",
+      "description": "Metaverse World is a webapp with a sleek, modern interface built with React, Next.js, Tailwind CSS, and Framer Motion. It combines responsive design with smooth animations for an engaging user experience."
+    },
+    "4": {
+      "title": "Power Zone Gym Studio",
+      "tech": "React | Fitness Website",
+      "description": "Power Zone Gym Studio is a modern fitness website built with React and Vite, featuring smooth user interactions. The site showcases gym services, membership options, and training programs with an engaging interface."
+    },
+    "5": {
+      "title": "Onix",
+      "tech": "React | Modern Web App",
+      "description": "Onix is a modern web application built with React and Vite, featuring a sleek dark theme and progressive web app capabilities. The site delivers fast performance and responsive design with clean, modern aesthetics."
+    },
+    "9": {
+      "title": "Webbly",
+      "tech": "React | Web Agency",
+      "description": "Webbly is a sleek, one-page website showcasing web development and design services (Web Agency). Built with cutting-edge technologies for speed, responsiveness, and accessibility."
+    },
+    "10": {
+      "title": "Atlantis Bistro",
+      "tech": "WordPress Template | Restaurant",
+      "description": "Professional restaurant website for Atlantis Bistro in Germany, showcasing culinary excellence and dining experiences. Built with WordPress, featuring modern design and German language content for local customers."
+    },
+    "11": {
+      "title": "Arabic Portfolio",
+      "tech": "WordPress | Framer | Arabic Portfolio",
+      "description": "Comprehensive Arabic portfolio website showcasing web development services for Arabic-speaking clients. Built with WordPress and Framer, featuring Arabic RTL support and modern design."
+    },
+    "12": {
+      "title": "WS Code",
+      "tech": "Web Development Services | Business Website",
+      "description": "Personal web development services website showcasing modern web solutions and custom development services. Built with React and modern technologies, it features responsive design and optimized performance."
+    }
+  }
+}

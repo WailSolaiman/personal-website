@@ -1,0 +1,36 @@
+{
+  "titles": {
+    "about": "Über mich",
+    "education": "Akademischer Hintergrund",
+    "resume": "Berufserfahrung",
+    "portfolio": "Ausgewählte Projekte",
+    "certificates": "Zertifizierungen",
+    "aiTools": "KI-gestützte Entwicklung",
+    "legacy": "Legacy-Websites"
+  },
+  "descriptions": {
+    "about": "Leidenschaftlicher Full-Stack-Entwickler, der digitale Erlebnisse mit modernen Technologien schafft",
+    "portfolio": "Eine Präsentation innovativer Web-Lösungen und kreativer Entwicklungsprojekte",
+    "certificates": "Berufliche Zertifizierungen und Kurse zur Verbesserung meiner Fähigkeiten",
+    "resume": "Letzte 10 Jahre"
+  },
+  "education": {
+    "university": "Technische Universität Lübeck",
+    "country": "Deutschland",
+    "degree": "Bachelor-Abschluss in Informatik / Softwaretechnik",
+    "degreeShort": "B.Eng. • Abgeschlossen 2013",
+    "bachelorCertificate": "Bachelor-Zertifikat"
+  },
+  "certificates": {
+    "platform": "Coursera"
+  },
+  "resume": {
+    "employmentCertificate": "Arbeitszeugnis"
+  },
+  "legacy": {
+    "title": "LEGACY WEBSITES",
+    "badge": "RETRO ARCHIV",
+    "subtitle": "Digitale Relikte vergangener Unternehmungen",
+    "description": "Websites für ehemalige Kunden & Arbeitgeber erstellt"
+  }
+}

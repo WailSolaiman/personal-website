@@ -1,12 +1,14 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function SkillsStats() {
+  const { t } = useTranslation("ui")
   const stats = [
     {
       id: 1,
       number: "10+",
-      label: "Years",
-      sublabel: "Experience",
+      label: t("stats.years"),
+      sublabel: t("stats.experience"),
       icon: "🏆",
       color: "from-violet-500 to-purple-600",
       delay: 0,
@@ -14,8 +16,8 @@ function SkillsStats() {
     {
       id: 2,
       number: "50+",
-      label: "Projects",
-      sublabel: "Completed",
+      label: t("stats.projects"),
+      sublabel: t("stats.completed"),
       icon: "🚀",
       color: "from-blue-500 to-cyan-500",
       delay: 0.1,
@@ -23,8 +25,8 @@ function SkillsStats() {
     {
       id: 3,
       number: "30+",
-      label: "Clients",
-      sublabel: "Happy",
+      label: t("stats.clients"),
+      sublabel: t("stats.happy"),
       icon: "😊",
       color: "from-green-500 to-emerald-500",
       delay: 0.2,

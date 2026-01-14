@@ -1,10 +1,12 @@
 import { motion } from "framer-motion"
 import { FaGraduationCap, FaFilePdf } from "react-icons/fa"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import DocumentModal from "../common/DocumentModal"
 import { certificateTranslation } from "../../data/educationData"
 
 function Education() {
+  const { t } = useTranslation(["sections", "ui"])
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
@@ -22,7 +24,7 @@ function Education() {
         >
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
-              Academic Background
+              {t("sections:titles.education")}
             </h2>
             <div className="w-16 h-1 bg-gradient-to-r from-primary to-text-accent mx-auto rounded-full"></div>
           </div>
@@ -52,7 +54,7 @@ function Education() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                Technical University of Lübeck
+                {t("sections:education.university")}
               </motion.h3>
 
               <motion.p
@@ -62,7 +64,7 @@ function Education() {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 viewport={{ once: true }}
               >
-                Germany
+                {t("sections:education.country")}
               </motion.p>
 
               <motion.p
@@ -72,7 +74,7 @@ function Education() {
                 transition={{ duration: 0.6, delay: 0.7 }}
                 viewport={{ once: true }}
               >
-                Bachelor's Degree in Computer Science / Software Engineering
+                {t("sections:education.degree")}
               </motion.p>
 
               <motion.span
@@ -82,7 +84,7 @@ function Education() {
                 transition={{ duration: 0.5, delay: 0.8 }}
                 viewport={{ once: true }}
               >
-                B.Eng. • Completed in 2013
+                {t("sections:education.degreeShort")}
               </motion.span>
 
               <motion.button
@@ -113,7 +115,7 @@ function Education() {
                   transition={{ duration: 0.4, delay: 1.2 }}
                   className="font-medium"
                 >
-                  View Certificate
+                  {t("ui:buttons.viewCertificate")}
                 </motion.span>
               </motion.button>
             </div>
@@ -124,9 +126,9 @@ function Education() {
       <DocumentModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        title="Bachelor Certificate"
+        title={t("sections:education.bachelorCertificate")}
         imageSrc="/images/bachelor-urkunde-page.jpg"
-        imageAlt="Bachelor Certificate"
+        imageAlt={t("sections:education.bachelorCertificate")}
         translationContent={certificateTranslation}
         translationTitle=""
       />

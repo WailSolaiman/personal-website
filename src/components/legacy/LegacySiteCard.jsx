@@ -1,6 +1,10 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function LegacySiteCard({ site, index }) {
+  const { t } = useTranslation("legacyData")
+  const siteKey = String(site.id)
+  const translatedDesc = t(`sites.${siteKey}.desc`, { defaultValue: site.desc })
   return (
     <motion.div
       className="group relative bg-card/30 backdrop-blur-sm border border-secondary/20 rounded-lg overflow-hidden hover:border-secondary/60 transition-all duration-300 cursor-pointer"
@@ -71,7 +75,7 @@ function LegacySiteCard({ site, index }) {
           </h3>
 
           <p className="text-text-secondary/70 text-xs font-mono leading-tight mb-4 line-clamp-2">
-            {site.desc}
+            {translatedDesc}
           </p>
 
           {/* Terminal-style link */}

@@ -1,0 +1,13 @@
+{
+  "description": "Professional certifications and courses completed to enhance my skills",
+  "items": {
+    "generativeAI": {
+      "title": "Generative AI: Introduction and Applications",
+      "description": "This course covers how to describe generative AI and distinguish it from discriminative AI. It explores the capabilities of generative AI and its use cases in the real world, identifies applications of generative AI in different sectors and industries, and examines common generative AI models and tools for text, code, image, audio, and video generation."
+    },
+    "promptEngineering": {
+      "title": "Generative AI: Prompt Engineering Basics",
+      "description": "This course explains the concept and relevance of prompt engineering in generative AI models. It covers applying best practices for creating prompts, assessing commonly used tools for prompt engineering, and applying common prompt engineering techniques and approaches for writing effective prompts."
+    }
+  }
+}

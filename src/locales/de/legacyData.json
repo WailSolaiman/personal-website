@@ -1,0 +1,27 @@
+{
+  "sites": {
+    "1": { "desc": "Architekturbüro-Website" },
+    "2": { "desc": "Business-Website-Projekt" },
+    "3": { "desc": "Bauunternehmen-Website" },
+    "4": { "desc": "Medizinische Klinik-Website" },
+    "5": { "desc": "Unternehmens-Website-Projekt" },
+    "6": { "desc": "Event-Unternehmen-Website" },
+    "7": { "desc": "Medizinische Fach-Website" },
+    "8": { "desc": "Arzt-Website" },
+    "9": { "desc": "Business-Website-Projekt" },
+    "10": { "desc": "Kunstunternehmen-Website" },
+    "11": { "desc": "Fotolabor-Services-Website" },
+    "12": { "desc": "Unternehmens-Website-Projekt" },
+    "13": { "desc": "Gutachten-Services-Website" },
+    "14": { "desc": "Landschaftsbau-Unternehmen-Website" },
+    "15": { "desc": "Computergestützte Chirurgie-Website" },
+    "16": { "desc": "Ferienwohnung-Website" },
+    "17": { "desc": "Möbelunternehmen-Website" },
+    "18": { "desc": "Unternehmens-Website-Projekt" },
+    "19": { "desc": "Fahrradladen-Website" },
+    "20": { "desc": "Transportprojekt-Website" },
+    "21": { "desc": "Musik-Talente-Website" },
+    "22": { "desc": "Tourismus-Website für Rügen" },
+    "23": { "desc": "Fahrradküche-Website" }
+  }
+}

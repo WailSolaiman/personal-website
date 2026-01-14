@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function PortfolioHeader() {
+  const { t } = useTranslation(["sections", "portfolio"])
   return (
     <motion.div
       className="text-center mb-16"
@@ -10,11 +12,11 @@ function PortfolioHeader() {
       viewport={{ once: true }}
     >
       <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
-        Featured Projects
+        {t("sections:titles.portfolio")}
       </h2>
       <div className="w-16 h-1 bg-gradient-to-r from-primary to-text-accent mx-auto rounded-full"></div>
       <p className="text-lg text-text-secondary/80 max-w-2xl mx-auto mt-6">
-        A showcase of innovative web solutions and creative development projects
+        {t("portfolio:description")}
       </p>
     </motion.div>
   )

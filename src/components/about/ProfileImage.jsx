@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function ProfileImage() {
+  const { t } = useTranslation("about")
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -52,12 +54,11 @@ function ProfileImage() {
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-              Available for work
+              {t("availability.availableForWork")}
             </span>
           </div>
           <p className="text-text-secondary/70 text-sm leading-relaxed">
-            Passionate about creating exceptional digital experiences that
-            combine thoughtful design with robust functionality.
+            {t("availability.profileDescription")}
           </p>
         </motion.div>
 

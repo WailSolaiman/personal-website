@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next"
 import ResumeSectionHeader from "./ResumeSectionHeader"
 import ExperienceTimeline from "./ExperienceTimeline"
 import SkillsOverview from "./SkillsOverview"
@@ -5,25 +6,24 @@ import { andersBjorkTranslation } from "../../data/andersBjorkData"
 import { viconTranslation } from "../../data/viconData"
 
 function Resume() {
+  const { t } = useTranslation("resume")
   const experiences = [
     {
       id: 1,
-      title: "Freelance Developer",
-      period: "2020–Present",
-      role: "Full-stack Web Developer",
-      description:
-        "Working as a freelance web developer for websites and web applications using HTML/CSS/JS, React/Next.js, and WordPress. Recently, I have been integrating AI tools and LLM APIs to accelerate development and enhance functionality. My AI-assisted development environment includes VS Code with GitHub Copilot and Cline extensions, as well as Cursor as an AI-first IDE.",
+      title: t("experience.freelance.title"),
+      period: t("experience.freelance.period"),
+      role: t("experience.freelance.role"),
+      description: t("experience.freelance.description"),
       skills: ["React", "Next.js", "AI-powered Tools"],
       icon: "💻",
       current: true,
     },
     {
       id: 2,
-      title: "VICON Web Business",
-      period: "2018–2019",
-      role: "Frontend Developer",
-      description:
-        "Responsible for creating high-quality client websites using HTML, CSS, and JavaScript. Developed responsive themes/templates based on Contao Content Management System and managed backends, including database and server integration.",
+      title: t("experience.vicon.title"),
+      period: t("experience.vicon.period"),
+      role: t("experience.vicon.role"),
+      description: t("experience.vicon.description"),
       skills: ["HTML", "CSS", "JavaScript", "Contao", "PHP"],
       icon: "🚀",
       hasCertificate: true,
@@ -36,11 +36,10 @@ function Resume() {
     },
     {
       id: 3,
-      title: "Anders Björk GmbH",
-      period: "2017–2018",
-      role: "WordPress Developer",
-      description:
-        "Focused on developing responsive WordPress themes with HTML, CSS, JavaScript, and PHP. Conducted ongoing monitoring and performance optimization of live WordPress sites to ensure a positive user experience, along with maintaining and enhancing existing themes.",
+      title: t("experience.andersBjork.title"),
+      period: t("experience.andersBjork.period"),
+      role: t("experience.andersBjork.role"),
+      description: t("experience.andersBjork.description"),
       skills: ["HTML", "CSS", "JavaScript", "WordPress"],
       icon: "🔧",
       hasCertificate: true,

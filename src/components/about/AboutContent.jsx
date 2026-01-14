@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function AboutContent() {
+  const { t } = useTranslation("about")
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -15,28 +17,17 @@ function AboutContent() {
           </div>
           <div>
             <h3 className="text-xl font-semibold text-text-primary">
-              Hello, I'm Wail
+              {t("greeting")}
             </h3>
             <p className="text-text-secondary/70 text-sm">
-              Frontend Web Developer
+              {t("role")}
             </p>
           </div>
         </div>
 
         <div className="prose prose-lg">
           <p className="text-base md:text-lg text-text-secondary leading-relaxed mb-6">
-            With over a decade in{" "}
-            <motion.span
-              className="font-semibold"
-              style={{ color: "var(--accent-purple)" }}
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              front-end development
-            </motion.span>
-            , I've worked with multiple companies and now provide freelance
-            services, delivering innovative web solutions with cutting-edge
-            technologies.
+            {t("bio")}
           </p>
 
           <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-6 mb-6">
@@ -47,11 +38,7 @@ function AboutContent() {
             >
               <div className="w-1.5 h-20 bg-gradient-to-b from-primary to-secondary rounded-full mt-1 flex-shrink-0"></div>
               <p className="text-text-primary/90 leading-relaxed text-sm md:text-base">
-                My journey began with traditional web technologies and has
-                evolved to embrace modern frameworks, performance optimization,
-                and user experience design. I believe in writing clean,
-                maintainable code while creating stunning user experiences that
-                make a difference.
+                {t("journey")}
               </p>
             </motion.div>
           </div>
@@ -64,7 +51,7 @@ function AboutContent() {
                 backgroundColor: "rgba(var(--color-primary), 0.15)",
               }}
             >
-              Creative Problem Solver
+              {t("tags.creative")}
             </motion.span>
             <motion.span
               className="px-4 py-2 bg-secondary/10 border border-secondary/20 rounded-full text-sm font-medium text-secondary"
@@ -73,7 +60,7 @@ function AboutContent() {
                 backgroundColor: "rgba(var(--color-secondary), 0.15)",
               }}
             >
-              Tech Enthusiast
+              {t("tags.tech")}
             </motion.span>
             <motion.span
               className="px-4 py-2 bg-text-accent/10 border border-text-accent/20 rounded-full text-sm font-medium text-text-accent"
@@ -82,7 +69,7 @@ function AboutContent() {
                 backgroundColor: "rgba(var(--color-text-accent), 0.15)",
               }}
             >
-              Quality Focused
+              {t("tags.quality")}
             </motion.span>
           </div>
         </div>

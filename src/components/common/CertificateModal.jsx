@@ -1,8 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect } from "react"
+import { useTranslation } from "react-i18next"
 import { FaTimes } from "react-icons/fa"
 
-function CertificateModal({ isOpen, onClose, title = "Certificate", imageSrc, imageAlt = "Certificate Image" }) {
+function CertificateModal({ isOpen, onClose, title, imageSrc, imageAlt }) {
+  const { t } = useTranslation("ui")
+  const defaultTitle = title || t("modals.certificate")
+  const defaultImageAlt = imageAlt || t("modals.certificateImage")
   // Close modal on ESC key
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -54,12 +58,12 @@ function CertificateModal({ isOpen, onClose, title = "Certificate", imageSrc, im
               {/* Header */}
               <div className="flex items-center justify-between p-4 md:p-6 border-b border-border bg-white dark:bg-gray-800">
                 <h3 className="text-lg md:text-xl font-bold text-text-primary">
-                  {title}
+                  {defaultTitle}
                 </h3>
                 <button
                   onClick={onClose}
                   className="p-2 hover:bg-surface rounded-lg transition-colors"
-                  aria-label="Close modal"
+                  aria-label={t("labels.closeModal")}
                 >
                   <FaTimes className="w-5 h-5 text-text-secondary" />
                 </button>
@@ -71,13 +75,13 @@ function CertificateModal({ isOpen, onClose, title = "Certificate", imageSrc, im
                   {imageSrc ? (
                     <img
                       src={imageSrc}
-                      alt={imageAlt}
+                      alt={defaultImageAlt}
                       className="w-full h-auto object-contain"
                       loading="lazy"
                     />
                   ) : (
                     <div className="flex items-center justify-center h-96 text-text-secondary bg-gray-50">
-                      <p>No image available</p>
+                      <p>{t("modals.noImageAvailable")}</p>
                     </div>
                   )}
                 </div>

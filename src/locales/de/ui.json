@@ -1,0 +1,40 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "resume": "Lebenslauf",
+    "portfolio": "Portfolio",
+    "legacy": "Legacy"
+  },
+  "buttons": {
+    "viewWork": "Meine Arbeiten",
+    "contact": "Kontakt",
+    "viewCertificate": "Zertifikat anzeigen",
+    "viewProject": "Projekt anzeigen",
+    "backToTop": "Nach oben"
+  },
+  "labels": {
+    "current": "Aktuell",
+    "getInTouch": "KONTAKT AUFNEHMEN",
+    "closeModal": "Modal schließen"
+  },
+  "stats": {
+    "projectsCompleted": "Projekte abgeschlossen",
+    "yearsExperience": "Jahre Erfahrung",
+    "clientSatisfaction": "Kundenzufriedenheit",
+    "years": "Jahre",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "completed": "Abgeschlossen",
+    "clients": "Kunden",
+    "happy": "Zufrieden"
+  },
+  "modals": {
+    "document": "Dokument",
+    "documentImage": "Dokumentbild",
+    "certificate": "Zertifikat",
+    "certificateImage": "Zertifikatsbild",
+    "englishTranslation": "Englische Übersetzung",
+    "noImageAvailable": "Kein Bild verfügbar"
+  }
+}

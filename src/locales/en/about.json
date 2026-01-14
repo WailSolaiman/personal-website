@@ -1,0 +1,22 @@
+{
+  "greeting": "Hello, I'm Wail",
+  "role": "Frontend Web Developer",
+  "bio": "With over a decade in front-end development, I've worked with multiple companies and now provide freelance services, delivering innovative web solutions with cutting-edge technologies.",
+  "journey": "My journey began with traditional web technologies and has evolved to embrace modern frameworks, performance optimization, and user experience design. I believe in writing clean, maintainable code while creating stunning user experiences that make a difference.",
+  "tags": {
+    "creative": "Creative Problem Solver",
+    "tech": "Tech Enthusiast",
+    "quality": "Quality Focused"
+  },
+  "alwaysLearning": "Always learning",
+  "alwaysLearningDesc": "Continuously adding new tools to my arsenal for better development experiences",
+  "availability": {
+    "title": "Available for Projects",
+    "subtitle": "Ready to collaborate",
+    "description": "Currently accepting new projects and exciting collaborations. Let's create something extraordinary together.",
+    "letsTalk": "💬 Let's Talk",
+    "viewContact": "View contact details →",
+    "availableForWork": "Available for work",
+    "profileDescription": "Passionate about creating exceptional digital experiences that combine thoughtful design with robust functionality."
+  }
+}

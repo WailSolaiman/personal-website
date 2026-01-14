@@ -1,22 +1,24 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 import SkillCategory from "./SkillCategory"
 
 function SkillsOverview() {
+  const { t } = useTranslation("resume")
   const skillCategories = [
     {
-      title: "Frontend",
+      title: t("skills.frontend"),
       skills: "React, Next.js, TypeScript, Tailwind",
     },
     {
-      title: "Backend",
+      title: t("skills.backend"),
       skills: "Node.js, PHP, MySQL, REST APIs",
     },
     {
-      title: "CMS & Tools",
+      title: t("skills.cms"),
       skills: "WordPress, Contao, Git, AI Integration",
     },
     {
-      title: "AI-powered Tools",
+      title: t("skills.aiTools"),
       skills: "GitHub Copilot, ChatGPT, Cursor, VS-Code Cline",
     },
   ]
@@ -30,7 +32,7 @@ function SkillsOverview() {
       viewport={{ once: true }}
     >
       <h3 className="text-2xl font-bold text-text-primary mb-8">
-        Technology Expertise
+        {t("skills.expertise")}
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
         {skillCategories.map((category) => (

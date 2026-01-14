@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function AITools() {
+  const { t } = useTranslation(["sections", "aiTools"])
   const tools = [
     {
       name: "Cursor IDE",
@@ -107,10 +109,10 @@ function AITools() {
             >
               <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-2 leading-tight">
                 <span className="bg-gradient-to-r from-purple-600 via-purple-400 to-purple-600 bg-clip-text text-transparent">
-                  AI-Powered
+                  {t("aiTools:title")}
                 </span>
                 <br />
-                <span className="text-text-primary">Development</span>
+                <span className="text-text-primary">{t("aiTools:subtitle")}</span>
               </h2>
               <div className="w-24 h-1.5 bg-gradient-to-r from-primary via-secondary to-primary rounded-full"></div>
             </motion.div>
@@ -123,43 +125,40 @@ function AITools() {
               viewport={{ once: true }}
             >
               <p className="text-xl md:text-2xl text-text-secondary leading-relaxed font-light">
-                I leverage cutting-edge{" "}
+                {t("aiTools:paragraph1.before")}{" "}
                 <span className="font-bold text-primary relative">
                   <span className="absolute inset-0 bg-primary/20 blur-sm"></span>
-                  <span className="relative">AI tools</span>
+                  <span className="relative">{t("aiTools:paragraph1.highlight")}</span>
                 </span>{" "}
-                to optimize my daily workflow and enhance code quality.
+                {t("aiTools:paragraph1.after")}
               </p>
               
               <p className="text-lg md:text-xl text-text-secondary/90 leading-relaxed">
-                My development environment is powered by{" "}
+                {t("aiTools:paragraph2.before")}{" "}
                 <span className="font-bold text-primary px-2 py-1 bg-primary/10 rounded-md border border-primary/20">
-                  Cursor IDE
+                  {t("aiTools:paragraph2.highlight")}
                 </span>
-                , an AI-first code editor that provides intelligent suggestions and
-                context-aware assistance.
+                {t("aiTools:paragraph2.after")}
               </p>
               
               <p className="text-lg md:text-xl text-text-secondary/90 leading-relaxed">
-                I also integrate{" "}
+                {t("aiTools:paragraph3.before")}{" "}
                 <span className="font-bold text-secondary px-2 py-1 bg-secondary/10 rounded-md border border-secondary/20">
-                  GitHub Copilot
+                  {t("aiTools:paragraph3.highlight1")}
                 </span>{" "}
-                and{" "}
+                {t("aiTools:paragraph3.middle")}{" "}
                 <span className="font-bold text-primary px-2 py-1 bg-primary/10 rounded-md border border-primary/20">
-                  Cline
+                  {t("aiTools:paragraph3.highlight2")}
                 </span>{" "}
-                via{" "}
+                {t("aiTools:paragraph3.via")}{" "}
                 <span className="font-bold text-primary px-2 py-1 bg-primary/10 rounded-md border border-primary/20">
-                  VS Code
+                  {t("aiTools:paragraph3.highlight3")}
                 </span>
-                , and leverage{" "}
+                {t("aiTools:paragraph3.and")}{" "}
                 <span className="font-bold text-secondary px-2 py-1 bg-secondary/10 rounded-md border border-secondary/20">
-                  ChatGPT
+                  {t("aiTools:paragraph3.highlight4")}
                 </span>{" "}
-                for complex problem-solving and code explanations, creating a comprehensive AI-assisted development
-                ecosystem that accelerates coding, improves accuracy, and helps me
-                deliver high-quality solutions more efficiently.
+                {t("aiTools:paragraph3.after")}
               </p>
             </motion.div>
           </motion.div>

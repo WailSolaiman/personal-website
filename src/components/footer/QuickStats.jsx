@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function QuickStats() {
+  const { t } = useTranslation("ui")
   return (
     <motion.div
       className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-3xl mx-auto"
@@ -16,7 +18,7 @@ function QuickStats() {
         >
           50+
         </div>
-        <div className="text-sm text-text-secondary">Projects Completed</div>
+        <div className="text-sm text-text-secondary">{t("stats.projectsCompleted")}</div>
       </div>
       <div className="text-center">
         <div
@@ -25,7 +27,7 @@ function QuickStats() {
         >
           10+
         </div>
-        <div className="text-sm text-text-secondary">Years Experience</div>
+        <div className="text-sm text-text-secondary">{t("stats.yearsExperience")}</div>
       </div>
       <div className="text-center">
         <div
@@ -34,7 +36,7 @@ function QuickStats() {
         >
           100%
         </div>
-        <div className="text-sm text-text-secondary">Client Satisfaction</div>
+        <div className="text-sm text-text-secondary">{t("stats.clientSatisfaction")}</div>
       </div>
     </motion.div>
   )

@@ -1,8 +1,10 @@
 import { motion } from "framer-motion"
 import { useTheme } from "../../contexts/ThemeContext"
+import { useTranslation } from "react-i18next"
 
 function HeroContent() {
   const { theme } = useTheme()
+  const { t } = useTranslation(["hero", "ui"])
 
   return (
     <>
@@ -14,7 +16,7 @@ function HeroContent() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <span className="inline-block px-4 py-2 bg-white/85 dark:bg-black/50 backdrop-blur-sm rounded-full border border-white/20 dark:border-white/10 text-sm font-bold text-purple-900 dark:text-purple-200 mb-6 animate-fade-in">
-          ✨ Crafting Digital Experiences
+          {t("hero:badge")}
         </span>
       </motion.div>
 
@@ -26,7 +28,7 @@ function HeroContent() {
         transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
       >
         <span className="bg-gradient-to-r from-gray-900 via-purple-600 to-purple-800 dark:from-purple-100 dark:via-purple-200 dark:to-purple-300 bg-clip-text text-transparent">
-          Wail Solaiman
+          {t("hero:title")}
         </span>
       </motion.h1>
 
@@ -38,7 +40,7 @@ function HeroContent() {
         transition={{ delay: 0.5, duration: 0.7 }}
       >
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-800 dark:text-gray-200 mb-4">
-          Freelancer, Frontend Developer
+          {t("hero:subtitle")}
         </h2>
         <div
           className={`w-16 h-1 mx-auto rounded-full mb-6 ${
@@ -48,8 +50,7 @@ function HeroContent() {
           }`}
         ></div>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Building interactive web experiences with cutting-edge technologies
-          and user-centered design principles.
+          {t("hero:description")}
         </p>
       </motion.div>
     </>

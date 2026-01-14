@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { FaFileAlt, FaExternalLinkAlt } from 'react-icons/fa'
 import DocumentModal from '../common/DocumentModal'
 
 function ExperienceItem({ experience, index }) {
+  const { t } = useTranslation(['resume', 'ui', 'sections'])
 	const {
 		icon,
 		title,
@@ -53,7 +55,7 @@ function ExperienceItem({ experience, index }) {
 											style={{
 												color: 'var(--accent-purple)',
 											}}>
-											Current
+											{t('ui:labels.current')}
 										</span>
 									)}
 								</h3>
@@ -94,7 +96,7 @@ function ExperienceItem({ experience, index }) {
 								style={{ color: 'var(--accent-purple)' }}>
 								<FaFileAlt className='w-4 h-4' />
 								<span className='font-medium text-sm'>
-									View Employment Certificate
+									{t('resume:viewCertificate')}
 								</span>
 							</button>
 						</div>
@@ -130,7 +132,7 @@ function ExperienceItem({ experience, index }) {
 				<DocumentModal
 					isOpen={isModalOpen}
 					onClose={() => setIsModalOpen(false)}
-					title='Employment Certificate'
+					title={t('sections:resume.employmentCertificate')}
 					imageSrc={certificate.imageSrc}
 					imageAlt={certificate.imageAlt}
 					translationContent={certificate.translationContent}

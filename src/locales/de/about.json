@@ -1,0 +1,22 @@
+{
+  "greeting": "Hallo, ich bin Wail",
+  "role": "Frontend-Webentwickler",
+  "bio": "Mit über einem Jahrzehnt Erfahrung in der Frontend-Entwicklung habe ich mit mehreren Unternehmen zusammengearbeitet und biete nun Freelance-Dienstleistungen an, die innovative Web-Lösungen mit modernsten Technologien liefern.",
+  "journey": "Meine Reise begann mit traditionellen Web-Technologien und hat sich weiterentwickelt, um moderne Frameworks, Performance-Optimierung und User-Experience-Design zu umfassen. Ich glaube an sauberen, wartbaren Code und gleichzeitig an die Schaffung beeindruckender Benutzererfahrungen, die einen Unterschied machen.",
+  "tags": {
+    "creative": "Kreativer Problemlöser",
+    "tech": "Technik-Enthusiast",
+    "quality": "Qualitätsorientiert"
+  },
+  "alwaysLearning": "Immer am Lernen",
+  "alwaysLearningDesc": "Kontinuierlich neue Tools zu meinem Arsenal hinzufügen für bessere Entwicklungserfahrungen",
+  "availability": {
+    "title": "Verfügbar für Projekte",
+    "subtitle": "Bereit zur Zusammenarbeit",
+    "description": "Aktuell nehme ich neue Projekte und spannende Kooperationen an. Lass uns gemeinsam etwas Außergewöhnliches schaffen.",
+    "letsTalk": "💬 Lass uns reden",
+    "viewContact": "Kontaktdaten anzeigen →",
+    "availableForWork": "Verfügbar für Arbeit",
+    "profileDescription": "Leidenschaftlich daran interessiert, außergewöhnliche digitale Erlebnisse zu schaffen, die durchdachtes Design mit robuster Funktionalität verbinden."
+  }
+}

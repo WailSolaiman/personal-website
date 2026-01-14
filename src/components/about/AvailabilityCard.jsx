@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function AvailabilityCard() {
+  const { t } = useTranslation("about")
   return (
     <motion.div
       className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 backdrop-blur-sm rounded-2xl p-6 xl:p-8 border border-green-200/50 dark:border-green-800/30 w-full max-w-xs xl:max-w-sm mx-auto shadow-soft min-h-[220px] xl:min-h-[240px] flex flex-col justify-center"
@@ -28,10 +30,10 @@ function AvailabilityCard() {
 
         <div className="text-center">
           <h4 className="text-lg font-bold text-text-primary mb-1">
-            Available for Projects
+            {t("availability.title")}
           </h4>
           <p className="text-xs text-text-secondary/70 font-medium">
-            Ready to collaborate
+            {t("availability.subtitle")}
           </p>
         </div>
       </motion.div>
@@ -45,8 +47,7 @@ function AvailabilityCard() {
         viewport={{ once: true }}
       >
         <p className="text-text-primary/90 text-sm leading-relaxed mb-6">
-          Currently accepting new projects and exciting collaborations. Let's
-          create something extraordinary together.
+          {t("availability.description")}
         </p>
 
         {/* Action buttons */}
@@ -56,14 +57,14 @@ function AvailabilityCard() {
             className="block w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold py-3 px-6 rounded-xl shadow-soft text-center no-underline hover:opacity-90 transition-opacity duration-200"
             whileTap={{ scale: 0.98 }}
           >
-            💬 Let's Talk
+            {t("availability.letsTalk")}
           </motion.a>
 
           <motion.a
             href="#footer"
             className="inline-block text-sm text-green-600 font-medium hover:text-green-700 transition-colors duration-200"
           >
-            View contact details →
+            {t("availability.viewContact")}
           </motion.a>
         </div>
       </motion.div>

@@ -1,0 +1,36 @@
+{
+  "titles": {
+    "about": "About Me",
+    "education": "Academic Background",
+    "resume": "Professional Experience",
+    "portfolio": "Featured Projects",
+    "certificates": "Certifications",
+    "aiTools": "AI-Powered Development",
+    "legacy": "Legacy Websites"
+  },
+  "descriptions": {
+    "about": "Passionate full-stack developer crafting digital experiences with modern technologies",
+    "portfolio": "A showcase of innovative web solutions and creative development projects",
+    "certificates": "Professional certifications and courses completed to enhance my skills",
+    "resume": "Latest 10 Years"
+  },
+  "education": {
+    "university": "Technical University of Lübeck",
+    "country": "Germany",
+    "degree": "Bachelor's Degree in Computer Science / Software Engineering",
+    "degreeShort": "B.Eng. • Completed in 2013",
+    "bachelorCertificate": "Bachelor Certificate"
+  },
+  "certificates": {
+    "platform": "Coursera"
+  },
+  "resume": {
+    "employmentCertificate": "Employment Certificate"
+  },
+  "legacy": {
+    "title": "LEGACY WEBSITES",
+    "badge": "RETRO ARCHIVE",
+    "subtitle": "Digital relics from past endeavors",
+    "description": "Websites built for former clients & employers"
+  }
+}

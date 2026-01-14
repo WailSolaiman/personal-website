@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function HeroButtons() {
+  const { t } = useTranslation("ui")
   return (
     <motion.div
       className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 xl:mb-8"
@@ -12,14 +14,14 @@ function HeroButtons() {
         href="#portfolio"
         className="group px-8 py-4 bg-gradient-to-r from-primary-default to-primary-dark text-white font-semibold rounded-xl shadow-hard hover:shadow-medium transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 animate-bounce-subtle inline-block"
       >
-        View My Work
+        {t("buttons.viewWork")}
       </a>
 
       <a
         href="#footer"
-        className="px-8 py-4 bg-white text-gray-800 font-semibold rounded-xl border border-purple-300/50 backdrop-blur-sm hover:border-purple-600 hover:text-purple-900 transition-all duration-300"
+        className="hidden sm:inline-block px-8 py-4 bg-white text-gray-800 font-semibold rounded-xl border border-purple-300/50 backdrop-blur-sm hover:border-purple-600 hover:text-purple-900 transition-all duration-300"
       >
-        Contact me
+        {t("buttons.contact")}
       </a>
     </motion.div>
   )

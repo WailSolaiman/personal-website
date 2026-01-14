@@ -1,8 +1,10 @@
 import { motion } from "framer-motion"
 import { useTheme } from "../../contexts/ThemeContext"
+import { useTranslation } from "react-i18next"
 
 function FooterBottom() {
   const { theme } = useTheme()
+  const { t } = useTranslation(["footer", "ui"])
   const isLightTheme = theme === "light"
   const currentYear = new Date().getFullYear()
 
@@ -17,11 +19,11 @@ function FooterBottom() {
       {/* Navigation Links */}
       <div className="flex flex-wrap justify-center gap-8 mb-6 text-sm">
         {[
-          { name: "Home", href: "#home" },
-          { name: "About", href: "#about" },
-          { name: "Resume", href: "#resume" },
-          { name: "Portfolio", href: "#portfolio" },
-          { name: "Legacy", href: "#legacy" },
+          { name: t("ui:navigation.home"), href: "#home" },
+          { name: t("ui:navigation.about"), href: "#about" },
+          { name: t("ui:navigation.resume"), href: "#resume" },
+          { name: t("ui:navigation.portfolio"), href: "#portfolio" },
+          { name: t("ui:navigation.legacy"), href: "#legacy" },
         ].map((link) => (
           <a
             key={link.name}
@@ -75,7 +77,7 @@ function FooterBottom() {
           >
             Wail Solaiman
           </span>
-          . Crafted with{" "}
+          . {t("footer:copyright")}{" "}
           <motion.span
             className="inline-block"
             animate={{ scale: [1, 1.2, 1] }}
@@ -87,12 +89,9 @@ function FooterBottom() {
           >
             ❤️
           </motion.span>{" "}
-          and modern web technologies.
         </p>
         <p className="mt-2 text-xs">
-          Built with <span className="font-semibold">React</span>,{" "}
-          <span className="font-semibold">Vite</span>, and{" "}
-          <span className="font-semibold">Tailwind CSS</span>
+          {t("footer:builtWith")}
         </p>
       </div>
     </motion.div>

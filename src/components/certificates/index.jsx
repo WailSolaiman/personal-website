@@ -1,27 +1,27 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import { FaCertificate, FaExternalLinkAlt } from "react-icons/fa"
 import CertificateModal from "../common/CertificateModal"
 
 function Certificates() {
+  const { t } = useTranslation(["sections", "certificates", "ui"])
   const [selectedCertificate, setSelectedCertificate] = useState(null)
 
   const certificates = [
     {
       id: 1,
       image: "/images/Generative AI Introduction and Applications.jpg",
-      title: "Generative AI: Introduction and Applications",
-      description:
-        "This course covers how to describe generative AI and distinguish it from discriminative AI. It explores the capabilities of generative AI and its use cases in the real world, identifies applications of generative AI in different sectors and industries, and examines common generative AI models and tools for text, code, image, audio, and video generation.",
-      platform: "Coursera",
+      title: t("certificates:items.generativeAI.title"),
+      description: t("certificates:items.generativeAI.description"),
+      platform: t("sections:certificates.platform"),
     },
     {
       id: 2,
       image: "/images/Generative AI Prompt Engineering Basics.jpg",
-      title: "Generative AI: Prompt Engineering Basics",
-      description:
-        "This course explains the concept and relevance of prompt engineering in generative AI models. It covers applying best practices for creating prompts, assessing commonly used tools for prompt engineering, and applying common prompt engineering techniques and approaches for writing effective prompts.",
-      platform: "Coursera",
+      title: t("certificates:items.promptEngineering.title"),
+      description: t("certificates:items.promptEngineering.description"),
+      platform: t("sections:certificates.platform"),
     },
   ]
 
@@ -56,11 +56,11 @@ function Certificates() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-4">
-            Certifications
+            {t("sections:titles.certificates")}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-primary mx-auto rounded-full mb-4"></div>
           <p className="text-lg text-text-secondary/80 max-w-2xl mx-auto">
-            Professional certifications and courses completed to enhance my skills
+            {t("certificates:description")}
           </p>
         </motion.div>
 
@@ -130,7 +130,7 @@ function Certificates() {
                     className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg transition-all duration-300 font-medium mt-4"
                   >
                     <FaExternalLinkAlt className="w-4 h-4" />
-                    View Certificate
+                    {t("ui:buttons.viewCertificate")}
                   </button>
                 </motion.div>
               </motion.div>

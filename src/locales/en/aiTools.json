@@ -1,0 +1,25 @@
+{
+  "title": "AI-Powered",
+  "subtitle": "Development",
+  "paragraph1": {
+    "before": "I leverage cutting-edge",
+    "highlight": "AI tools",
+    "after": "to optimize my daily workflow and enhance code quality."
+  },
+  "paragraph2": {
+    "before": "My development environment is powered by",
+    "highlight": "Cursor IDE",
+    "after": ", an AI-first code editor that provides intelligent suggestions and context-aware assistance."
+  },
+  "paragraph3": {
+    "before": "I also integrate",
+    "highlight1": "GitHub Copilot",
+    "middle": "and",
+    "highlight2": "Cline",
+    "via": "via",
+    "highlight3": "VS Code",
+    "and": ", and leverage",
+    "highlight4": "ChatGPT",
+    "after": "for complex problem-solving and code explanations, creating a comprehensive AI-assisted development ecosystem that accelerates coding, improves accuracy, and helps me deliver high-quality solutions more efficiently."
+  }
+}

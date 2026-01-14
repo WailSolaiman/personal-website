@@ -1,6 +1,12 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function ProjectContent({ item, hoveredProject }) {
+  const { t } = useTranslation(["portfolio", "portfolioData"])
+  const projectKey = String(item.id)
+  const translatedTitle = t(`portfolioData:projects.${projectKey}.title`, { defaultValue: item.title })
+  const translatedTech = t(`portfolioData:projects.${projectKey}.tech`, { defaultValue: item.tech })
+  const translatedDescription = t(`portfolioData:projects.${projectKey}.description`, { defaultValue: item.description })
   return (
     <div className="p-8">
       <motion.div
@@ -10,7 +16,7 @@ function ProjectContent({ item, hoveredProject }) {
         transition={{ duration: 0.3 }}
       >
         <h3 className="text-2xl font-bold text-text-primary mb-2 group-hover:text-primary transition-colors duration-300">
-          {item.title}
+          {translatedTitle}
         </h3>
 
         <div className="flex items-center gap-2 mb-4">
@@ -18,12 +24,12 @@ function ProjectContent({ item, hoveredProject }) {
             className="px-3 py-1 bg-primary/20 text-xs font-semibold rounded-full"
             style={{ color: "var(--accent-purple)" }}
           >
-            {item.tech}
+            {translatedTech}
           </span>
         </div>
 
         <p className="text-text-secondary text-sm leading-relaxed mb-6">
-          {item.description}
+          {translatedDescription}
         </p>
 
         {/* Tech Stack */}
@@ -72,7 +78,7 @@ function ProjectContent({ item, hoveredProject }) {
                 d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
               />
             </svg>
-            Website
+            {t("viewWebsite")}
           </motion.a>
         </div>
       </motion.div>

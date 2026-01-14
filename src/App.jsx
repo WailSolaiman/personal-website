@@ -1,4 +1,5 @@
 import { ThemeProvider } from "./contexts/ThemeContext"
+import { LanguageProvider } from "./contexts/LanguageContext"
 import Header from "./components/header"
 import Hero from "./components/hero"
 import About from "./components/about"
@@ -14,18 +15,20 @@ import { portfolioItems, legacySites } from "./data/portfolioData"
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-background text-text-primary transition-colors duration-300 dark:bg-background dark:text-text-primary">
-        <Header />
-        <Hero />
-        <About />
-        <Education />
-        <Resume />
-        <AITools />
-        <Certificates />
-        <Portfolio portfolioItems={portfolioItems} />
-        <Legacy legacySites={legacySites} />
-        <Footer />
-      </div>
+      <LanguageProvider>
+        <div className="min-h-screen bg-background text-text-primary transition-colors duration-300 dark:bg-background dark:text-text-primary">
+          <Header />
+          <Hero />
+          <About />
+          <Education />
+          <Resume />
+          <AITools />
+          <Certificates />
+          <Portfolio portfolioItems={portfolioItems} />
+          <Legacy legacySites={legacySites} />
+          <Footer />
+        </div>
+      </LanguageProvider>
     </ThemeProvider>
   )
 }

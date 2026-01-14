@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function LegacyHeader() {
+  const { t } = useTranslation("sections")
   return (
     <motion.div
       className="text-center mb-16 relative"
@@ -17,7 +19,7 @@ function LegacyHeader() {
       <div className="inline-flex items-center gap-2 px-4 py-2 bg-card/50 backdrop-blur-sm rounded-full border border-border/20 mb-6">
         <div className="w-2 h-2 retro-bg-border animate-bounce-subtle rounded-full"></div>
         <span className="text-xs font-medium retro-text-medium">
-          RETRO ARCHIVE
+          {t("legacy.badge")}
         </span>
         <div className="text-xs opacity-50">█</div>
       </div>
@@ -33,14 +35,14 @@ function LegacyHeader() {
           animation: "gradientShift 3s ease-in-out infinite",
         }}
       >
-        {">"} LEGACY WEBSITES {"<"}
+        {">"} {t("legacy.title")} {"<"}
       </h2>
       <div className="w-16 h-0.5 retro-bg-border mx-auto mb-8"></div>
 
       <p className="text-text-secondary/80 max-w-2xl mx-auto font-mono text-sm">
-        {`/* Digital relics from past endeavors */`}
+        {`/* ${t("legacy.subtitle")} */`}
         <br />
-        <span className="retro-text-medium">{`// Websites built for former clients & employers`}</span>
+        <span className="retro-text-medium">{`// ${t("legacy.description")}`}</span>
       </p>
     </motion.div>
   )

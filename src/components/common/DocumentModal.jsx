@@ -1,16 +1,21 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect } from "react"
+import { useTranslation } from "react-i18next"
 import { FaTimes } from "react-icons/fa"
 
 function DocumentModal({
   isOpen,
   onClose,
-  title = "Document",
+  title,
   imageSrc,
-  imageAlt = "Document Image",
+  imageAlt,
   translationContent = "Translation content will be displayed here.",
-  translationTitle = "English Translation",
+  translationTitle,
 }) {
+  const { t } = useTranslation("ui")
+  const defaultTitle = title || t("modals.document")
+  const defaultImageAlt = imageAlt || t("modals.documentImage")
+  const defaultTranslationTitle = translationTitle || t("modals.englishTranslation")
   // Close modal on ESC key
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -61,12 +66,12 @@ function DocumentModal({
               {/* Header */}
               <div className="flex items-center justify-between p-4 md:p-6 border-b border-border">
                 <h3 className="text-lg md:text-xl font-bold text-text-primary">
-                  {title}
+                  {defaultTitle}
                 </h3>
                 <button
                   onClick={onClose}
                   className="p-2 hover:bg-surface-hover rounded-lg transition-colors"
-                  aria-label="Close modal"
+                  aria-label={t("labels.closeModal")}
                 >
                   <FaTimes className="w-5 h-5 text-text-secondary" />
                 </button>
@@ -84,7 +89,7 @@ function DocumentModal({
                   <div className="bg-surface-hover rounded-lg p-4 h-full">
                     <div className="mb-4">
                       <h4 className="text-sm font-medium text-text-secondary uppercase tracking-wide">
-                        Document Image
+                        {t("modals.documentImage")}
                       </h4>
                     </div>
 
@@ -92,13 +97,13 @@ function DocumentModal({
                       {imageSrc ? (
                         <img
                           src={imageSrc}
-                          alt={imageAlt}
+                          alt={defaultImageAlt}
                           className="w-full h-full object-contain object-top"
                           loading="lazy"
                         />
                       ) : (
                         <div className="flex items-center justify-center h-full text-text-secondary bg-gray-50">
-                          <p>No image available</p>
+                          <p>{t("modals.noImageAvailable")}</p>
                         </div>
                       )}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
@@ -117,7 +122,7 @@ function DocumentModal({
                     <div className="flex items-center gap-2 mb-3">
                       <span className="w-4 h-4 bg-primary rounded-full"></span>
                       <h4 className="text-sm font-medium text-text-secondary uppercase tracking-wide">
-                        {translationTitle}
+                        {defaultTranslationTitle}
                       </h4>
                     </div>
 

@@ -1,0 +1,30 @@
+{
+  "viewCertificate": "View Employment Certificate",
+  "skills": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cms": "CMS & Tools",
+    "aiTools": "AI-powered Tools",
+    "expertise": "Technology Expertise"
+  },
+  "experience": {
+    "freelance": {
+      "title": "Freelance Developer",
+      "period": "2020–Present",
+      "role": "Full-stack Web Developer",
+      "description": "Working as a freelance web developer for websites and web applications using HTML/CSS/JS, React/Next.js, and WordPress. Recently, I have been integrating AI tools and LLM APIs to accelerate development and enhance functionality. My AI-assisted development environment includes VS Code with GitHub Copilot and Cline extensions, as well as Cursor as an AI-first IDE."
+    },
+    "vicon": {
+      "title": "VICON Web Business",
+      "period": "2018–2019",
+      "role": "Frontend Developer",
+      "description": "Responsible for creating high-quality client websites using HTML, CSS, and JavaScript. Developed responsive themes/templates based on Contao Content Management System and managed backends, including database and server integration."
+    },
+    "andersBjork": {
+      "title": "Anders Björk GmbH",
+      "period": "2017–2018",
+      "role": "WordPress Developer",
+      "description": "Focused on developing responsive WordPress themes with HTML, CSS, JavaScript, and PHP. Conducted ongoing monitoring and performance optimization of live WordPress sites to ensure a positive user experience, along with maintaining and enhancing existing themes."
+    }
+  }
+}

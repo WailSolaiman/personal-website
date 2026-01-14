@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 import AboutContent from "./AboutContent"
 import SkillsStats from "./SkillsStats"
 import TechStack from "./TechStack"
@@ -6,6 +7,7 @@ import ProfileImage from "./ProfileImage"
 import AvailabilityCard from "./AvailabilityCard"
 
 function About() {
+  const { t } = useTranslation(["sections", "about"])
   return (
     <section
       id="about"
@@ -26,12 +28,11 @@ function About() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-6">
-            About Me
+            {t("sections:titles.about")}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-primary mx-auto rounded-full mb-4"></div>
           <p className="text-lg text-text-secondary/80 max-w-2xl mx-auto">
-            Passionate full-stack developer crafting digital experiences with
-            modern technologies
+            {t("sections:descriptions.about")}
           </p>
         </motion.div>
 
@@ -52,10 +53,9 @@ function About() {
                 </div>
                 <p className="text-sm text-text-secondary/80">
                   <span className="font-semibold text-primary">
-                    Always learning
+                    {t("about:alwaysLearning")}
                   </span>{" "}
-                  - Continuously adding new tools to my arsenal for better
-                  development experiences
+                  - {t("about:alwaysLearningDesc")}
                 </p>
               </div>
             </motion.div>
