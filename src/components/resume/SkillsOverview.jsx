@@ -17,7 +17,7 @@ function SkillsOverview() {
     },
     {
       title: "AI-powered Tools",
-      skills: "v0, Lovabale, Cursor, VS-Code Cline",
+      skills: "GitHub Copilot, ChatGPT, Cursor, VS-Code Cline",
     },
   ]
 

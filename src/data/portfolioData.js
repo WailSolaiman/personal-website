@@ -107,7 +107,7 @@ export const portfolioItems = [
     description:
       "Professional restaurant website for Atlantis Bistro in Germany, showcasing culinary excellence and dining experiences. Built with WordPress, featuring modern design and German language content for local customers.",
     techList: "WordPress | Elementor | PHP | MySQL",
-    link: "https://t3.wailsolaiman.online/",
+    link: "https://t3.wailsolaiman.space/",
     alt: "Atlantis Bistro",
   },
   {
@@ -120,6 +120,17 @@ export const portfolioItems = [
     techList: "WordPress | Framer",
     link: "https://wailsolaiman.space/portfolio/",
     alt: "Arabic Portfolio",
+  },
+  {
+    id: 12,
+    image: "/images/portfolio/ws-code.online.jpg",
+    title: "WS Code",
+    tech: "Web Development Services | Business Website",
+    description:
+      "Personal web development services website showcasing modern web solutions and custom development services. Built with React and modern technologies, it features responsive design and optimized performance.",
+    techList: "React | Next.js | Modern Web Technologies",
+    link: "https://wscode.online/",
+    alt: "WS Code",
   },
 ]
 

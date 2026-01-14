@@ -8,7 +8,7 @@ import {
   FaWordpress,
   FaRobot,
 } from "react-icons/fa"
-import { SiNextdotjs } from "react-icons/si"
+import { SiNextdotjs, SiSupabase, SiTypescript, SiTailwindcss, SiStripe } from "react-icons/si"
 
 function TechStack() {
   const technologies = [
@@ -48,6 +48,26 @@ function TechStack() {
       icon: FaRobot,
       color: "bg-green-500",
     },
+    {
+      name: "Supabase",
+      icon: SiSupabase,
+      color: "bg-green-600",
+    },
+    {
+      name: "TypeScript",
+      icon: SiTypescript,
+      color: "bg-blue-600",
+    },
+    {
+      name: "Tailwind",
+      icon: SiTailwindcss,
+      color: "bg-cyan-500",
+    },
+    {
+      name: "Stripe",
+      icon: SiStripe,
+      color: "bg-indigo-600",
+    },
   ]
 
   return (
@@ -62,7 +82,7 @@ function TechStack() {
         Technology Stack
       </h3>
 
-      <div className="grid grid-cols-2 grid-rows-4 gap-2">
+      <div className="grid grid-cols-3 grid-rows-4 gap-2">
         {technologies.map((tech, index) => (
           <div
             key={tech.name}

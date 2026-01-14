@@ -93,7 +93,7 @@ function ExperienceItem({ experience, index }) {
 								className='inline-flex items-center gap-2 px-4 py-2 bg-purple-200/30 hover:bg-purple-200/50 text-primary rounded-lg transition-all duration-200 hover:scale-105 active:scale-95'
 								style={{ color: 'var(--accent-purple)' }}>
 								<FaFileAlt className='w-4 h-4' />
-								<span className='font-medium'>
+								<span className='font-medium text-sm'>
 									View Employment Certificate
 								</span>
 							</button>

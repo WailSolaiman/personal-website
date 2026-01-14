@@ -4,6 +4,8 @@ import Hero from "./components/hero"
 import About from "./components/about"
 import Education from "./components/education"
 import Resume from "./components/resume"
+import AITools from "./components/aiTools"
+import Certificates from "./components/certificates"
 import Portfolio from "./components/portfolio"
 import Legacy from "./components/legacy"
 import Footer from "./components/footer"
@@ -18,6 +20,8 @@ function App() {
         <About />
         <Education />
         <Resume />
+        <AITools />
+        <Certificates />
         <Portfolio portfolioItems={portfolioItems} />
         <Legacy legacySites={legacySites} />
         <Footer />
