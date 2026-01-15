@@ -44,22 +44,17 @@ function SocialLinksGrid() {
         <motion.a
           key={link.name}
           href={link.url}
-          className="flex flex-col items-center p-6 bg-card/50 backdrop-blur-sm rounded-2xl border border-border/30 group transition-all duration-300 hover:border-purple-500"
+          className="flex flex-col items-center p-6 bg-card/50 backdrop-blur-sm rounded-2xl border-2 border-primary-default/30 dark:border-white/30 group transition-all duration-300 hover:border-primary-default/50 dark:hover:border-white/50"
           transition={{
             type: "spring",
             stiffness: 400,
             delay: index * 0.1,
           }}
         >
-          <div className="mb-3 p-3 bg-card rounded-xl group-hover:text-purple-500">
+          <div className="mb-3 p-3 bg-card rounded-xl text-gray-900 dark:text-white transition-colors duration-300 group-hover:[color:var(--color-primary)]">
             {link.icon}
           </div>
-          <span
-            className="font-semibold text-text-primary transition-colors duration-300 hover-accent"
-            style={{
-              "--hover-color": "var(--accent-purple)", // Fallback for hover
-            }}
-          >
+          <span className="font-semibold text-gray-900 dark:text-white transition-colors duration-300 group-hover:[color:var(--color-primary)]">
             {link.name}
           </span>
         </motion.a>

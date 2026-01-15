@@ -1,13 +1,13 @@
 {
-  "description": "Berufliche Zertifizierungen und Kurse zur Verbesserung meiner Fähigkeiten",
+  "description": "Zertifikate und Kurse, um meine Skills auszubauen",
   "items": {
     "generativeAI": {
       "title": "Generative KI: Einführung und Anwendungen",
-      "description": "Dieser Kurs behandelt, wie man generative KI beschreibt und sie von diskriminativer KI unterscheidet. Er untersucht die Fähigkeiten generativer KI und ihre Anwendungsfälle in der realen Welt, identifiziert Anwendungen generativer KI in verschiedenen Sektoren und Branchen und untersucht gängige generative KI-Modelle und Tools für Text, Code, Bild, Audio und Video-Generierung."
+      "description": "Der Kurs erklärt, was generative KI ist und wie sie sich von klassischer (diskriminativer) KI unterscheidet. Dazu gibt’s Beispiele aus der Praxis und einen Überblick über gängige Modelle und Tools für Text, Code, Bild, Audio und Video."
     },
     "promptEngineering": {
       "title": "Generative KI: Grundlagen des Prompt Engineering",
-      "description": "Dieser Kurs erklärt das Konzept und die Relevanz des Prompt Engineering in generativen KI-Modellen. Er behandelt die Anwendung bewährter Praktiken für die Erstellung von Prompts, die Bewertung häufig verwendeter Tools für Prompt Engineering und die Anwendung gängiger Prompt-Engineering-Techniken und -Ansätze für das Schreiben effektiver Prompts."
+      "description": "Der Kurs erklärt Prompt Engineering in generativen KI-Modellen und warum es wichtig ist. Er zeigt Best Practices, typische Tools und Techniken, um bessere und präzisere Prompts zu schreiben."
     }
   }
 }

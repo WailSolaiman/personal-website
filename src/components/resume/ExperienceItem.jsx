@@ -26,7 +26,7 @@ function ExperienceItem({ experience, index }) {
 	return (
 		<motion.div
 			className={`relative mb-12 ${index === 0 ? 'mt-8' : ''}`}
-			initial={{ opacity: 0, y: 40 }}
+			initial={{ opacity: 1, y: 50 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.6, delay: index * 0.1 }}
 			viewport={{ once: true }}>
@@ -37,9 +37,9 @@ function ExperienceItem({ experience, index }) {
 				}`}>
 				{/* Experience card */}
 				<motion.div
-					className={`bg-card/50 backdrop-blur-sm p-8 rounded-2xl shadow-medium border border-border/10 hover:shadow-hard transition-all duration-300 max-w-2xl ${
-						current ? 'ring-2 ring-primary/30' : ''
-					} ${isLeft ? 'md:mr-8' : 'md:ml-8'} relative z-10`}
+					className={`bg-card/50 backdrop-blur-sm p-8 rounded-2xl shadow-medium border-2 border-primary-default/30 dark:border-white/30 hover:border-primary-default/50 dark:hover:border-white/50 hover:shadow-hard transition-all duration-300 max-w-2xl ${
+						isLeft ? 'md:mr-8' : 'md:ml-8'
+					} relative z-10`}
 					whileHover={{ y: -5 }}
 					transition={{ type: 'spring', stiffness: 300 }}>
 					{/* Header */}

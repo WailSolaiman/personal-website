@@ -11,20 +11,20 @@
     "freelance": {
       "title": "Freelance-Entwickler",
       "period": "2020–Heute",
-      "role": "Full-Stack-Webentwickler",
-      "description": "Ich arbeite als Freelance-Webentwickler für Websites und Webanwendungen mit HTML/CSS/JS, React/Next.js und WordPress. Kürzlich habe ich KI-Tools und LLM-APIs integriert, um die Entwicklung zu beschleunigen und die Funktionalität zu verbessern. Meine KI-gestützte Entwicklungsumgebung umfasst VS Code mit GitHub Copilot und Cline-Erweiterungen sowie Cursor als KI-first IDE."
+      "role": "Frontend-Webentwickler",
+      "description": "Ich arbeite als Freelance-Webentwickler und baue Websites & Webapps mit HTML/CSS/JS, React/Next.js und WordPress. In letzter Zeit integriere ich auch KI-Tools und LLM-APIs, um schneller zu entwickeln und Features smarter zu machen. Mein Setup: VS Code mit GitHub Copilot & Cline sowie Cursor als AI-first IDE."
     },
     "vicon": {
       "title": "VICON Web Business",
       "period": "2018–2019",
       "role": "Frontend-Entwickler",
-      "description": "Verantwortlich für die Erstellung hochwertiger Kundenwebsites mit HTML, CSS und JavaScript. Entwicklung responsiver Themes/Templates basierend auf dem Contao Content Management System und Verwaltung von Backends, einschließlich Datenbank- und Serverintegration."
+      "description": "Ich habe Kundenwebsites mit HTML, CSS und JavaScript umgesetzt. Außerdem: responsive Themes/Templates für Contao und Backend-Pflege inkl. Datenbank- und Server-Anbindung."
     },
     "andersBjork": {
       "title": "Anders Björk GmbH",
       "period": "2017–2018",
       "role": "WordPress-Entwickler",
-      "description": "Fokus auf die Entwicklung responsiver WordPress-Themes mit HTML, CSS, JavaScript und PHP. Durchführung kontinuierlicher Überwachung und Performance-Optimierung von Live-WordPress-Sites, um eine positive Benutzererfahrung zu gewährleisten, sowie Wartung und Verbesserung bestehender Themes."
+      "description": "Ich habe responsive WordPress-Themes entwickelt (HTML, CSS, JavaScript, PHP) und Live-Sites überwacht und optimiert. Dazu kamen Wartung und Weiterentwicklung bestehender Themes."
     }
   }
 }

@@ -3,47 +3,47 @@
     "1": {
       "title": "EchoRealm",
       "tech": "React | VR-Website",
-      "description": "EchoRealm ist eine VR-Website zur Erstellung immersiver Umgebungen mit modernen Web-Tools. Erstellt mit React 18, TailwindCSS und Vite, gewährleistet es schnelle Performance und sauberen Code mit ESLint."
+      "description": "EchoRealm ist eine VR-Website für immersive Web-Experiences. Gebaut mit React 18, TailwindCSS und Vite — schnell, clean, ESLint-ready."
     },
     "2": {
       "title": "Restaura Paris",
       "tech": "React | Restaurant-Website",
-      "description": "Restaura Paris schafft kulinarische Erlebnisse, bei denen Design auf Performance trifft. Erstellt mit React 18, TailwindCSS und Vite, bietet es flüssige Animationen über Framer Motion und sauberen Code mit ESLint."
+      "description": "Restaura Paris: kulinarisches Erlebnis, bei dem Design auf Performance trifft. React 18, TailwindCSS und Vite, dazu smooth Animationen mit Framer Motion und clean Code mit ESLint."
     },
     "3": {
       "title": "Metaverse World",
       "tech": "React | Next.js Webapp",
-      "description": "Metaverse World ist eine Webapp mit einem eleganten, modernen Interface, erstellt mit React, Next.js, Tailwind CSS und Framer Motion. Es kombiniert responsives Design mit flüssigen Animationen für ein ansprechendes Benutzererlebnis."
+      "description": "Metaverse World ist eine Next.js Webapp mit modernem UI. React, Next.js, Tailwind CSS und Framer Motion sorgen für responsives Design und smooth Animationen."
     },
     "4": {
       "title": "Power Zone Gym Studio",
       "tech": "React | Fitness-Website",
-      "description": "Power Zone Gym Studio ist eine moderne Fitness-Website, erstellt mit React und Vite, mit flüssigen Benutzerinteraktionen. Die Website präsentiert Fitnessstudio-Services, Mitgliedschaftsoptionen und Trainingsprogramme mit einem ansprechenden Interface."
+      "description": "Power Zone Gym Studio ist eine moderne Fitness-Website mit React und Vite. Sie zeigt Services, Mitgliedschaften und Trainingsprogramme in einem klaren, interaktiven UI."
     },
     "5": {
       "title": "Onix",
-      "tech": "React | Moderne Web-App",
-      "description": "Onix ist eine moderne Webanwendung, erstellt mit React und Vite, mit einem eleganten dunklen Theme und Progressive Web App-Funktionen. Die Website bietet schnelle Performance und responsives Design mit sauberer, moderner Ästhetik."
+      "tech": "React | Moderne Webapp",
+      "description": "Onix ist eine moderne Webapp mit React und Vite, Dark Theme und PWA-Features. Schnell, responsive und clean."
     },
     "9": {
       "title": "Webbly",
       "tech": "React | Web-Agentur",
-      "description": "Webbly ist eine elegante, einseitige Website, die Webentwicklungs- und Design-Services (Web-Agentur) präsentiert. Erstellt mit modernsten Technologien für Geschwindigkeit, Responsivität und Barrierefreiheit."
+      "description": "Webbly ist eine elegante One-Pager-Website für eine Webagentur. Fokus auf Speed, Responsivität und Accessibility."
     },
     "10": {
       "title": "Atlantis Bistro",
       "tech": "WordPress-Vorlage | Restaurant",
-      "description": "Professionelle Restaurant-Website für Atlantis Bistro in Deutschland, die kulinarische Exzellenz und kulinarische Erlebnisse präsentiert. Erstellt mit WordPress, mit modernem Design und deutschen Inhalten für lokale Kunden."
+      "description": "Atlantis Bistro: Restaurant-Website in Deutschland — WordPress, modernes Design und Inhalte auf Deutsch."
     },
     "11": {
       "title": "Arabisches Portfolio",
       "tech": "WordPress | Framer | Arabisches Portfolio",
-      "description": "Umfassende arabische Portfolio-Website, die Webentwicklungs-Services für arabischsprachige Kunden präsentiert. Erstellt mit WordPress und Framer, mit arabischer RTL-Unterstützung und modernem Design."
+      "description": "Arabisches Portfolio: Portfolio-Website für arabischsprachige Kunden — gebaut mit WordPress und Framer, inklusive RTL-Support und modernem Design."
     },
     "12": {
       "title": "WS Code",
       "tech": "Webentwicklungs-Services | Business-Website",
-      "description": "Persönliche Webentwicklungs-Services-Website, die moderne Web-Lösungen und maßgeschneiderte Entwicklungs-Services präsentiert. Erstellt mit React und modernen Technologien, bietet sie responsives Design und optimierte Performance."
+      "description": "WS Code: persönliche Business-Website für Webentwicklung-Services. React, responsives Design und optimierte Performance."
     }
   }
 }

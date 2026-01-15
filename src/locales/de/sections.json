@@ -9,10 +9,10 @@
     "legacy": "Legacy-Websites"
   },
   "descriptions": {
-    "about": "Leidenschaftlicher Full-Stack-Entwickler, der digitale Erlebnisse mit modernen Technologien schafft",
-    "portfolio": "Eine Präsentation innovativer Web-Lösungen und kreativer Entwicklungsprojekte",
-    "certificates": "Berufliche Zertifizierungen und Kurse zur Verbesserung meiner Fähigkeiten",
-    "resume": "Letzte 10 Jahre"
+    "about": "Frontend-Entwickler mit Fokus auf moderne Web-Erlebnisse",
+    "portfolio": "Eine Auswahl innovativer Web-Lösungen und kreativer Projekte",
+    "certificates": "Zertifizierungen und Kurse, um meine Skills auszubauen",
+    "resume": "Letzte 10 Jahre Berufserfahrung"
   },
   "education": {
     "university": "Technische Universität Lübeck",
@@ -31,6 +31,8 @@
     "title": "LEGACY WEBSITES",
     "badge": "RETRO ARCHIV",
     "subtitle": "Digitale Relikte vergangener Unternehmungen",
-    "description": "Websites für ehemalige Kunden & Arbeitgeber erstellt"
+    "description": "Websites für ehemalige Kunden & Arbeitgeber erstellt",
+    "footerText": "Diese Sammlung zeigt, wie sich meine Webdevelopment-Skills über verschiedene Technologien und Kundenanforderungen entwickelt haben.",
+    "footerHint": "// Links öffnen in neuen Tabs zum Anschauen"
   }
 }

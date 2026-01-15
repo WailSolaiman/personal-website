@@ -25,7 +25,7 @@ function ProfileImage() {
           >
             <img
               src="/images/profile-pic.jpg"
-              alt="Wail Solaiman - Full-Stack Developer"
+              alt="Wail Solaiman - Frontend Developer"
               className="w-full h-full object-cover rounded-2xl border-4 border-card/80 shadow-hard"
             />
 

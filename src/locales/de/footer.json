@@ -1,6 +1,17 @@
 {
   "title": "Lass uns gemeinsam etwas Großartiges schaffen",
   "description": "Hast du ein Projekt im Kopf? Ich würde gerne von dir hören und besprechen, wie wir deine Ideen mit modernen Web-Technologien zum Leben erwecken können.",
-  "copyright": "Mit ❤️ und modernen Web-Technologien erstellt.",
-  "builtWith": "Erstellt mit React, Vite und Tailwind CSS"
+  "copyright": "Mit Liebe und modernen Web-Technologien gebaut.",
+  "builtWith": "Erstellt mit React, Vite und Tailwind CSS",
+  "privacy": {
+    "label": "Datenschutz",
+    "title": "Datenschutz",
+    "intro": "Dieses Portfolio erhebt keine personenbezogenen Daten.",
+    "points": [
+      "Keine Analyse-, Werbe- oder Tracking-Skripte.",
+      "Kein Kontaktformular — wenn du mir eine E-Mail schreibst, läuft das über deinen E-Mail-Anbieter.",
+      "Deine Theme- und Sprachpräferenz kann lokal im Browser gespeichert werden (localStorage).",
+      "Externe Links (z. B. GitHub/LinkedIn) unterliegen deren eigenen Datenschutzrichtlinien."
+    ]
+  }
 }

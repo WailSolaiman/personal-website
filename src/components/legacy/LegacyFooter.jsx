@@ -1,6 +1,9 @@
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function LegacyFooter() {
+  const { t } = useTranslation("sections")
+
   return (
     <motion.div
       className="mt-16 text-center font-mono"
@@ -16,11 +19,10 @@ function LegacyFooter() {
           <span>legacy_archive</span>
         </div>
         <p className="text-text-secondary text-sm leading-relaxed">
-          This collection represents the evolution of my web development skills
-          across different technologies and client requirements.
+          {t("legacy.footerText")}
           <br />
           <span className="retro-text-medium text-xs opacity-75">
-            {`// Links open in new tabs for exploration`}
+            {t("legacy.footerHint")}
           </span>
         </p>
       </div>
