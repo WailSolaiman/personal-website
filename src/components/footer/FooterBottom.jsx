@@ -117,18 +117,7 @@ function FooterBottom() {
           >
             Wail Solaiman
           </span>
-          . {t("footer:copyright")}{" "}
-          <motion.span
-            className="inline-block"
-            animate={{ scale: [1, 1.2, 1] }}
-            transition={{
-              repeat: Infinity,
-              duration: 2,
-              ease: "easeInOut",
-            }}
-          >
-            ❤️
-          </motion.span>{" "}
+          . {t("footer:copyright")}
         </p>
         <p className="mt-2 text-xs">
           {t("footer:builtWith")}
