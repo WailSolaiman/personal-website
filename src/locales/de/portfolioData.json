@@ -3,7 +3,7 @@
     "1": {
       "title": "EchoRealm",
       "tech": "React | VR-Website",
-      "description": "EchoRealm ist eine VR-Website für immersive Web-Experiences. Gebaut mit React 18, TailwindCSS und Vite — schnell, clean, ESLint-ready."
+      "description": "EchoRealm ist eine VR-Website für immersive Web-Experiences. Gebaut mit React, TailwindCSS und Vite, mit flüssiger Motion dank Framer Motion — schnell und hochwertig."
     },
     "2": {
       "title": "Restaura Paris",
@@ -16,9 +16,9 @@
       "description": "Metaverse World ist eine Next.js Webapp mit modernem UI. React, Next.js, Tailwind CSS und Framer Motion sorgen für responsives Design und smooth Animationen."
     },
     "4": {
-      "title": "Power Zone Gym Studio",
+      "title": "EVOGYM",
       "tech": "React | Fitness-Website",
-      "description": "Power Zone Gym Studio ist eine moderne Fitness-Website mit React und Vite. Sie zeigt Services, Mitgliedschaften und Trainingsprogramme in einem klaren, interaktiven UI."
+      "description": "EVOGYM ist eine moderne Fitness-Website mit React, Vite und Tailwind CSS; Framer Motion sorgt für ansprechende Interaktionen. Services, Mitgliedschaften und Trainingsprogramme in einem klaren, responsiven Layout."
     },
     "5": {
       "title": "Onix",
@@ -44,6 +44,26 @@
       "title": "WS Code",
       "tech": "Webentwicklungs-Services | Business-Website",
       "description": "WS Code: persönliche Business-Website für Webentwicklung-Services. React, responsives Design und optimierte Performance."
+    },
+    "13": {
+      "title": "Velvet",
+      "tech": "React | Brand-Website",
+      "description": "Velvet ist ein raffiniertes Marketing-Erlebnis mit React und Vite, Styling mit Tailwind CSS und flüssigen Interaktionen dank Framer Motion."
+    },
+    "14": {
+      "title": "Cybercore",
+      "tech": "React | Tech-Landingpage",
+      "description": "Cybercore ist eine wirkungsvolle Tech-Landingpage mit React, JavaScript und Vite, Tailwind CSS fürs Layout und Framer Motion fürs Motion Design."
+    },
+    "15": {
+      "title": "Buildplane",
+      "tech": "React | Produkt-Landingpage",
+      "description": "Buildplane zeigt ein produktorientiertes UI auf dem modernen React-Stack: Vite als Tooling, Tailwind CSS für Design-Tokens und Framer Motion für starke Übergänge."
+    },
+    "16": {
+      "title": "Either AI",
+      "tech": "React | KI-Erlebnis",
+      "description": "Either AI präsentiert ein KI-inspiriertes Web-Erlebnis mit React und Vite, Utility-First-Styling via Tailwind CSS und präzisen Motion-Patterns mit Framer Motion."
     }
   }
 }

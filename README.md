@@ -66,9 +66,9 @@ WAILSOL25WEB/
 
 ### 1. EchoRealm
 
-- **Technology**: React 18, TailwindCSS, Vite
+- **Technology**: React, JavaScript, TailwindCSS, Vite, Framer Motion
 - **Description**: VR website for creating immersive environments
-- **Live Demo**: [echorealm-tau.vercel.app](https://echorealm-tau.vercel.app/)
+- **Live Demo**: [echorealm.wailsolaiman.com](https://echorealm.wailsolaiman.com/)
 
 ### 2. Restaura Paris
 
@@ -82,11 +82,11 @@ WAILSOL25WEB/
 - **Description**: Modern webapp with sleek interface
 - **Live Demo**: [metaverse-world.netlify.app](https://metaverse-world.netlify.app/)
 
-### 4. Power Zone Gym Studio
+### 4. EVOGYM
 
-- **Technology**: React, Vite, JavaScript
+- **Technology**: React, JavaScript, TailwindCSS, Vite, Framer Motion
 - **Description**: Fitness website with responsive design
-- **Live Demo**: [power-zone-gym-studio.netlify.app](https://power-zone-gym-studio.netlify.app/)
+- **Live Demo**: [evogym.wailsolaiman.com](https://evogym.wailsolaiman.com/)
 
 ### 5. Onix
 

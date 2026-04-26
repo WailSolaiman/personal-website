@@ -1,13 +1,13 @@
 export const portfolioItems = [
   {
     id: 1,
-    image: "/images/portfolio/echorealm.jpg",
+    image: "/images/portfolio/echorealm.wailsolaiman.com.jpg",
     title: "EchoRealm",
     tech: "React | VR Website",
     description:
-      "EchoRealm is a VR website for creating immersive environments with modern web tools. Built with React 18, TailwindCSS, and Vite, it ensures fast performance and clean code with ESLint.",
-    techList: "React | JavaScript | TailwindCSS | Vite",
-    link: "https://echorealm-tau.vercel.app/",
+      "EchoRealm is a VR website for creating immersive environments with modern web tools. Built with React, TailwindCSS, and Vite, with smooth motion via Framer Motion for a fast, polished experience.",
+    techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
+    link: "https://echorealm.wailsolaiman.com/",
     alt: "EchoRealm",
   },
   {
@@ -34,14 +34,14 @@ export const portfolioItems = [
   },
   {
     id: 4,
-    image: "/images/portfolio/gym-studio.png",
-    title: "Power Zone Gym Studio",
+    image: "/images/portfolio/evogym.wailsolaiman.com.png",
+    title: "EVOGYM",
     tech: "React | Fitness Website",
     description:
-      "Power Zone Gym Studio is a modern fitness website built with React and Vite, featuring smooth user interactions. The site showcases gym services, membership options, and training programs with an engaging interface.",
-    techList: "React | Vite | JavaScript",
-    link: "https://power-zone-gym-studio.netlify.app/",
-    alt: "Power Zone Gym Studio",
+      "EVOGYM is a modern fitness website built with React, Vite, and Tailwind CSS, with Framer Motion for engaging interactions. It showcases gym services, memberships, and training programs in a clean, responsive layout.",
+    techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
+    link: "https://evogym.wailsolaiman.com/",
+    alt: "EVOGYM",
   },
   {
     id: 5,
@@ -131,6 +131,50 @@ export const portfolioItems = [
     techList: "React | Next.js | Modern Web Technologies",
     link: "https://wscode.online/",
     alt: "WS Code",
+  },
+  {
+    id: 13,
+    image: "/images/portfolio/velvet.wailsolaiman.com.png",
+    title: "Velvet",
+    tech: "React | Brand Website",
+    description:
+      "Velvet is a polished marketing experience built with React and Vite, styled with Tailwind CSS, and brought to life with Framer Motion for smooth, responsive interactions.",
+    techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
+    link: "https://velvet.wailsolaiman.com/",
+    alt: "Velvet",
+  },
+  {
+    id: 14,
+    image: "/images/portfolio/cybercore.wailsolaiman.com.png",
+    title: "Cybercore",
+    tech: "React | Tech Landing",
+    description:
+      "Cybercore is a high-impact tech landing page using React, JavaScript, and Vite, with Tailwind CSS for layout and Framer Motion for motion design.",
+    techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
+    link: "https://cybercore.wailsolaiman.com/",
+    alt: "Cybercore",
+  },
+  {
+    id: 15,
+    image: "/images/portfolio/buildplane.wailsolaiman.com.png",
+    title: "Buildplane",
+    tech: "React | Product Landing",
+    description:
+      "Buildplane showcases a product-focused UI built on the modern React stack—Vite for tooling, Tailwind CSS for design tokens, and Framer Motion for engaging transitions.",
+    techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
+    link: "https://buildplane.wailsolaiman.com/",
+    alt: "Buildplane",
+  },
+  {
+    id: 16,
+    image: "/images/portfolio/eitherai.wailsolaiman.com.png",
+    title: "Either AI",
+    tech: "React | AI Experience",
+    description:
+      "Either AI presents an AI-themed web experience with React and Vite, utility-first styling via Tailwind CSS, and refined motion patterns powered by Framer Motion.",
+    techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
+    link: "https://eitherai.wailsolaiman.com/",
+    alt: "Either AI",
   },
 ]
 
