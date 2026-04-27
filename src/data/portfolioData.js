@@ -18,7 +18,7 @@ export const portfolioItems = [
     description:
       "Restaura Paris creates dining experiences where design meets performance. Built with React 18, TailwindCSS, and Vite, it features smooth animations via Framer Motion and clean code with ESLint.",
     techList: "React | Framer Motion | TailwindCSS | Vite",
-    link: "https://restaura-three.vercel.app/",
+    link: "https://restaura.wailsolaiman.com/",
     alt: "Restaura Paris",
   },
   {
@@ -29,7 +29,7 @@ export const portfolioItems = [
     description:
       "Metaverse World is a webapp with a sleek, modern interface built with React, Next.js, Tailwind CSS, and Framer Motion. It combines responsive design with smooth animations for an engaging user experience.",
     techList: "React | Next.js | TailwindCSS",
-    link: "https://metaverse-world.netlify.app/",
+    link: "https://metaverse.wailsolaiman.com/",
     alt: "Metaverse World",
   },
   {
@@ -45,13 +45,13 @@ export const portfolioItems = [
   },
   {
     id: 5,
-    image: "/images/portfolio/onix.png",
+    image: "/images/portfolio/onix.wailsolaiman.com.png",
     title: "Onix",
     tech: "React | Modern Web App",
     description:
       "Onix is a modern web application built with React and Vite, featuring a sleek dark theme and progressive web app capabilities. The site delivers fast performance and responsive design with clean, modern aesthetics.",
     techList: "React | Vite | JavaScript",
-    link: "https://onix-chi.vercel.app/",
+    link: "https://onix.wailsolaiman.com/",
     alt: "Onix",
   },
   {
@@ -90,13 +90,13 @@ export const portfolioItems = [
   },
   {
     id: 9,
-    image: "/images/portfolio/webbly.jpeg",
+    image: "/images/portfolio/webbly.wailsolaiman.com.png",
     title: "Webbly",
     tech: "React | Web Agency",
     description:
       "Webbly is a sleek, one-page website showcasing web development and design services (Web Agency). Built with cutting-edge technologies for speed, responsiveness, and accessibility.",
     techList: "React | Vite | JavaScript | Framer Motion",
-    link: "https://webbly-ws.vercel.app/",
+    link: "https://webbly.wailsolaiman.com/",
     alt: "Webbly",
   },
   {
@@ -120,17 +120,6 @@ export const portfolioItems = [
     techList: "WordPress | Framer",
     link: "https://wailsolaiman.space/portfolio/",
     alt: "Arabic Portfolio",
-  },
-  {
-    id: 12,
-    image: "/images/portfolio/ws-code.online.jpg",
-    title: "WS Code",
-    tech: "Web Development Services | Business Website",
-    description:
-      "Personal web development services website showcasing modern web solutions and custom development services. Built with React and modern technologies, it features responsive design and optimized performance.",
-    techList: "React | Next.js | Modern Web Technologies",
-    link: "https://wscode.online/",
-    alt: "WS Code",
   },
   {
     id: 13,

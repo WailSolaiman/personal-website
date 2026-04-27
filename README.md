@@ -74,13 +74,13 @@ WAILSOL25WEB/
 
 - **Technology**: React 18, Framer Motion, TailwindCSS, Vite
 - **Description**: Restaurant website with smooth animations
-- **Live Demo**: [restaura-three.vercel.app](https://restaura-three.vercel.app/)
+- **Live Demo**: [restaura.wailsolaiman.com](https://restaura.wailsolaiman.com/)
 
 ### 3. Metaverse World
 
 - **Technology**: React, Next.js, TailwindCSS
 - **Description**: Modern webapp with sleek interface
-- **Live Demo**: [metaverse-world.netlify.app](https://metaverse-world.netlify.app/)
+- **Live Demo**: [metaverse.wailsolaiman.com](https://metaverse.wailsolaiman.com/)
 
 ### 4. EVOGYM
 
@@ -92,7 +92,7 @@ WAILSOL25WEB/
 
 - **Technology**: React, Vite, PWA
 - **Description**: Modern web app with dark theme
-- **Live Demo**: [onix-chi.vercel.app](https://onix-chi.vercel.app/)
+- **Live Demo**: [onix.wailsolaiman.com](https://onix.wailsolaiman.com/)
 
 ### 6. React Crypto Universe
 
