@@ -1,7 +1,7 @@
 export const portfolioItems = [
   {
     id: 1,
-    image: "/images/portfolio/echorealm.wailsolaiman.com.jpg",
+    image: "/images/portfolio/echorealm.wailsolaiman.com-2.jpeg",
     title: "EchoRealm",
     tech: "React | VR Website",
     description:
@@ -90,7 +90,7 @@ export const portfolioItems = [
   },
   {
     id: 9,
-    image: "/images/portfolio/webbly.wailsolaiman.com.png",
+    image: "/images/portfolio/webbly.wailsolaiman.com-2.jpeg",
     title: "Webbly",
     tech: "React | Web Agency",
     description:
@@ -114,16 +114,16 @@ export const portfolioItems = [
     id: 11,
     image: "/images/portfolio/ws-space.jpg",
     title: "Arabic Portfolio",
-    tech: "WordPress | Framer | Arabic Portfolio",
+    tech: "React | WordPress | Framer | Arabic Portfolio",
     description:
-      "Comprehensive Arabic portfolio website showcasing web development services for Arabic-speaking clients. Built with WordPress and Framer, featuring Arabic RTL support and modern design.",
-    techList: "WordPress | Framer",
+      "Comprehensive Arabic portfolio website showcasing web development services for Arabic-speaking clients. Built with React, WordPress, and Framer, featuring Arabic RTL support and modern design.",
+    techList: "React | WordPress | Framer",
     link: "https://wailsolaiman.space/portfolio/",
     alt: "Arabic Portfolio",
   },
   {
     id: 13,
-    image: "/images/portfolio/velvet.wailsolaiman.com.png",
+    image: "/images/portfolio/velvet.wailsolaiman.com-2.jpeg",
     title: "Velvet",
     tech: "React | Brand Website",
     description:
@@ -134,7 +134,7 @@ export const portfolioItems = [
   },
   {
     id: 14,
-    image: "/images/portfolio/cybercore.wailsolaiman.com.png",
+    image: "/images/portfolio/cybercore.wailsolaiman.com-2.jpeg",
     title: "Cybercore",
     tech: "React | Tech Landing",
     description:
@@ -145,7 +145,7 @@ export const portfolioItems = [
   },
   {
     id: 15,
-    image: "/images/portfolio/buildplane.wailsolaiman.com.png",
+    image: "/images/portfolio/buildplane.wailsolaiman.com-2.png",
     title: "Buildplane",
     tech: "React | Product Landing",
     description:
@@ -156,7 +156,7 @@ export const portfolioItems = [
   },
   {
     id: 16,
-    image: "/images/portfolio/eitherai.wailsolaiman.com.png",
+    image: "/images/portfolio/eitherai.wailsolaiman.com-2.png",
     title: "Either AI",
     tech: "React | AI Experience",
     description:
