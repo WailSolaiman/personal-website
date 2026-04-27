@@ -25,6 +25,18 @@
       "period": "2017–2018",
       "role": "WordPress Developer",
       "description": "Focused on developing responsive WordPress themes with HTML, CSS, JavaScript, and PHP. Conducted ongoing monitoring and performance optimization of live WordPress sites to ensure a positive user experience, along with maintaining and enhancing existing themes."
+    },
+    "eTailersIss": {
+      "title": "eTailers ISS GmbH",
+      "period": "06/2016 – 09/2016",
+      "role": "Front-End Web Developer",
+      "description": "Development and maintenance of websites using HTML and CSS. Implementation and adaptation of websites including templates and features using JavaScript."
+    },
+    "parrotMedia": {
+      "title": "Parrot Media GmbH",
+      "period": "03/2016 – 05/2016",
+      "role": "Front-End Web Developer",
+      "description": "Implementation of client websites using HTML, CSS, and JavaScript. Contribution to TYPO3 projects (template and layout adjustments), including testing and bug fixes."
     }
   }
 }

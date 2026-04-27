@@ -12,19 +12,31 @@
       "title": "Freelance-Entwickler",
       "period": "2020–Heute",
       "role": "Frontend-Webentwickler",
-      "description": "Ich arbeite als Freelance-Webentwickler und baue Websites & Webapps mit HTML/CSS/JS, React/Next.js und WordPress. In letzter Zeit integriere ich auch KI-Tools und LLM-APIs, um schneller zu entwickeln und Features smarter zu machen. Mein Setup: VS Code mit GitHub Copilot & Cline sowie Cursor als AI-first IDE."
+      "description": "Freelance-Webentwicklung für Websites und Webapps mit HTML/CSS/JS, React/Next.js und WordPress. Aktuell Integration von KI-Tools und LLM-APIs zur Beschleunigung der Entwicklung und für smartere Features. Entwicklungsumgebung: VS Code mit GitHub Copilot und Cline sowie Cursor als AI-first IDE."
     },
     "vicon": {
       "title": "VICON Web Business",
       "period": "2018–2019",
       "role": "Frontend-Entwickler",
-      "description": "Ich habe Kundenwebsites mit HTML, CSS und JavaScript umgesetzt. Außerdem: responsive Themes/Templates für Contao und Backend-Pflege inkl. Datenbank- und Server-Anbindung."
+      "description": "Umsetzung von Kundenwebsites mit HTML, CSS und JavaScript. Entwicklung responsiver Themes und Templates auf Basis von Contao sowie Backend-Pflege inklusive Datenbank- und Server-Anbindung."
     },
     "andersBjork": {
       "title": "Anders Björk GmbH",
       "period": "2017–2018",
       "role": "WordPress-Entwickler",
-      "description": "Ich habe responsive WordPress-Themes entwickelt (HTML, CSS, JavaScript, PHP) und Live-Sites überwacht und optimiert. Dazu kamen Wartung und Weiterentwicklung bestehender Themes."
+      "description": "Entwicklung responsiver WordPress-Themes mit HTML, CSS, JavaScript und PHP. Überwachung und Performance-Optimierung von Live-WordPress-Sites für eine stabile Nutzererfahrung; Wartung und Weiterentwicklung bestehender Themes."
+    },
+    "eTailersIss": {
+      "title": "eTailers ISS GmbH",
+      "period": "06/2016 – 09/2016",
+      "role": "Frontend-Webentwickler",
+      "description": "Entwicklung und Wartung von Websites mit HTML und CSS. Umsetzung und Anpassung von Websites inklusive Templates und Funktionen mit JavaScript."
+    },
+    "parrotMedia": {
+      "title": "Parrot Media GmbH",
+      "period": "03/2016 – 05/2016",
+      "role": "Frontend-Webentwickler",
+      "description": "Umsetzung von Kundenwebsites mit HTML, CSS und JavaScript. Mitarbeit an TYPO3-Projekten (Template- und Layout-Anpassungen) inklusive Tests und Fehlerbehebung."
     }
   }
 }

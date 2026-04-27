@@ -17,6 +17,12 @@ function ExperienceItem({ experience, index }) {
 		hasCertificate,
 		certificate,
 	} = experience
+
+	const Icon = icon && (typeof icon === "function" ? icon : icon.Icon)
+	const iconClassName =
+		icon && typeof icon === "object" && icon.className
+			? icon.className
+			: "w-8 h-8 shrink-0 text-[var(--accent-purple)]"
 	const [isModalOpen, setIsModalOpen] = useState(false)
 
 	// Zig-zag layout: odd items go left, even items go right
@@ -45,7 +51,11 @@ function ExperienceItem({ experience, index }) {
 					{/* Header */}
 					<div className='flex items-start justify-between mb-4'>
 						<div className='flex items-start gap-4'>
-							<div className='text-3xl'>{icon}</div>
+							{Icon ? (
+								<div className='pt-0.5 shrink-0' aria-hidden>
+									<Icon className={iconClassName} />
+								</div>
+							) : null}
 							<div>
 								<h3 className='text-2xl font-bold text-text-primary mb-1'>
 									{title}
