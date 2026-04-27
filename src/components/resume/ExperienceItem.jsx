@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { FaFileAlt, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaFileAlt } from 'react-icons/fa'
 import DocumentModal from '../common/DocumentModal'
 
 function ExperienceItem({ experience, index }) {
@@ -21,7 +21,7 @@ function ExperienceItem({ experience, index }) {
 
 	// Zig-zag layout: odd items go left, even items go right
 	const isLeft = index % 2 !== 0
-	const containerPadding = isLeft ? 'pr-16 md:pr-20' : 'pl-16 md:pl-20'
+	const containerPadding = isLeft ? 'pe-16 md:pe-20' : 'ps-16 md:ps-20'
 
 	return (
 		<motion.div
@@ -33,12 +33,12 @@ function ExperienceItem({ experience, index }) {
 			{/* Card container for positioning */}
 			<div
 				className={`relative ${
-					isLeft ? 'md:text-right md:flex md:justify-end' : ''
+					isLeft ? 'md:text-end md:flex md:justify-end' : ''
 				}`}>
 				{/* Experience card */}
 				<motion.div
 					className={`bg-card/50 backdrop-blur-sm p-8 rounded-2xl shadow-medium border-2 border-primary-default/30 dark:border-white/30 hover:border-primary-default/50 dark:hover:border-white/50 hover:shadow-hard transition-all duration-300 max-w-2xl ${
-						isLeft ? 'md:mr-8' : 'md:ml-8'
+						isLeft ? 'md:me-8' : 'md:ms-8'
 					} relative z-10`}
 					whileHover={{ y: -5 }}
 					transition={{ type: 'spring', stiffness: 300 }}>
@@ -51,7 +51,7 @@ function ExperienceItem({ experience, index }) {
 									{title}
 									{current && (
 										<span
-											className='inline-block ml-2 px-2 py-1 text-xs font-semibold bg-primary/20 rounded-full animate-pulse'
+											className='inline-block ms-2 px-2 py-1 text-xs font-semibold bg-primary/20 rounded-full animate-pulse'
 											style={{
 												color: 'var(--accent-purple)',
 											}}>
@@ -72,7 +72,7 @@ function ExperienceItem({ experience, index }) {
 					</div>
 
 					{/* Description */}
-					<p className='text-text-secondary mb-6 leading-relaxed text-left'>
+					<p className='text-text-secondary mb-6 leading-relaxed text-start'>
 						{description}
 					</p>
 
@@ -99,30 +99,6 @@ function ExperienceItem({ experience, index }) {
 									{t('resume:viewCertificate')}
 								</span>
 							</button>
-						</div>
-					)}
-
-					{/* Links for Freelance Developer */}
-					{current && (
-						<div className='flex flex-wrap gap-3 mt-4'>
-							<a
-								href='https://wailsolaiman.space/portfolio/'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='inline-flex items-center gap-2 px-3 py-1 bg-primary/10 hover:bg-primary/20 text-primary text-xs font-medium rounded-full border border-border/30 hover:border-primary/50 transition-colors duration-200 hover:scale-105'
-								style={{ color: 'var(--accent-purple)' }}>
-								<span>WailSolaiman.Space</span>
-								<FaExternalLinkAlt className='w-3 h-3' />
-							</a>
-							<a
-								href='https://wscode.online'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='inline-flex items-center gap-2 px-3 py-1 bg-primary/10 hover:bg-primary/20 text-primary text-xs font-medium rounded-full border border-border/30 hover:border-primary/50 transition-colors duration-200 hover:scale-105'
-								style={{ color: 'var(--accent-purple)' }}>
-								<span>WsCode.Online</span>
-								<FaExternalLinkAlt className='w-3 h-3' />
-							</a>
 						</div>
 					)}
 				</motion.div>

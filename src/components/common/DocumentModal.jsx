@@ -84,7 +84,7 @@ function DocumentModal({
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="w-full md:w-3/5 p-4 md:p-6 border-r border-border"
+                  className="w-full md:w-3/5 p-4 md:p-6 border-e border-border"
                 >
                   <div className="bg-surface-hover rounded-lg p-4 h-full">
                     <div className="mb-4">

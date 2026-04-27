@@ -3,20 +3,30 @@ import { useTranslation } from "react-i18next"
 
 const LanguageContext = createContext()
 
+function readStoredLanguage() {
+  if (typeof window === "undefined") return "en"
+  return localStorage.getItem("language") || "en"
+}
+
+function applyDocumentLanguage(lng) {
+  const isRtl = lng === "ar"
+  document.documentElement.lang = lng === "ar" ? "ar" : lng === "de" ? "de" : "en"
+  document.documentElement.dir = isRtl ? "rtl" : "ltr"
+}
+
 export function LanguageProvider({ children }) {
   const { i18n } = useTranslation()
-  const [language, setLanguage] = useState("en")
+  const [language, setLanguage] = useState(readStoredLanguage)
 
   useEffect(() => {
-    // Get language from localStorage or default to 'en'
-    const savedLanguage = localStorage.getItem("language") || "en"
-    setLanguage(savedLanguage)
-    i18n.changeLanguage(savedLanguage)
-  }, [i18n])
+    applyDocumentLanguage(language)
+    if (i18n.language !== language) {
+      i18n.changeLanguage(language)
+    }
+  }, [language, i18n])
 
   const changeLanguage = (lng) => {
     setLanguage(lng)
-    i18n.changeLanguage(lng)
     localStorage.setItem("language", lng)
   }
 

@@ -114,3 +114,22 @@ html:not(.dark) {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Arabic (Option B): IBM Plex Sans Arabic body + Tajawal headings — html[lang="ar"] set by LanguageContext */
+html[lang="ar"] body {
+  font-family: "IBM Plex Sans Arabic", system-ui, sans-serif;
+}
+
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] h5,
+html[lang="ar"] h6 {
+  font-family: "Tajawal", "IBM Plex Sans Arabic", system-ui, sans-serif;
+}
+
+/* Preserve monospace stacks (e.g. Legacy section) */
+html[lang="ar"] .font-mono {
+  font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", "Courier New", monospace;
+}

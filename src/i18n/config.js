@@ -22,6 +22,17 @@ import deAITools from "../locales/de/aiTools.json"
 import deFooter from "../locales/de/footer.json"
 import dePortfolioData from "../locales/de/portfolioData.json"
 import deLegacyData from "../locales/de/legacyData.json"
+import arUI from "../locales/ar/ui.json"
+import arSections from "../locales/ar/sections.json"
+import arHero from "../locales/ar/hero.json"
+import arAbout from "../locales/ar/about.json"
+import arResume from "../locales/ar/resume.json"
+import arPortfolio from "../locales/ar/portfolio.json"
+import arCertificates from "../locales/ar/certificates.json"
+import arAITools from "../locales/ar/aiTools.json"
+import arFooter from "../locales/ar/footer.json"
+import arPortfolioData from "../locales/ar/portfolioData.json"
+import arLegacyData from "../locales/ar/legacyData.json"
 
 i18n
   .use(initReactI18next)
@@ -53,9 +64,23 @@ i18n
         portfolioData: dePortfolioData,
         legacyData: deLegacyData,
       },
+      ar: {
+        ui: arUI,
+        sections: arSections,
+        hero: arHero,
+        about: arAbout,
+        resume: arResume,
+        portfolio: arPortfolio,
+        certificates: arCertificates,
+        aiTools: arAITools,
+        footer: arFooter,
+        portfolioData: arPortfolioData,
+        legacyData: arLegacyData,
+      },
     },
     lng: "en", // default language
     fallbackLng: "en",
+    supportedLngs: ["en", "de", "ar"],
     interpolation: {
       escapeValue: false, // React already escapes values
     },

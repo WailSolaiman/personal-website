@@ -10,7 +10,7 @@ function Navigation() {
     { href: "#about", label: t("navigation.about") },
     { href: "#resume", label: t("navigation.resume") },
     { href: "#portfolio", label: t("navigation.portfolio") },
-    { href: "#legacy", label: t("navigation.legacy"), extraClasses: "pr-12" },
+    { href: "#legacy", label: t("navigation.legacy"), extraClasses: "pe-12" },
   ]
 
   const baseClasses =
@@ -20,7 +20,7 @@ function Navigation() {
     <div className="hidden md:flex flex-1 items-center justify-center mx-4 min-w-0 relative">
       <div
         ref={navScrollRef}
-        className="flex gap-3 md:gap-4 lg:gap-6 overflow-x-auto scrollbar-hide relative pr-4 pl-6 border-l border-r border-white/20 md:border-0"
+        className="flex gap-3 md:gap-4 lg:gap-6 overflow-x-auto scrollbar-hide relative ps-6 pe-4 border-s border-e border-white/20 md:border-0"
       >
         {navItems.map((item) => (
           <a

@@ -58,6 +58,9 @@ export default {
         serif: ["Lora", "Georgia", "serif"],
         mono: ["JetBrains Mono", "Courier New", "monospace"],
         display: ["Inter var", "Poppins", "sans-serif"],
+        // Arabic (Google Fonts, loaded in index.html) — mirrors index.css [lang="ar"] rules
+        "arabic-body": ['"IBM Plex Sans Arabic"', "system-ui", "sans-serif"],
+        "arabic-display": ["Tajawal", '"IBM Plex Sans Arabic"', "system-ui", "sans-serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in",

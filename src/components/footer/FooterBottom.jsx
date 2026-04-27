@@ -166,11 +166,11 @@ function FooterBottom() {
                   </button>
                 </div>
 
-                <div className="p-4 md:p-6 text-left">
+                <div className="p-4 md:p-6 text-start">
                   <p className="text-text-secondary/80 mb-4">
                     {t("footer:privacy.intro")}
                   </p>
-                  <ul className="space-y-2 list-disc pl-5 text-sm text-text-secondary/80">
+                  <ul className="space-y-2 list-disc ps-5 text-sm text-text-secondary/80">
                     {privacyPoints.map((point, idx) => (
                       <li key={idx}>{point}</li>
                     ))}

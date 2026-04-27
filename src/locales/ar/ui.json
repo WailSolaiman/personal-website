@@ -1,0 +1,40 @@
+{
+  "navigation": {
+    "home": "الرئيسية",
+    "about": "عن المطور",
+    "resume": "السيرة الذاتية",
+    "portfolio": "الأعمال",
+    "legacy": "الأرشيف"
+  },
+  "buttons": {
+    "viewWork": "استعرض أعمالي",
+    "contact": "تواصل معي",
+    "viewCertificate": "عرض الشهادة",
+    "viewProject": "عرض المشروع",
+    "backToTop": "للأعلى"
+  },
+  "labels": {
+    "current": "حالي",
+    "getInTouch": "لنتواصل",
+    "closeModal": "إغلاق"
+  },
+  "stats": {
+    "projectsCompleted": "مشروعاً منجزاً",
+    "yearsExperience": "سنوات الخبرة",
+    "clientSatisfaction": "رضا العملاء",
+    "years": "سنوات",
+    "experience": "خبرة",
+    "projects": "مشاريع",
+    "completed": "مكتملة",
+    "clients": "عملاء",
+    "happy": "سعداء"
+  },
+  "modals": {
+    "document": "مستند",
+    "documentImage": "معاينة المستند",
+    "certificate": "شهادة",
+    "certificateImage": "معاينة الشهادة",
+    "englishTranslation": "الترجمة الإنجليزية",
+    "noImageAvailable": "الصورة غير متوفرة"
+  }
+}

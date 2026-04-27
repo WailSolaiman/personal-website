@@ -1,0 +1,64 @@
+{
+  "projects": {
+    "1": {
+      "title": "EchoRealm",
+      "tech": "React | VR Experience",
+      "description": "منصة مبتكرة لإنشاء بيئات واقع افتراضي غامرة. تم بناؤها باستخدام React وTailwindCSS مع توظيف Framer Motion لتقديم تجربة تصفح سريعة وحركات انسيابية فائقة."
+    },
+    "2": {
+      "title": "Restaura Paris",
+      "tech": "React | Restaurant Site",
+      "description": "موقع يجمع بين جمالية التصميم وقوة الأداء. يعتمد على React 18 وTailwindCSS، مع التركيز على تنظيم الكود باستخدام ESLint لضمان استدامة المشروع."
+    },
+    "3": {
+      "title": "Metaverse World",
+      "tech": "React | Next.js App",
+      "description": "تطبيق ويب عصري يستعرض مفاهيم الميتافيرس، تم تطويره باستخدام Next.js لضمان أفضل أداء لمحركات البحث، مع تصميم متجاوب وحركات سلسة."
+    },
+    "4": {
+      "title": "EVOGYM",
+      "tech": "React | Fitness Site",
+      "description": "موقع رياضي متكامل يستعرض الخدمات والعضويات بتصميم نظيف. يستخدم Framer Motion لخلق تفاعل جذاب يزيد من معدل بقاء المستخدم في الموقع."
+    },
+    "5": {
+      "title": "Onix",
+      "tech": "React | Modern Web App",
+      "description": "تطبيق ويب متطور (PWA) يتميز بمظهر داكن (Dark Mode) وأداء عالي الاستجابة، مما يوفر تجربة مستخدم مشابهة للتطبيقات الأصلية."
+    },
+    "9": {
+      "title": "Webbly",
+      "tech": "React | Digital Agency",
+      "description": "موقع الصفحة الواحدة (One-Page) لوكالة رقمية، يركز بشكل أساسي على سرعة التحميل، سهولة الاستخدام، ومعايير إمكانية الوصول العالمية."
+    },
+    "10": {
+      "title": "Atlantis Bistro",
+      "tech": "WordPress | Restaurant",
+      "description": "قالب WordPress مخصص لمطعم في ألمانيا، يبرز التجربة البصرية للأطباق بتصميم حديث يتناسب مع الجمهور المحلي."
+    },
+    "11": {
+      "title": "Arabic Portfolio",
+      "tech": "React | WordPress | Framer",
+      "description": "نموذج لمعرض أعمال عربي متكامل، يدعم الكتابة من اليمين لليسار (RTL) بشكل أصيل مع تصميم عصري وتفاعلات سلسة."
+    },
+    "13": {
+      "title": "Velvet",
+      "tech": "React | Brand Site",
+      "description": "تجربة تسويقية رقمية أنيقة تعتمد على React وVite، حيث تم دمج Framer Motion لتقديم انتقالات بصرية تعكس فخامة العلامة التجارية."
+    },
+    "14": {
+      "title": "Cybercore",
+      "tech": "React | Tech Landing Page",
+      "description": "صفحة هبوط تقنية قوية تركز على عرض البيانات والخدمات البرمجية بوضوح، مع هيكلة مرنة باستخدام Tailwind CSS."
+    },
+    "15": {
+      "title": "Buildplane",
+      "tech": "React | Product Page",
+      "description": "واجهة تركز على استعراض المنتجات التقنية، مبنية بأحدث أدوات التطوير لضمان سرعة الاستجابة وجاذبية العرض البصري."
+    },
+    "16": {
+      "title": "Either AI",
+      "tech": "React | AI Experience",
+      "description": "موقع يستعرض إمكانيات الذكاء الاصطناعي بتصميم مستقبلي، يعتمد على حركات دقيقة وتنسيقات لونية تعزز الهوية التقنية للمشروع."
+    }
+  }
+}
