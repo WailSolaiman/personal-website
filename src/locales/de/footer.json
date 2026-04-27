@@ -6,9 +6,9 @@
   "privacy": {
     "label": "Datenschutz",
     "title": "Datenschutz",
-    "intro": "Dieses Portfolio erhebt keine personenbezogenen Daten.",
+    "intro": "Dieses Portfolio verzichtet auf Werbung und invasive Tracker. Aggregierte Besucherstatistiken helfen, die Seite zu verbessern.",
     "points": [
-      "Keine Analyse-, Werbe- oder Tracking-Skripte.",
+      "Analyse: Plausible (eigene Subdomain, EU-Infrastruktur), ohne Cookies — nur aggregierte Kennzahlen wie Seitenaufrufe; Klicks auf ausgehende Links können ebenfalls aggregiert erfasst werden. Details zum Auftragsverarbeiter: https://plausible.io/privacy.",
       "Kein Kontaktformular — wenn du mir eine E-Mail schreibst, läuft das über deinen E-Mail-Anbieter.",
       "Deine Theme- und Sprachpräferenz kann lokal im Browser gespeichert werden (localStorage).",
       "Externe Links (z. B. GitHub/LinkedIn) unterliegen deren eigenen Datenschutzrichtlinien."

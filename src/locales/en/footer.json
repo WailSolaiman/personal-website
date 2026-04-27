@@ -6,9 +6,9 @@
   "privacy": {
     "label": "Privacy",
     "title": "Privacy",
-    "intro": "This portfolio does not collect personal data.",
+    "intro": "This portfolio avoids ads and invasive trackers. Aggregated visit statistics help improve the site.",
     "points": [
-      "No analytics, ads, or tracking scripts.",
+      "Analytics: Plausible (self-hosted subdomain, EU infrastructure), cookie-free — aggregate page views and similar metrics only; outbound link clicks may be counted in aggregate. See https://plausible.io/privacy for the processor’s approach.",
       "No contact form — if you email me, it happens via your email provider.",
       "Your theme and language preference may be stored locally in your browser (localStorage).",
       "External links (e.g., GitHub/LinkedIn) are governed by their own privacy policies."
