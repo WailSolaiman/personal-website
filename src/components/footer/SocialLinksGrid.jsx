@@ -1,6 +1,11 @@
 import { motion } from "framer-motion"
+import { useRevealAnimation } from "../../hooks/useRevealAnimation"
 
 function SocialLinksGrid() {
+  const reveal = useRevealAnimation({
+    initial: { opacity: 0, y: 30 },
+    transition: { duration: 0.6, delay: 0.2 },
+  })
   const socialLinks = [
     {
       name: "GitHub",
@@ -35,16 +40,13 @@ function SocialLinksGrid() {
   return (
     <motion.div
       className="grid grid-cols-2 justify-center gap-6 mb-12 max-w-2xl mx-auto"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
-      viewport={{ once: true }}
+      {...reveal}
     >
       {socialLinks.map((link, index) => (
         <motion.a
           key={link.name}
           href={link.url}
-          className="flex flex-col items-center p-6 bg-card/50 backdrop-blur-sm rounded-2xl border-2 border-primary-default/30 dark:border-white/30 group transition-all duration-300 hover:border-primary-default/50 dark:hover:border-white/50"
+          className="flex flex-col items-center p-6 bg-card md:bg-card/50 md:backdrop-blur-sm rounded-2xl border-2 border-primary-default/30 dark:border-white/30 group transition-all duration-300 hover:border-primary-default/50 dark:hover:border-white/50"
           transition={{
             type: "spring",
             stiffness: 400,

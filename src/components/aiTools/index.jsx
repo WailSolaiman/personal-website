@@ -1,8 +1,29 @@
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
+import { useIsMobile } from "../../hooks/useIsMobile"
+import { revealAnimation, useRevealAnimation } from "../../hooks/useRevealAnimation"
 
 function AITools() {
   const { t } = useTranslation(["sections", "aiTools"])
+  const isMobile = useIsMobile()
+  const leftColumnReveal = useRevealAnimation({
+    initial: { opacity: 0, x: -40 },
+    visible: { opacity: 1, x: 0 },
+    transition: { duration: 0.8 },
+  })
+  const titleReveal = useRevealAnimation({
+    initial: { opacity: 0, y: 20 },
+    transition: { duration: 0.6 },
+  })
+  const textReveal = useRevealAnimation({
+    initial: { opacity: 0, y: 20 },
+    transition: { duration: 0.8, delay: 0.2 },
+  })
+  const iconsColumnReveal = useRevealAnimation({
+    initial: { opacity: 0, x: 40 },
+    visible: { opacity: 1, x: 0 },
+    transition: { duration: 0.8, delay: 0.2 },
+  })
   const tools = [
     {
       name: "Cursor IDE",
@@ -13,6 +34,11 @@ function AITools() {
       floatDuration: 4,
       floatDelay: 0,
       rotation: -3,
+      floatMotion: {
+        y: [0, -16, 0],
+        x: [0, 5, 0],
+        rotate: [-3, 2, -3],
+      },
     },
     {
       name: "Claude Code",
@@ -25,6 +51,11 @@ function AITools() {
       rotation: 2,
       darkInvert: true,
       secondaryGlow: true,
+      floatMotion: {
+        y: [0, 12, 0],
+        x: [0, -7, 0],
+        rotate: [2, -4, 2],
+      },
     },
     {
       name: "VS Code",
@@ -35,6 +66,11 @@ function AITools() {
       floatDuration: 5,
       floatDelay: 0.5,
       rotation: 2,
+      floatMotion: {
+        y: ["-50%", "-56%", "-50%"],
+        rotate: [2, 6, 2],
+        center: true,
+      },
     },
     {
       name: "ChatGPT",
@@ -47,6 +83,11 @@ function AITools() {
       rotation: -2,
       darkInvert: true,
       secondaryGlow: true,
+      floatMotion: {
+        y: [0, -10, 4, 0],
+        x: [0, 6, -4, 0],
+        rotate: [-2, 3, -2],
+      },
     },
     {
       name: "Codex",
@@ -58,16 +99,21 @@ function AITools() {
       floatDelay: 1,
       rotation: -2,
       darkInvert: true,
+      floatMotion: {
+        y: [0, -20, 0],
+        x: [0, -5, 0],
+        rotate: [-2, -5, -2],
+      },
     },
   ]
 
   return (
     <section
       id="ai-tools"
-      className="py-24 lg:py-32 px-6 bg-gradient-to-br from-surface/30 via-background to-surface/30 border-t-2 border-border/30 relative overflow-hidden"
+      className="section-deferred py-24 lg:py-32 px-6 bg-gradient-to-br from-surface/30 via-background to-surface/30 border-t-2 border-border/30 relative overflow-hidden"
     >
-      {/* Background Effects */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
+      {/* Background Effects — desktop only */}
+      <div className="absolute inset-0 -z-10 overflow-hidden hidden md:block">
         <motion.div
           className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"
           animate={{
@@ -100,16 +146,10 @@ function AITools() {
           {/* Left Column - Text */}
           <motion.div
             className="space-y-8"
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            {...leftColumnReveal}
           >
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+              {...titleReveal}
               className="space-y-4"
             >
               <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-2 leading-tight">
@@ -124,10 +164,7 @@ function AITools() {
             
             <motion.div
               className="space-y-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
+              {...textReveal}
             >
               <p className="text-xl md:text-2xl text-text-secondary leading-relaxed font-light">
                 {t("aiTools:paragraph1.before")}{" "}
@@ -168,15 +205,82 @@ function AITools() {
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Floating Icons */}
+          {/* Right Column - Icons */}
           <motion.div
-            className="relative h-[400px] md:h-[500px] lg:h-[650px]"
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
+            className="relative md:h-[500px] lg:h-[650px]"
+            {...iconsColumnReveal}
           >
+            {/* Mobile: single row */}
+            <div className="grid grid-cols-5 gap-2 md:hidden">
+              {tools.map((tool) => (
+                <div key={tool.name} className="flex min-w-0 flex-col items-center">
+                  <div className="flex w-full flex-col items-center rounded-xl border border-primary/30 bg-card p-2 shadow-soft">
+                    <img
+                      src={tool.image}
+                      alt={tool.name}
+                      className={`h-8 w-8 object-contain ${
+                        tool.darkInvert ? "dark:brightness-0 dark:invert" : ""
+                      }`}
+                    />
+                  </div>
+                  <span className="mt-1.5 line-clamp-2 text-center text-[9px] font-semibold leading-tight text-text-primary">
+                    {tool.name}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Desktop: floating layout */}
+            <div className="relative hidden h-full md:block">
             {tools.map((tool, index) => {
+              const iconCard = (
+                <div
+                  className="relative rounded-3xl border-2 border-primary/30 bg-card/60 p-5 shadow-2xl backdrop-blur-lg lg:p-6"
+                  style={{
+                    boxShadow:
+                      "0 20px 60px rgba(124, 58, 237, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 0 1px rgba(124, 58, 237, 0.1)",
+                  }}
+                >
+                  <motion.div
+                    className="absolute -inset-1 rounded-3xl border-2 border-primary/40"
+                    animate={{
+                      scale: [1, 1.15, 1],
+                      opacity: [0.4, 0.7, 0.4],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: tool.floatDelay,
+                    }}
+                  />
+
+                  <div className="relative z-10 flex flex-col items-center">
+                    <img
+                      src={tool.image}
+                      alt={tool.name}
+                      style={{
+                        width: "clamp(48px, 10vw, " + tool.size + "px)",
+                        height: "clamp(48px, 10vw, " + tool.size + "px)",
+                      }}
+                      className={`object-contain ${
+                        tool.darkInvert ? "dark:brightness-0 dark:invert" : ""
+                      }`}
+                    />
+                    <motion.span
+                      className="mt-4 text-sm font-bold tracking-wide text-text-primary"
+                      {...revealAnimation(isMobile, {
+                        initial: { opacity: 0 },
+                        visible: { opacity: 1 },
+                        transition: { delay: 0.8 + index * 0.3 },
+                      })}
+                    >
+                      {tool.name}
+                    </motion.span>
+                  </div>
+                </div>
+              )
+
               return (
                 <motion.div
                   key={tool.name}
@@ -189,57 +293,57 @@ function AITools() {
                         }
                       : tool.position
                   }
-                  initial={{ 
-                    opacity: 0, 
-                    scale: 0.5, 
-                    rotate: -180,
-                    x: tool.position.transform ? "-50%" : 0,
-                    y: tool.position.transform ? "-50%" : 0,
-                  }}
-                  whileInView={{ 
-                    opacity: 1, 
-                    scale: 1,
-                    x: tool.position.transform ? "-50%" : 0,
-                    y: tool.position.transform ? "-50%" : 0,
+                  {...revealAnimation(isMobile, {
+                    initial: {
+                      opacity: 0,
+                      scale: 0.5,
+                      rotate: -180,
+                      x: tool.position.transform ? "-50%" : 0,
+                      y: tool.position.transform ? "-50%" : 0,
+                    },
+                    visible: {
+                      opacity: 1,
+                      scale: 1,
+                      x: tool.position.transform ? "-50%" : 0,
+                      y: tool.position.transform ? "-50%" : 0,
+                    },
                     transition: {
                       duration: 0.8,
                       delay: 0.5 + index * 0.3,
                       type: "spring",
                       stiffness: 100,
-                    }
-                  }}
-                  viewport={{ once: true }}
+                    },
+                  })}
                   animate={{
-                    y: tool.position.transform 
-                      ? "-50%"
-                      : [0, -15, 0],
-                    rotate: [tool.rotation, tool.rotation + 1.5, tool.rotation],
-                    x: tool.position.transform ? "-50%" : undefined,
+                    y: tool.floatMotion.y,
+                    x: tool.floatMotion.center ? "-50%" : tool.floatMotion.x,
+                    rotate: tool.floatMotion.rotate,
                   }}
                   transition={{
                     y: {
                       duration: tool.floatDuration,
-                      repeat: tool.position.transform ? 0 : Infinity,
+                      repeat: Infinity,
                       ease: "easeInOut",
                       delay: tool.floatDelay,
                     },
+                    x: tool.floatMotion.center
+                      ? undefined
+                      : {
+                          duration: tool.floatDuration * 1.2,
+                          repeat: Infinity,
+                          ease: "easeInOut",
+                          delay: tool.floatDelay + 0.2,
+                        },
                     rotate: {
-                      duration: tool.floatDuration * 1.5,
+                      duration: tool.floatDuration * 1.4,
                       repeat: Infinity,
                       ease: "easeInOut",
                       delay: tool.floatDelay,
                     },
                   }}
-                  whileHover={{
-                    scale: 1.2,
-                    rotate: 0,
-                    z: 50,
-                    transition: { duration: 0.3 },
-                  }}
                 >
-                  {/* Glow effect */}
                   <motion.div
-                    className="absolute inset-0 rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                    className="absolute inset-0 rounded-full opacity-60 blur-2xl"
                     style={{
                       width: tool.size * 2.5,
                       height: tool.size * 2.5,
@@ -259,67 +363,11 @@ function AITools() {
                       delay: tool.floatDelay,
                     }}
                   />
-
-                  {/* Glassmorphic container */}
-                  <motion.div
-                    className="relative backdrop-blur-lg bg-card/60 border-2 border-primary/30 rounded-3xl p-4 md:p-5 lg:p-6 shadow-2xl"
-                    style={{
-                      boxShadow:
-                        "0 20px 60px rgba(124, 58, 237, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 0 1px rgba(124, 58, 237, 0.1)",
-                    }}
-                    whileHover={{
-                      boxShadow:
-                        "0 30px 80px rgba(124, 58, 237, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3)",
-                      borderColor: "rgba(124, 58, 237, 0.5)",
-                    }}
-                  >
-                    {/* Pulsing ring */}
-                    <motion.div
-                      className="absolute -inset-1 border-2 border-primary/40 rounded-3xl"
-                      animate={{
-                        scale: [1, 1.15, 1],
-                        opacity: [0.4, 0.7, 0.4],
-                      }}
-                      transition={{
-                        duration: 3,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                        delay: tool.floatDelay,
-                      }}
-                    />
-
-                    <div className="flex flex-col items-center relative z-10">
-                      <motion.div
-                        className="relative"
-                        whileHover={{ scale: 1.15 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <img
-                          src={tool.image}
-                          alt={tool.name}
-                          style={{
-                            width: 'clamp(48px, 10vw, ' + tool.size + 'px)',
-                            height: 'clamp(48px, 10vw, ' + tool.size + 'px)',
-                          }}
-                          className={`object-contain ${
-                            tool.darkInvert ? "dark:brightness-0 dark:invert" : ""
-                          }`}
-                        />
-                      </motion.div>
-                      <motion.span
-                        className="text-xs md:text-sm font-bold text-text-primary mt-2 md:mt-4 tracking-wide"
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ delay: 0.8 + index * 0.3 }}
-                        viewport={{ once: true }}
-                      >
-                        {tool.name}
-                      </motion.span>
-                    </div>
-                  </motion.div>
+                  {iconCard}
                 </motion.div>
               )
             })}
+            </div>
           </motion.div>
         </div>
       </div>

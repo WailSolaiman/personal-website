@@ -12,7 +12,7 @@ function HeroButtons() {
     >
       <a
         href="#portfolio"
-        className="group px-8 py-4 bg-gradient-to-r from-primary-default to-primary-dark text-white font-semibold rounded-xl shadow-hard hover:shadow-medium transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 animate-bounce-subtle inline-block"
+        className="group px-8 py-4 bg-gradient-to-r from-primary-default to-primary-dark text-white font-semibold rounded-xl shadow-hard hover:shadow-medium transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 md:animate-bounce-subtle inline-block"
       >
         {t("buttons.viewWork")}
       </a>

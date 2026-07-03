@@ -1,16 +1,17 @@
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
+import { useRevealAnimation } from "../../hooks/useRevealAnimation"
 
 function AboutContent() {
   const { t } = useTranslation("about")
+  const reveal = useRevealAnimation({
+    transition: { duration: 0.8, delay: 0.3 },
+  })
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.3 }}
-      viewport={{ once: true }}
+      {...reveal}
     >
-      <div className="bg-card/60 backdrop-blur-sm rounded-2xl p-8 border border-border/20 shadow-soft hover:shadow-medium transition-all duration-500 hover:border-primary/30">
+      <div className="bg-card md:bg-card/60 md:backdrop-blur-sm rounded-2xl p-8 border border-border/20 shadow-soft hover:shadow-medium transition-all duration-500 hover:border-primary/30">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center">
             <span className="text-2xl">👋</span>

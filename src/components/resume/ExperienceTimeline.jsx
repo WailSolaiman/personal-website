@@ -1,26 +1,24 @@
-import { motion } from "framer-motion"
 import ExperienceItem from "./ExperienceItem"
 
 function ExperienceTimeline({ experiences }) {
   return (
     <div className="relative max-w-6xl mx-auto overflow-hidden">
-      {/* Timeline connector - dotted pattern */}
-      <div className="absolute start-8 md:start-1/2 md:transform md:-translate-x-1/2 w-0.5 h-full z-0 pointer-events-none">
-        {/* Arrow at top */}
-        <div
-          className="absolute -top-3 left-1/2 transform -translate-x-1/2 text-purple-500 text-2xl"
-          style={{ fontSize: "24px" }}
-        >
+      {/* Arrow head — desktop only */}
+      <div className="relative hidden h-8 pointer-events-none md:block" aria-hidden="true">
+        <div className="absolute start-8 md:start-1/2 -translate-x-1/2 text-purple-500 text-2xl leading-none">
           ▲
         </div>
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `radial-gradient(circle, var(--accent-purple) 2px, transparent 2px)`,
-            backgroundSize: "2px 16px",
-          }}
-        ></div>
       </div>
+
+      {/* Dotted timeline line — desktop only */}
+      <div
+        className="absolute start-8 md:start-1/2 md:-translate-x-1/2 top-8 bottom-0 w-0.5 z-0 pointer-events-none hidden md:block"
+        style={{
+          backgroundImage: `radial-gradient(circle, var(--accent-purple) 2px, transparent 2px)`,
+          backgroundSize: "2px 16px",
+        }}
+        aria-hidden="true"
+      />
 
       {experiences.map((exp, index) => (
         <ExperienceItem key={exp.id} experience={exp} index={index} />

@@ -9,8 +9,13 @@ import {
   FaRobot,
 } from "react-icons/fa"
 import { SiNextdotjs, SiSupabase, SiTypescript, SiTailwindcss, SiStripe } from "react-icons/si"
+import { useRevealAnimation } from "../../hooks/useRevealAnimation"
 
 function TechStack() {
+  const reveal = useRevealAnimation({
+    initial: { opacity: 0, y: 30 },
+    transition: { duration: 0.8, delay: 0.9 },
+  })
   const technologies = [
     {
       name: "HTML5",
@@ -72,11 +77,8 @@ function TechStack() {
 
   return (
     <motion.div
-      className="bg-card/60 backdrop-blur-sm rounded-2xl p-4 xl:p-6 border border-border/20 shadow-soft w-full max-w-xs xl:max-w-sm mx-auto"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.9 }}
-      viewport={{ once: true }}
+      className="bg-card md:bg-card/60 md:backdrop-blur-sm rounded-2xl p-4 xl:p-6 border border-border/20 shadow-soft w-full max-w-xs xl:max-w-sm mx-auto"
+      {...reveal}
     >
       <h3 className="text-lg font-bold text-text-primary text-center mb-4">
         Technology Stack

@@ -3,10 +3,16 @@ import { useTheme } from "../../contexts/ThemeContext"
 import { useTranslation } from "react-i18next"
 import { useEffect, useState } from "react"
 import { FaTimes } from "react-icons/fa"
+import { useRevealAnimation } from "../../hooks/useRevealAnimation"
 
 function FooterBottom() {
   const { theme } = useTheme()
   const { t } = useTranslation(["footer", "ui"])
+  const reveal = useRevealAnimation({
+    initial: { opacity: 0 },
+    visible: { opacity: 1 },
+    transition: { duration: 0.6, delay: 0.8 },
+  })
   const isLightTheme = theme === "light"
   const currentYear = new Date().getFullYear()
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false)
@@ -42,10 +48,7 @@ function FooterBottom() {
   return (
     <motion.div
       className="border-t border-border/30 pt-8 text-center"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.6, delay: 0.8 }}
-      viewport={{ once: true }}
+      {...reveal}
     >
       {/* Navigation Links */}
       <div className="flex flex-wrap justify-center gap-8 mb-6 text-sm">

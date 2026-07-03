@@ -5,16 +5,26 @@ import SkillsStats from "./SkillsStats"
 import TechStack from "./TechStack"
 import ProfileImage from "./ProfileImage"
 import AvailabilityCard from "./AvailabilityCard"
+import { useRevealAnimation } from "../../hooks/useRevealAnimation"
 
 function About() {
   const { t } = useTranslation(["sections", "about"])
+  const headerReveal = useRevealAnimation({
+    initial: { opacity: 0, y: 50 },
+    transition: { duration: 0.8, ease: "easeOut" },
+  })
+  const learningReveal = useRevealAnimation({
+    initial: { opacity: 0, scale: 0.95 },
+    visible: { opacity: 1, scale: 1 },
+    transition: { duration: 0.6, delay: 1.5 },
+  })
   return (
     <section
       id="about"
       className="py-16 xl:py-28 px-6 lg:px-8 xl:px-12 bg-gradient-to-br from-background via-surface/20 to-background relative overflow-hidden"
     >
       {/* Background effects */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
+      <div className="absolute inset-0 -z-10 overflow-hidden hidden md:block">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-secondary/5 rounded-full blur-2xl"></div>
       </div>
@@ -22,10 +32,7 @@ function About() {
       <div className="container mx-auto relative z-10">
         <motion.div
           className="text-center mb-12 lg:mb-20"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
+          {...headerReveal}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-6">
             {t("sections:titles.about")}
@@ -42,10 +49,7 @@ function About() {
             <SkillsStats />
             <motion.div
               className="p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border border-primary/20"
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 1.5 }}
-              viewport={{ once: true }}
+              {...learningReveal}
             >
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">

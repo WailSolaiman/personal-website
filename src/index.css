@@ -148,3 +148,61 @@ html[lang="ar"] h6 {
 html[lang="ar"] .font-mono {
   font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", "Courier New", monospace;
 }
+
+/* Legacy section gradient title */
+.legacy-gradient-title {
+  background: linear-gradient(
+    135deg,
+    var(--retro-green-dark),
+    var(--retro-green-light),
+    var(--retro-green-dark)
+  );
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .legacy-gradient-title {
+    animation: gradientShift 3s ease-in-out infinite;
+  }
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Mobile performance — reduce paint cost while scrolling */
+@media (max-width: 767px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [class*="backdrop-blur"] {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .animate-pulse,
+  .animate-bounce-subtle {
+    animation: none !important;
+  }
+
+  [class*="blur-xl"],
+  [class*="blur-2xl"],
+  [class*="blur-3xl"] {
+    filter: none !important;
+  }
+
+  section.section-deferred {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
+  }
+}

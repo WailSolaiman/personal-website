@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { FaFileAlt } from 'react-icons/fa'
 import DocumentModal from '../common/DocumentModal'
+import { useRevealAnimation } from '../../hooks/useRevealAnimation'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 function ExperienceItem({ experience, index }) {
   const { t } = useTranslation(['resume', 'ui', 'sections'])
@@ -24,6 +26,12 @@ function ExperienceItem({ experience, index }) {
 			? icon.className
 			: "w-8 h-8 shrink-0 text-[var(--accent-purple)]"
 	const [isModalOpen, setIsModalOpen] = useState(false)
+	const reveal = useRevealAnimation({
+		initial: { opacity: 1, y: 50 },
+		visible: { opacity: 1, y: 0 },
+		transition: { duration: 0.6, delay: index * 0.1 },
+	})
+	const isMobile = useIsMobile()
 
 	// Zig-zag layout: odd items go left, even items go right
 	const isLeft = index % 2 !== 0
@@ -31,11 +39,8 @@ function ExperienceItem({ experience, index }) {
 
 	return (
 		<motion.div
-			className={`relative mb-12 ${index === 0 ? 'mt-8' : ''}`}
-			initial={{ opacity: 1, y: 50 }}
-			whileInView={{ opacity: 1, y: 0 }}
-			transition={{ duration: 0.6, delay: index * 0.1 }}
-			viewport={{ once: true }}>
+			className={`relative z-10 mb-12 ${index === 0 ? 'mt-0' : ''}`}
+			{...reveal}>
 			{/* Card container for positioning */}
 			<div
 				className={`relative ${
@@ -43,10 +48,10 @@ function ExperienceItem({ experience, index }) {
 				}`}>
 				{/* Experience card */}
 				<motion.div
-					className={`bg-card/50 backdrop-blur-sm p-8 rounded-2xl shadow-medium border-2 border-primary-default/30 dark:border-white/30 hover:border-primary-default/50 dark:hover:border-white/50 hover:shadow-hard transition-all duration-300 max-w-2xl ${
+					className={`bg-card md:bg-card/50 md:backdrop-blur-sm p-8 rounded-2xl shadow-medium border-2 border-primary-default/30 dark:border-white/30 hover:border-primary-default/50 dark:hover:border-white/50 hover:shadow-hard transition-all duration-300 max-w-2xl ${
 						isLeft ? 'md:me-8' : 'md:ms-8'
 					} relative z-10`}
-					whileHover={{ y: -5 }}
+					{...(!isMobile && { whileHover: { y: -5 } })}
 					transition={{ type: 'spring', stiffness: 300 }}>
 					{/* Header */}
 					<div className='flex items-start justify-between mb-4'>

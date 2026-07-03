@@ -91,7 +91,7 @@ function Resume() {
   return (
     <section
       id="resume"
-      className="py-24 lg:py-32 px-6 bg-surface/30 border-t-2 border-border/30"
+      className="section-deferred py-24 lg:py-32 px-6 bg-surface/30 border-t-2 border-border/30"
     >
       <div className="container mx-auto">
         <ResumeSectionHeader />

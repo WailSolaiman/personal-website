@@ -1,13 +1,15 @@
 import { motion } from "framer-motion"
+import { useRevealAnimation } from "../../hooks/useRevealAnimation"
 
 function NewsletterCTA() {
+  const reveal = useRevealAnimation({
+    initial: { opacity: 0, y: 30 },
+    transition: { duration: 0.6, delay: 0.6 },
+  })
   return (
     <motion.div
       className="mb-12"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.6 }}
-      viewport={{ once: true }}
+      {...reveal}
     >
       <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 border border-border/20 max-w-2xl mx-auto">
         <div className="text-center">
@@ -23,7 +25,7 @@ function NewsletterCTA() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 bg-card/50 backdrop-blur-sm border border-border/30 rounded-xl text-text-primary placeholder-text-secondary/50 focus:outline-none focus:border-primary/50 transition-colors duration-300"
+              className="flex-1 px-4 py-3 bg-card md:bg-card/50 md:backdrop-blur-sm border border-border/30 rounded-xl text-text-primary placeholder-text-secondary/50 focus:outline-none focus:border-primary/50 transition-colors duration-300"
             />
             <button className="px-6 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl shadow-soft hover:shadow-medium transition-all duration-300">
               Subscribe

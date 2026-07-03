@@ -3,10 +3,14 @@ import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { FaCertificate, FaExternalLinkAlt } from "react-icons/fa"
 import CertificateModal from "../common/CertificateModal"
+import { useIsMobile } from "../../hooks/useIsMobile"
+import { revealAnimation, useRevealAnimation } from "../../hooks/useRevealAnimation"
 
 function Certificates() {
   const { t } = useTranslation(["sections", "certificates", "ui"])
   const [selectedCertificate, setSelectedCertificate] = useState(null)
+  const isMobile = useIsMobile()
+  const headerReveal = useRevealAnimation()
 
   const certificates = [
     {
@@ -28,10 +32,10 @@ function Certificates() {
   return (
     <section
       id="certificates"
-      className="py-24 lg:py-32 px-6 bg-gradient-to-br from-surface/30 via-background to-surface/30 border-t-2 border-border/30 relative overflow-hidden"
+      className="section-deferred py-24 lg:py-32 px-6 bg-gradient-to-br from-surface/30 via-background to-surface/30 border-t-2 border-border/30 relative overflow-hidden"
     >
       {/* Background Effects */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
+      <div className="absolute inset-0 -z-10 overflow-hidden hidden md:block">
         <motion.div
           className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"
           animate={{
@@ -50,10 +54,7 @@ function Certificates() {
         {/* Section Header */}
         <motion.div
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          {...headerReveal}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-4">
             {t("sections:titles.certificates")}
@@ -74,10 +75,10 @@ function Certificates() {
                 className={`flex flex-col ${
                   isEven ? "lg:flex-row-reverse" : "lg:flex-row"
                 } gap-8 lg:gap-12 items-center`}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                viewport={{ once: true }}
+                {...revealAnimation(isMobile, {
+                  initial: { opacity: 0, y: 50 },
+                  transition: { duration: 0.8, delay: index * 0.2 },
+                })}
               >
                 {/* Image */}
                 <motion.div
@@ -103,10 +104,11 @@ function Certificates() {
                 {/* Text Content */}
                 <motion.div
                   className="w-full lg:w-[60%] space-y-4"
-                  initial={{ opacity: 0, x: isEven ? 40 : -40 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.2 + 0.2 }}
-                  viewport={{ once: true }}
+                  {...revealAnimation(isMobile, {
+                    initial: { opacity: 0, x: isEven ? 40 : -40 },
+                    visible: { opacity: 1, x: 0 },
+                    transition: { duration: 0.8, delay: index * 0.2 + 0.2 },
+                  })}
                 >
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">

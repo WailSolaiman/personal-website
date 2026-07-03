@@ -1,15 +1,14 @@
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
+import { useRevealAnimation } from "../../hooks/useRevealAnimation"
 
 function PortfolioHeader() {
   const { t } = useTranslation(["sections", "portfolio"])
+  const reveal = useRevealAnimation()
   return (
     <motion.div
       className="text-center mb-16"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
+      {...reveal}
     >
       <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
         {t("sections:titles.portfolio")}

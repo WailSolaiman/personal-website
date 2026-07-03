@@ -1,6 +1,18 @@
 import { motion } from "framer-motion"
+import { useIsMobile } from "../../hooks/useIsMobile"
 
 function StatusDot() {
+  const isMobile = useIsMobile()
+
+  if (isMobile) {
+    return (
+      <div
+        className="relative h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-br from-green-300 to-emerald-500"
+        aria-hidden="true"
+      />
+    )
+  }
+
   return (
     <motion.div
       className="relative flex h-2.5 w-2.5 shrink-0 items-center justify-center"

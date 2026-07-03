@@ -18,7 +18,7 @@ function Portfolio({ portfolioItems }) {
   return (
     <section
       id="portfolio"
-      className="border-t border-border/20 bg-surface/30 px-6 py-24 lg:py-32"
+      className="section-deferred border-t border-border/20 bg-surface/30 px-6 py-24 lg:py-32"
     >
       <div className="container mx-auto">
         <PortfolioHeader />

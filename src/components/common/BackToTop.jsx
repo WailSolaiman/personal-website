@@ -30,7 +30,7 @@ function BackToTop() {
           exit={{ opacity: 0, y: 12, scale: 0.9 }}
           transition={{ duration: 0.2 }}
           onClick={scrollToTop}
-          className={`fixed bottom-6 right-6 z-40 p-3 bg-card/80 backdrop-blur-sm hover:bg-card border ${
+          className={`fixed bottom-6 right-6 z-40 p-3 bg-card md:bg-card/80 md:backdrop-blur-sm hover:bg-card border ${
             isLightTheme ? "border-black/20" : "border-border/30"
           } rounded-full shadow-medium transition-colors duration-300 group`}
           aria-label={t("buttons.backToTop")}
