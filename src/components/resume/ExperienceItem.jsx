@@ -43,9 +43,9 @@ function ExperienceItem({ experience, index }) {
 				}`}>
 				{/* Experience card */}
 				<motion.div
-					className={`experience-glass p-8 rounded-2xl max-w-2xl ${
+					className={`bg-card/50 backdrop-blur-sm p-8 rounded-2xl shadow-medium border-2 border-primary-default/30 dark:border-white/30 hover:border-primary-default/50 dark:hover:border-white/50 hover:shadow-hard transition-all duration-300 max-w-2xl ${
 						isLeft ? 'md:me-8' : 'md:ms-8'
-					} relative z-10 transition-[border-color,box-shadow] duration-300 hover:border-white/50 dark:hover:border-white/25`}
+					} relative z-10`}
 					whileHover={{ y: -5 }}
 					transition={{ type: 'spring', stiffness: 300 }}>
 					{/* Header */}
