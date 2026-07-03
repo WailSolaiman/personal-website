@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next"
 const LanguageContext = createContext()
 
 function readStoredLanguage() {
-  if (typeof window === "undefined") return "en"
-  return localStorage.getItem("language") || "en"
+  if (typeof window === "undefined") return "de"
+  return localStorage.getItem("language") || "de"
 }
 
 function applyDocumentLanguage(lng) {

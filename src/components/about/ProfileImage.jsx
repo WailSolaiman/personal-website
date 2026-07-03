@@ -1,90 +1,75 @@
+import { useState } from "react"
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
+import StatusDot from "./StatusDot"
+import ImageLightbox from "../common/ImageLightbox"
+
+const PROFILE_IMAGE = "/images/profile-img-2.png"
+const PROFILE_ALT = "Wail Solaiman - Frontend Developer"
 
 function ProfileImage() {
   const { t } = useTranslation("about")
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8, delay: 0.6, type: "spring", stiffness: 200 }}
-      viewport={{ once: true }}
-      className="relative"
-    >
-      {/* Main card container */}
+    <>
       <motion.div
-        className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 border border-border/20 shadow-soft"
-        transition={{ type: "spring", stiffness: 300 }}
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.6, type: "spring", stiffness: 200 }}
+        viewport={{ once: true }}
+        className="relative w-full"
       >
-        {/* Profile image container */}
-        <div className="relative mb-6">
-          {/* Profile image */}
-          <motion.div
-            className="relative w-40 h-40 mx-auto"
-            transition={{ duration: 0.5 }}
-          >
-            <img
-              src="/images/profile-pic.jpg"
-              alt="Wail Solaiman - Frontend Developer"
-              className="w-full h-full object-cover rounded-2xl border-4 border-card/80 shadow-hard"
-            />
-
-            {/* Status indicator */}
-            <motion.div
-              className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-green-400 to-green-500 rounded-full border-4 border-card flex items-center justify-center shadow-lg"
-              animate={{ scale: [1, 1.1, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              <div className="w-3 h-3 bg-white rounded-full"></div>
-            </motion.div>
-          </motion.div>
-        </div>
-
-        {/* Name and title */}
         <motion.div
-          className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          viewport={{ once: true }}
+          className="bg-card/60 backdrop-blur-sm rounded-3xl border border-border/20 shadow-soft overflow-hidden"
+          transition={{ type: "spring", stiffness: 300 }}
         >
-          <h3 className="text-2xl font-bold text-text-primary mb-2">
-            Wail Solaiman
-          </h3>
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-              {t("availability.availableForWork")}
-            </span>
-          </div>
-          <p className="text-text-secondary/70 text-sm leading-relaxed">
-            {t("availability.profileDescription")}
-          </p>
-        </motion.div>
+          <div className="flex flex-col md:flex-row md:min-h-[280px]">
+            <motion.div
+              className="flex flex-col justify-center p-6 sm:p-8 md:w-1/2 md:p-8 lg:p-10"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-2xl font-bold text-text-primary mb-3 md:text-left text-center">
+                Wail Solaiman
+              </h3>
+              <div className="flex items-center gap-2 mb-4 md:justify-start justify-center">
+                <StatusDot />
+                <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
+                  {t("availability.availableForWork")}
+                </span>
+              </div>
+              <p className="text-text-secondary/70 text-sm leading-relaxed md:text-left text-center">
+                {t("availability.profileDescription")}
+              </p>
+            </motion.div>
 
-        {/* Social stats - Removed */}
-        {/* <motion.div
-          className="grid grid-cols-3 gap-4 mt-6 pt-6 border-t border-border/20"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.0 }}
-          viewport={{ once: true }}
-        >
-          <div className="text-center">
-            <div className="text-lg font-bold text-text-primary">10+</div>
-            <div className="text-xs text-text-secondary/70">Years</div>
+            <button
+              type="button"
+              onClick={() => setLightboxOpen(true)}
+              className="group relative md:w-1/2 min-h-[220px] sm:min-h-[260px] md:min-h-0 cursor-zoom-in focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
+              aria-label={`${PROFILE_ALT}. Click to enlarge.`}
+            >
+              <img
+                src={PROFILE_IMAGE}
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.02]"
+              />
+              <span className="pointer-events-none absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10 group-focus-visible:bg-black/10" />
+            </button>
           </div>
-          <div className="text-center">
-            <div className="text-lg font-bold text-text-primary">50+</div>
-            <div className="text-xs text-text-secondary/70">Projects</div>
-          </div>
-          <div className="text-center">
-            <div className="text-lg font-bold text-text-primary">30+</div>
-            <div className="text-xs text-text-secondary/70">Clients</div>
-          </div>
-        </motion.div> */}
+        </motion.div>
       </motion.div>
-    </motion.div>
+
+      <ImageLightbox
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        imageSrc={PROFILE_IMAGE}
+        imageAlt={PROFILE_ALT}
+      />
+    </>
   )
 }
 

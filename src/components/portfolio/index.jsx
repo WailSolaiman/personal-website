@@ -8,6 +8,7 @@ function Portfolio({ portfolioItems }) {
       "React Crypto Universe",
       "Web Agency React Template",
       "React Tour Guide",
+      "Arabic Portfolio",
     ]
     return portfolioItems.filter(
       (item) => !projectsToRemove.includes(item.title)

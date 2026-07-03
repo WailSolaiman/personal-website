@@ -1,38 +1,38 @@
 {
   "titles": {
     "about": "About Me",
-    "education": "Academic Background",
-    "resume": "Professional Experience",
+    "education": "Education",
+    "resume": "Work Experience",
     "portfolio": "Featured Projects",
-    "certificates": "Certifications",
+    "certificates": "Certificates",
     "aiTools": "AI-Powered Development",
     "legacy": "Legacy Websites"
   },
   "descriptions": {
-    "about": "Passionate frontend developer crafting digital experiences with modern technologies",
-    "portfolio": "A showcase of innovative web solutions and creative development projects",
-    "certificates": "Professional certifications and courses completed to enhance my skills",
-    "resume": "Latest 10 Years"
+    "about": "Frontend developer who loves clear, modern websites",
+    "portfolio": "A few projects I've worked on",
+    "certificates": "Courses and certs that keep me sharp",
+    "resume": "The last 10 years"
   },
   "education": {
     "university": "Technical University of Lübeck",
     "country": "Germany",
-    "degree": "Bachelor's Degree in Computer Science / Software Engineering",
-    "degreeShort": "B.Eng. • Completed in 2013",
-    "bachelorCertificate": "Bachelor Certificate"
+    "degree": "Bachelor's in Computer Science / Software Engineering",
+    "degreeShort": "B.Eng. • Graduated 2013",
+    "bachelorCertificate": "Degree certificate"
   },
   "certificates": {
     "platform": "Coursera"
   },
   "resume": {
-    "employmentCertificate": "Employment Certificate"
+    "employmentCertificate": "Employment certificate"
   },
   "legacy": {
     "title": "LEGACY WEBSITES",
     "badge": "RETRO ARCHIVE",
-    "subtitle": "Digital relics from past endeavors",
-    "description": "Websites built for former clients & employers",
-    "footerText": "This collection represents the evolution of my web development skills across different technologies and client requirements.",
-    "footerHint": "// Links open in new tabs for exploration"
+    "subtitle": "Old sites from past projects",
+    "description": "Websites for former clients and employers",
+    "footerText": "A look at how my web work has changed over the years — different tech, different clients, same drive.",
+    "footerHint": "// Links open in new tabs"
   }
 }

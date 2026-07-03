@@ -15,14 +15,16 @@ function AITools() {
       rotation: -3,
     },
     {
-      name: "GitHub Copilot",
-      image: "/images/ai-tools/github-copilot.svg",
+      name: "Claude Code",
+      image: "/images/ai-tools/claudecode.svg",
       size: 92,
       color: "text-secondary",
       position: { top: "10%", right: "10%" },
       floatDuration: 4.3,
       floatDelay: 0.3,
       rotation: 2,
+      darkInvert: true,
+      secondaryGlow: true,
     },
     {
       name: "VS Code",
@@ -43,16 +45,19 @@ function AITools() {
       floatDuration: 4.7,
       floatDelay: 0.7,
       rotation: -2,
+      darkInvert: true,
+      secondaryGlow: true,
     },
     {
-      name: "Cline",
-      image: "/images/ai-tools/cline.svg",
+      name: "Codex",
+      image: "/images/ai-tools/codex.svg",
       size: 88,
       color: "text-primary",
       position: { bottom: "10%", right: "10%" },
       floatDuration: 4.5,
       floatDelay: 1,
       rotation: -2,
+      darkInvert: true,
     },
   ]
 
@@ -241,7 +246,7 @@ function AITools() {
                       left: "50%",
                       top: "50%",
                       transform: "translate(-50%, -50%)",
-                      background: `radial-gradient(circle, ${tool.name === "GitHub Copilot" || tool.name === "ChatGPT" ? "rgba(168, 85, 247, 0.5)" : "rgba(124, 58, 237, 0.5)"} 0%, rgba(124, 58, 237, 0.2) 50%, transparent 100%)`,
+                      background: `radial-gradient(circle, ${tool.secondaryGlow ? "rgba(168, 85, 247, 0.5)" : "rgba(124, 58, 237, 0.5)"} 0%, rgba(124, 58, 237, 0.2) 50%, transparent 100%)`,
                     }}
                     animate={{
                       scale: [1, 1.2, 1],
@@ -297,11 +302,7 @@ function AITools() {
                             height: 'clamp(48px, 10vw, ' + tool.size + 'px)',
                           }}
                           className={`object-contain ${
-                            tool.name === "GitHub Copilot" || 
-                            tool.name === "ChatGPT" || 
-                            tool.name === "Cline"
-                              ? "dark:brightness-0 dark:invert"
-                              : ""
+                            tool.darkInvert ? "dark:brightness-0 dark:invert" : ""
                           }`}
                         />
                       </motion.div>

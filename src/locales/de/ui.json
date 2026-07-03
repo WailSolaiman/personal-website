@@ -1,8 +1,8 @@
 {
   "navigation": {
-    "home": "Startseite",
+    "home": "Home",
     "about": "Über mich",
-    "resume": "Lebenslauf",
+    "resume": "Erfahrung",
     "portfolio": "Portfolio",
     "legacy": "Legacy"
   },
@@ -10,24 +10,25 @@
     "viewWork": "Meine Projekte",
     "contact": "Kontakt",
     "viewCertificate": "Zertifikat anzeigen",
-    "viewProject": "Projekt anzeigen",
+    "viewProject": "Projekt ansehen",
     "backToTop": "Nach oben"
   },
   "labels": {
     "current": "Aktuell",
-    "getInTouch": "KONTAKT AUFNEHMEN",
+    "getInTouch": "KONTAKT",
     "closeModal": "Schließen"
   },
   "stats": {
-    "projectsCompleted": "Projekte abgeschlossen",
+    "projectsCompleted": "Projekte umgesetzt",
     "yearsExperience": "Jahre Erfahrung",
     "clientSatisfaction": "Kundenzufriedenheit",
     "years": "Jahre",
     "experience": "Erfahrung",
     "projects": "Projekte",
-    "completed": "Abgeschlossen",
+    "completed": "Umgesetzt",
     "clients": "Kunden",
-    "happy": "Zufrieden"
+    "happy": "Zufrieden",
+    "happyClients": "Zufriedene Kunden"
   },
   "modals": {
     "document": "Dokument",

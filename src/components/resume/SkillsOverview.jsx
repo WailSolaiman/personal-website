@@ -7,19 +7,19 @@ function SkillsOverview() {
   const skillCategories = [
     {
       title: t("skills.frontend"),
-      skills: "React, Next.js, TypeScript, Tailwind",
+      skills: t("skillLists.frontend"),
     },
     {
       title: t("skills.backend"),
-      skills: "Node.js, PHP, MySQL, REST APIs",
+      skills: t("skillLists.backend"),
     },
     {
       title: t("skills.cms"),
-      skills: "WordPress, Contao, Git, AI Integration",
+      skills: t("skillLists.cms"),
     },
     {
       title: t("skills.aiTools"),
-      skills: "GitHub Copilot, ChatGPT, Cursor, VS-Code Cline",
+      skills: t("skillLists.aiTools"),
     },
   ]
 

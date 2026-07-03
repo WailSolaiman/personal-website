@@ -4,39 +4,45 @@
     "frontend": "Frontend",
     "backend": "Backend",
     "cms": "CMS & Tools",
-    "aiTools": "KI-gestützte Tools",
-    "expertise": "Technologie-Expertise"
+    "aiTools": "KI-Tools",
+    "expertise": "Tech-Stack"
+  },
+  "skillLists": {
+    "frontend": "React, Next.js, TypeScript, Tailwind",
+    "backend": "Node.js, PHP, MySQL, REST APIs",
+    "cms": "WordPress, Contao, Git, KI-Integration",
+    "aiTools": "Claude Code, Codex, ChatGPT, Cursor"
   },
   "experience": {
     "freelance": {
       "title": "Freelance-Entwickler",
-      "period": "2020–Heute",
+      "period": "2020–heute",
       "role": "Frontend-Webentwickler",
-      "description": "Freelance-Webentwicklung für Websites und Webapps mit HTML/CSS/JS, React/Next.js und WordPress. Aktuell Integration von KI-Tools und LLM-APIs zur Beschleunigung der Entwicklung und für smartere Features. Entwicklungsumgebung: VS Code mit GitHub Copilot und Cline sowie Cursor als AI-first IDE."
+      "description": "Als Freelancer baue ich Websites und Webapps mit HTML/CSS/JS, React/Next.js und WordPress. In letzter Zeit setze ich viel auf KI-Tools und LLM-APIs — schneller entwickeln, smartere Features. Mein Setup: Cursor als IDE, dazu Claude Code, Codex und ChatGPT in VS Code."
     },
     "vicon": {
       "title": "VICON Web Business",
       "period": "2018–2019",
       "role": "Frontend-Entwickler",
-      "description": "Umsetzung von Kundenwebsites mit HTML, CSS und JavaScript. Entwicklung responsiver Themes und Templates auf Basis von Contao sowie Backend-Pflege inklusive Datenbank- und Server-Anbindung."
+      "description": "Kundenwebsites mit HTML, CSS und JavaScript. Responsive Themes und Templates mit Contao, plus Backend-Themen wie Datenbank und Server-Anbindung."
     },
     "andersBjork": {
       "title": "Anders Björk GmbH",
       "period": "2017–2018",
       "role": "WordPress-Entwickler",
-      "description": "Entwicklung responsiver WordPress-Themes mit HTML, CSS, JavaScript und PHP. Überwachung und Performance-Optimierung von Live-WordPress-Sites für eine stabile Nutzererfahrung; Wartung und Weiterentwicklung bestehender Themes."
+      "description": "Responsive WordPress-Themes mit HTML, CSS, JavaScript und PHP. Live-Sites im Blick behalten, Performance verbessern und bestehende Themes weiterentwickeln."
     },
     "eTailersIss": {
       "title": "eTailers ISS GmbH",
       "period": "06/2016 – 09/2016",
       "role": "Frontend-Webentwickler",
-      "description": "Entwicklung und Wartung von Websites mit HTML und CSS. Umsetzung und Anpassung von Websites inklusive Templates und Funktionen mit JavaScript."
+      "description": "Websites mit HTML und CSS entwickeln und pflegen. Templates und JavaScript-Funktionen umsetzen und anpassen."
     },
     "parrotMedia": {
       "title": "Parrot Media GmbH",
       "period": "03/2016 – 05/2016",
       "role": "Frontend-Webentwickler",
-      "description": "Umsetzung von Kundenwebsites mit HTML, CSS und JavaScript. Mitarbeit an TYPO3-Projekten (Template- und Layout-Anpassungen) inklusive Tests und Fehlerbehebung."
+      "description": "Kundenwebsites mit HTML, CSS und JavaScript. Bei TYPO3-Projekten Templates und Layouts angepasst, getestet und Bugs gefixt."
     }
   }
 }

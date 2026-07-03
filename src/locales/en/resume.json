@@ -1,42 +1,48 @@
 {
-  "viewCertificate": "View Employment Certificate",
+  "viewCertificate": "View employment certificate",
   "skills": {
     "frontend": "Frontend",
     "backend": "Backend",
     "cms": "CMS & Tools",
-    "aiTools": "AI-powered Tools",
-    "expertise": "Technology Expertise"
+    "aiTools": "AI tools",
+    "expertise": "Tech stack"
+  },
+  "skillLists": {
+    "frontend": "React, Next.js, TypeScript, Tailwind",
+    "backend": "Node.js, PHP, MySQL, REST APIs",
+    "cms": "WordPress, Contao, Git, AI integration",
+    "aiTools": "Claude Code, Codex, ChatGPT, Cursor"
   },
   "experience": {
     "freelance": {
       "title": "Freelance Developer",
       "period": "2020–Present",
-      "role": "Full-stack Web Developer",
-      "description": "Working as a freelance web developer for websites and web applications using HTML/CSS/JS, React/Next.js, and WordPress. Recently, I have been integrating AI tools and LLM APIs to accelerate development and enhance functionality. My AI-assisted development environment includes VS Code with GitHub Copilot and Cline extensions, as well as Cursor as an AI-first IDE."
+      "role": "Frontend Web Developer",
+      "description": "I build websites and web apps as a freelancer using HTML/CSS/JS, React/Next.js, and WordPress. Lately I've been using AI tools and LLM APIs a lot — faster builds, smarter features. My setup: Cursor as my IDE, plus Claude Code, Codex, and ChatGPT in VS Code."
     },
     "vicon": {
       "title": "VICON Web Business",
       "period": "2018–2019",
       "role": "Frontend Developer",
-      "description": "Responsible for creating high-quality client websites using HTML, CSS, and JavaScript. Developed responsive themes/templates based on Contao Content Management System and managed backends, including database and server integration."
+      "description": "Client websites with HTML, CSS, and JavaScript. Responsive themes and templates with Contao, plus backend work like database and server setup."
     },
     "andersBjork": {
       "title": "Anders Björk GmbH",
       "period": "2017–2018",
       "role": "WordPress Developer",
-      "description": "Focused on developing responsive WordPress themes with HTML, CSS, JavaScript, and PHP. Conducted ongoing monitoring and performance optimization of live WordPress sites to ensure a positive user experience, along with maintaining and enhancing existing themes."
+      "description": "Responsive WordPress themes with HTML, CSS, JavaScript, and PHP. Kept live sites running smoothly, improved performance, and updated existing themes."
     },
     "eTailersIss": {
       "title": "eTailers ISS GmbH",
       "period": "06/2016 – 09/2016",
-      "role": "Front-End Web Developer",
-      "description": "Development and maintenance of websites using HTML and CSS. Implementation and adaptation of websites including templates and features using JavaScript."
+      "role": "Frontend Web Developer",
+      "description": "Built and maintained websites with HTML and CSS. Implemented and tweaked templates and JavaScript features."
     },
     "parrotMedia": {
       "title": "Parrot Media GmbH",
       "period": "03/2016 – 05/2016",
-      "role": "Front-End Web Developer",
-      "description": "Implementation of client websites using HTML, CSS, and JavaScript. Contribution to TYPO3 projects (template and layout adjustments), including testing and bug fixes."
+      "role": "Frontend Web Developer",
+      "description": "Client websites with HTML, CSS, and JavaScript. Worked on TYPO3 projects — template and layout tweaks, testing, and bug fixes."
     }
   }
 }

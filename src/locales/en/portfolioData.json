@@ -3,62 +3,62 @@
     "1": {
       "title": "EchoRealm",
       "tech": "React | VR Website",
-      "description": "EchoRealm is a VR website for creating immersive environments with modern web tools. Built with React, TailwindCSS, and Vite, with smooth motion via Framer Motion for a fast, polished experience."
+      "description": "A VR website for immersive browser experiences. Built with React, Tailwind, and Vite — smooth animations with Framer Motion."
     },
     "2": {
       "title": "Restaura Paris",
       "tech": "React | Restaurant Website",
-      "description": "Restaura Paris creates dining experiences where design meets performance. Built with React 18, TailwindCSS, and Vite, it features smooth animations via Framer Motion and clean code with ESLint."
+      "description": "A restaurant site where design and performance matter. React 18, Tailwind, and Vite, with Framer Motion for the animations."
     },
     "3": {
       "title": "Metaverse World",
       "tech": "React | Next.js Webapp",
-      "description": "Metaverse World is a webapp with a sleek, modern interface built with React, Next.js, Tailwind CSS, and Framer Motion. It combines responsive design with smooth animations for an engaging user experience."
+      "description": "A Next.js web app with a clean, modern UI. React, Tailwind, and Framer Motion for responsive layout and smooth motion."
     },
     "4": {
       "title": "EVOGYM",
       "tech": "React | Fitness Website",
-      "description": "EVOGYM is a modern fitness website built with React, Vite, and Tailwind CSS, with Framer Motion for engaging interactions. It showcases gym services, memberships, and training programs in a clean, responsive layout."
+      "description": "Fitness website with React, Vite, and Tailwind. Framer Motion for interactions — memberships, programs, and services laid out clearly."
     },
     "5": {
       "title": "Onix",
       "tech": "React | Modern Web App",
-      "description": "Onix is a modern web application built with React and Vite, featuring a sleek dark theme and progressive web app capabilities. The site delivers fast performance and responsive design with clean, modern aesthetics."
+      "description": "Web app with React and Vite, dark theme and PWA support. Fast, responsive, and minimal."
     },
     "9": {
       "title": "Webbly",
       "tech": "React | Web Agency",
-      "description": "Webbly is a sleek, one-page website showcasing web development and design services (Web Agency). Built with cutting-edge technologies for speed, responsiveness, and accessibility."
+      "description": "One-page site for a web agency — built for speed, responsiveness, and accessibility."
     },
     "10": {
       "title": "Atlantis Bistro",
       "tech": "WordPress Template | Restaurant",
-      "description": "Professional restaurant website for Atlantis Bistro in Germany, showcasing culinary excellence and dining experiences. Built with WordPress, featuring modern design and German language content for local customers."
+      "description": "Restaurant website for the German market — WordPress, modern design, and content in German."
     },
     "11": {
       "title": "Arabic Portfolio",
       "tech": "React | WordPress | Framer | Arabic Portfolio",
-      "description": "Comprehensive Arabic portfolio website showcasing web development services for Arabic-speaking clients. Built with React, WordPress, and Framer, featuring Arabic RTL support and modern design."
+      "description": "Portfolio for Arabic-speaking clients — React, WordPress, and Framer, with full RTL support."
     },
     "13": {
       "title": "Velvet",
       "tech": "React | Brand Website",
-      "description": "Velvet is a polished marketing experience built with React and Vite, styled with Tailwind CSS, and brought to life with Framer Motion for smooth, responsive interactions."
+      "description": "Marketing site with React and Vite. Tailwind for styling, Framer Motion for smooth transitions."
     },
     "14": {
       "title": "Cybercore",
       "tech": "React | Tech Landing",
-      "description": "Cybercore is a high-impact tech landing page using React, JavaScript, and Vite, with Tailwind CSS for layout and Framer Motion for motion design."
+      "description": "Tech landing page with React and Vite. Tailwind for layout, Framer Motion for the animations."
     },
     "15": {
       "title": "Buildplane",
       "tech": "React | Product Landing",
-      "description": "Buildplane showcases a product-focused UI built on the modern React stack—Vite for tooling, Tailwind CSS for design tokens, and Framer Motion for engaging transitions."
+      "description": "Product landing page on the React stack — Vite, Tailwind, and Framer Motion for clean transitions."
     },
     "16": {
       "title": "Either AI",
       "tech": "React | AI Experience",
-      "description": "Either AI presents an AI-themed web experience with React and Vite, utility-first styling via Tailwind CSS, and refined motion patterns powered by Framer Motion."
+      "description": "AI-themed web experience with React and Vite — Tailwind for styling, Framer Motion for motion."
     }
   }
 }

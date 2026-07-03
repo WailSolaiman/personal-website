@@ -5,8 +5,8 @@ function LanguageSwitcher({ compact = false }) {
   const { language, changeLanguage } = useLanguage()
 
   const languages = [
-    { code: "en", label: "EN", name: "English" },
     { code: "de", label: "DE", name: "Deutsch" },
+    { code: "en", label: "EN", name: "English" },
     { code: "ar", label: "AR", name: "العربية" },
   ]
 

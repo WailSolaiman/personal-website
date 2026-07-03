@@ -2,16 +2,17 @@ import { createContext, useContext, useEffect, useState } from "react"
 
 const ThemeContext = createContext()
 
+function readStoredTheme() {
+  if (typeof window === "undefined") return "dark"
+  return localStorage.getItem("theme") || "dark"
+}
+
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState("light") // Default to light
+  const [theme, setTheme] = useState(readStoredTheme)
 
   useEffect(() => {
-    // Always default to light mode for new visitors
-    const themeToApply = "light"
-    setTheme(themeToApply)
-    applyTheme(themeToApply)
-    localStorage.setItem("theme", themeToApply)
-  }, [])
+    applyTheme(theme)
+  }, [theme])
 
   const applyTheme = (themeName) => {
     const root = window.document.documentElement
@@ -22,7 +23,6 @@ export function ThemeProvider({ children }) {
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light"
     setTheme(newTheme)
-    applyTheme(newTheme)
     localStorage.setItem("theme", newTheme)
   }
 

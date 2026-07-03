@@ -83,17 +83,18 @@ function TechStack() {
       </h3>
 
       <div className="grid grid-cols-3 grid-rows-4 gap-2">
-        {technologies.map((tech, index) => (
+        {technologies.map((tech) => (
           <div
             key={tech.name}
             className="flex flex-col items-center justify-center p-2"
           >
-            {/* Tech Icon */}
-            <div
+            <motion.div
               className={`w-10 h-10 ${tech.color} rounded-lg flex items-center justify-center text-white shadow-md mb-1`}
+              whileHover={{ x: 5 }}
+              transition={{ type: "spring", stiffness: 300 }}
             >
               <tech.icon size={20} />
-            </div>
+            </motion.div>
             {/* Tech Name */}
             <span className="text-xs font-medium text-text-primary text-center">
               {tech.name}

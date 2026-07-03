@@ -2,24 +2,24 @@
   "title": "AI-Powered",
   "subtitle": "Development",
   "paragraph1": {
-    "before": "I leverage cutting-edge",
+    "before": "Day to day I use",
     "highlight": "AI tools",
-    "after": "to optimize my daily workflow and enhance code quality."
+    "after": "to work faster and keep my code cleaner."
   },
   "paragraph2": {
-    "before": "My development environment is powered by",
+    "before": "Most of my work happens in",
     "highlight": "Cursor IDE",
-    "after": ", an AI-first code editor that provides intelligent suggestions and context-aware assistance."
+    "after": " — an AI-first editor that gives me smart, in-context suggestions."
   },
   "paragraph3": {
-    "before": "I also integrate",
-    "highlight1": "GitHub Copilot",
+    "before": "I also use",
+    "highlight1": "Claude Code",
     "middle": "and",
-    "highlight2": "Cline",
-    "via": "via",
+    "highlight2": "Codex",
+    "via": "in",
     "highlight3": "VS Code",
-    "and": ", and leverage",
+    "and": ", plus",
     "highlight4": "ChatGPT",
-    "after": "for complex problem-solving and code explanations, creating a comprehensive AI-assisted development ecosystem that accelerates coding, improves accuracy, and helps me deliver high-quality solutions more efficiently."
+    "after": " when things get tricky. It keeps me in flow and helps me ship faster."
   }
 }

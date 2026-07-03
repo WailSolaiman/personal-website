@@ -2,39 +2,40 @@
   "navigation": {
     "home": "Home",
     "about": "About",
-    "resume": "Resume",
+    "resume": "Experience",
     "portfolio": "Portfolio",
     "legacy": "Legacy"
   },
   "buttons": {
-    "viewWork": "View My Work",
-    "contact": "Contact me",
-    "viewCertificate": "View Certificate",
-    "viewProject": "View Project",
+    "viewWork": "See my work",
+    "contact": "Contact",
+    "viewCertificate": "View certificate",
+    "viewProject": "View project",
     "backToTop": "Back to top"
   },
   "labels": {
     "current": "Current",
     "getInTouch": "GET IN TOUCH",
-    "closeModal": "Close modal"
+    "closeModal": "Close"
   },
   "stats": {
-    "projectsCompleted": "Projects Completed",
-    "yearsExperience": "Years Experience",
-    "clientSatisfaction": "Client Satisfaction",
+    "projectsCompleted": "Projects delivered",
+    "yearsExperience": "Years of experience",
+    "clientSatisfaction": "Client satisfaction",
     "years": "Years",
     "experience": "Experience",
     "projects": "Projects",
-    "completed": "Completed",
+    "completed": "Delivered",
     "clients": "Clients",
-    "happy": "Happy"
+    "happy": "Happy",
+    "happyClients": "Happy clients"
   },
   "modals": {
     "document": "Document",
-    "documentImage": "Document Image",
+    "documentImage": "Document image",
     "certificate": "Certificate",
-    "certificateImage": "Certificate Image",
-    "englishTranslation": "English Translation",
+    "certificateImage": "Certificate image",
+    "englishTranslation": "English translation",
     "noImageAvailable": "No image available"
   }
 }

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
+import StatusDot from "./StatusDot"
 
 function AvailabilityCard() {
   const { t } = useTranslation("about")
@@ -19,14 +20,7 @@ function AvailabilityCard() {
         transition={{ delay: 1.4 }}
         viewport={{ once: true }}
       >
-        <motion.div
-          className="relative"
-          animate={{ rotate: [0, 360] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-        >
-          <div className="w-4 h-4 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full shadow-lg"></div>
-          <div className="absolute inset-0 w-4 h-4 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full animate-pulse"></div>
-        </motion.div>
+        <StatusDot />
 
         <div className="text-center">
           <h4 className="text-lg font-bold text-text-primary mb-1">

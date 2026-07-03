@@ -78,7 +78,7 @@ i18n
         legacyData: arLegacyData,
       },
     },
-    lng: "en", // default language
+    lng: "de",
     fallbackLng: "en",
     supportedLngs: ["en", "de", "ar"],
     interpolation: {

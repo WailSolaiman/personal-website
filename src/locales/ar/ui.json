@@ -27,7 +27,8 @@
     "projects": "مشاريع",
     "completed": "مكتملة",
     "clients": "عملاء",
-    "happy": "سعداء"
+    "happy": "سعداء",
+    "happyClients": "عملاء سعداء"
   },
   "modals": {
     "document": "مستند",

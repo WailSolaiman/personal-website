@@ -37,6 +37,21 @@
 /* Custom styles for smooth scrolling */
 html {
   scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Initial theme setup */
@@ -132,4 +147,45 @@ html[lang="ar"] h6 {
 /* Preserve monospace stacks (e.g. Legacy section) */
 html[lang="ar"] .font-mono {
   font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", "Courier New", monospace;
+}
+
+/* Resume experience cards — glass effect with solid fallback (no backdrop-filter cost) */
+.experience-glass {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+html.dark .experience-glass {
+  background: rgba(30, 30, 30, 0.72);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  .experience-glass {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  html.dark .experience-glass {
+    background: rgba(30, 30, 30, 0.4);
+  }
+}
+
+.experience-glass:hover {
+  box-shadow:
+    0 8px 32px rgba(124, 58, 237, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+html.dark .experience-glass:hover {
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }

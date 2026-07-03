@@ -1,25 +1,25 @@
 {
   "title": "KI-gestützt",
-  "subtitle": "Entwicklung",
+  "subtitle": "Entwickeln",
   "paragraph1": {
-    "before": "Ich nutze moderne",
+    "before": "Im Alltag nutze ich",
     "highlight": "KI-Tools",
-    "after": ", um meinen täglichen Workflow zu optimieren und die Codequalität zu verbessern."
+    "after": ", damit ich schneller arbeite und der Code sauberer bleibt."
   },
   "paragraph2": {
-    "before": "Mein Setup läuft mit",
+    "before": "Hauptsächlich arbeite ich in",
     "highlight": "Cursor IDE",
-    "after": " angetrieben, einem KI-first Code-Editor, der intelligente Vorschläge und kontextbewusste Unterstützung bietet."
+    "after": " — einem Editor mit KI, der mir kontextbezogene Vorschläge macht."
   },
   "paragraph3": {
-    "before": "Ich integriere auch",
-    "highlight1": "GitHub Copilot",
+    "before": "Dazu kommen",
+    "highlight1": "Claude Code",
     "middle": "und",
-    "highlight2": "Cline",
-    "via": "über",
+    "highlight2": "Codex",
+    "via": "in",
     "highlight3": "VS Code",
-    "and": " und nutze",
+    "and": ", plus",
     "highlight4": "ChatGPT",
-    "after": " für komplexe Problemlösungen und Code-Erklärungen. So entsteht ein umfassendes KI-gestütztes Setup, das Coding beschleunigt, die Genauigkeit verbessert und mir hilft, hochwertige Lösungen effizient zu liefern."
+    "after": ", wenn es mal komplizierter wird. So bleibe ich im Flow und liefere schneller ab."
   }
 }

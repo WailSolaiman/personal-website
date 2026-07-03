@@ -61,7 +61,7 @@ function About() {
             </motion.div>
           </div>
 
-          <div className="flex flex-col items-center space-y-8">
+          <div className="flex w-full flex-col items-center space-y-8">
             <ProfileImage />
             <div className="flex flex-col lg:flex-row gap-4 xl:gap-8 w-full justify-center items-center">
               <AvailabilityCard />

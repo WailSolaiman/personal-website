@@ -1,22 +1,22 @@
 {
   "greeting": "Hello, I'm Wail",
   "role": "Frontend Web Developer",
-  "bio": "With over a decade in front-end development, I've worked with multiple advertising agencies in Germany and now provide freelance services worldwide, delivering innovative web solutions with cutting-edge technologies.",
-  "journey": "My journey began with traditional web technologies and has evolved to embrace modern frameworks, performance optimization, and user experience design. I believe in writing clean, maintainable code while creating stunning user experiences that make a difference.",
+  "bio": "I've been doing front-end development for over ten years. I worked with ad agencies in Germany, and now I'm freelancing worldwide — mostly with React, WordPress, and whatever fits the project.",
+  "journey": "I started with classic HTML, CSS, and JavaScript. These days I focus on modern frameworks, performance, and UX. I care about clean code and interfaces that just feel right.",
   "tags": {
-    "creative": "Creative Problem Solver",
-    "tech": "Tech Enthusiast",
-    "quality": "Quality Focused"
+    "creative": "Problem solver",
+    "tech": "Tech enthusiast",
+    "quality": "Quality first"
   },
   "alwaysLearning": "Always learning",
-  "alwaysLearningDesc": "Continuously adding new tools to my arsenal for better development experiences",
+  "alwaysLearningDesc": "I'm always trying new tools — to work faster and enjoy the process more.",
   "availability": {
-    "title": "Available for Projects",
-    "subtitle": "Ready to collaborate",
-    "description": "Currently accepting new projects and exciting collaborations. Let's create something extraordinary together.",
-    "letsTalk": "💬 Let's Talk",
-    "viewContact": "View contact details →",
-    "availableForWork": "Available for work",
-    "profileDescription": "Passionate about creating exceptional digital experiences that combine thoughtful design with robust functionality."
+    "title": "Open for projects",
+    "subtitle": "Got something in mind?",
+    "description": "I have room for new work right now. Drop me a line and we can see what makes sense to build together.",
+    "letsTalk": "💬 Let's talk",
+    "viewContact": "View contact →",
+    "availableForWork": "Open for new projects",
+    "profileDescription": "For me, good design and solid tech go together — it should look great and work reliably."
   }
 }

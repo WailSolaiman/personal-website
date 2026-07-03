@@ -1,22 +1,22 @@
 {
   "greeting": "Hallo, ich bin Wail",
   "role": "Frontend-Webentwickler",
-  "bio": "Seit über zehn Jahren arbeite ich bereits in der Front-End-Entwicklung. In dieser Zeit war ich für verschiedene Werbeagenturen in Deutschland tätig und biete nun weltweit freiberufliche Dienstleistungen an, wobei ich innovative Web-Lösungen mit modernsten Technologien realisiere.",
-  "journey": "Meine Reise begann mit klassischen Web-Technologien und ging weiter zu modernen Frameworks, Performance-Optimierung und User Experience. Ich mag sauberen, wartbaren Code und baue gerne Interfaces, die sich richtig gut anfühlen.",
+  "bio": "Seit über zehn Jahren mache ich Frontend-Entwicklung. In Deutschland habe ich für verschiedene Werbeagenturen gearbeitet, heute bin ich als Freelancer weltweit unterwegs — mit React, WordPress und dem Stack, der zum Projekt passt.",
+  "journey": "Angefangen habe ich mit klassischem HTML, CSS und JavaScript. Heute liegt der Fokus auf modernen Frameworks, Performance und UX. Mir sind sauberer Code und Oberflächen wichtig, die sich einfach gut anfühlen.",
   "tags": {
-    "creative": "Kreativer Problemlöser",
-    "tech": "Technik-Enthusiast",
-    "quality": "Qualitätsorientiert"
+    "creative": "Lösungsorientiert",
+    "tech": "Tech-Enthusiast",
+    "quality": "Qualität zuerst"
   },
   "alwaysLearning": "Immer am Lernen",
-  "alwaysLearningDesc": "Ich ergänze ständig neue Tools in meinem Setup — für bessere Dev Experience",
+  "alwaysLearningDesc": "Ich probiere ständig neue Tools aus — damit die Arbeit schneller und angenehmer wird.",
   "availability": {
-    "title": "Verfügbar für Projekte",
-    "subtitle": "Bereit zur Zusammenarbeit",
-    "description": "Aktuell habe ich Kapazität für neue Projekte und spannende Kooperationen. Lass uns etwas Gutes bauen.",
+    "title": "Offen für Projekte",
+    "subtitle": "Lust auf was Neues?",
+    "description": "Gerade habe ich Kapazität für neue Aufträge. Schreib mir gern — dann schauen wir, was wir zusammen bauen können.",
     "letsTalk": "💬 Lass uns reden",
-    "viewContact": "Kontaktdaten anzeigen →",
-    "availableForWork": "Verfügbar für Arbeit",
-    "profileDescription": "Ich kombiniere gutes Design mit robuster Technik, damit am Ende ein starkes digitales Erlebnis entsteht."
+    "viewContact": "Kontakt anzeigen →",
+    "availableForWork": "Offen für neue Projekte",
+    "profileDescription": "Für mich gehören gutes Design und solide Technik zusammen — am Ende soll es gut aussehen und zuverlässig laufen."
   }
 }

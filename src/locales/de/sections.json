@@ -1,25 +1,25 @@
 {
   "titles": {
     "about": "Über mich",
-    "education": "Akademischer Hintergrund",
+    "education": "Ausbildung",
     "resume": "Berufserfahrung",
     "portfolio": "Ausgewählte Projekte",
-    "certificates": "Zertifizierungen",
-    "aiTools": "KI-gestützte Entwicklung",
+    "certificates": "Zertifikate",
+    "aiTools": "Entwicklung mit KI",
     "legacy": "Legacy-Websites"
   },
   "descriptions": {
-    "about": "Frontend-Entwickler mit Fokus auf moderne Web-Erlebnisse",
-    "portfolio": "Eine Auswahl innovativer Web-Lösungen und kreativer Projekte",
-    "certificates": "Zertifizierungen und Kurse, um meine Skills auszubauen",
-    "resume": "Letzte 10 Jahre Berufserfahrung"
+    "about": "Frontend-Entwickler mit Fokus auf klare, moderne Web-Erlebnisse",
+    "portfolio": "Ein paar Projekte, an denen ich gearbeitet habe",
+    "certificates": "Kurse und Zertifikate, die mir weiterhelfen",
+    "resume": "Die letzten 10 Jahre"
   },
   "education": {
-    "university": "Technische Universität Lübeck",
+    "university": "Technische Hochschule Lübeck",
     "country": "Deutschland",
-    "degree": "Bachelor-Abschluss in Informatik / Softwaretechnik",
-    "degreeShort": "B.Eng. • Abgeschlossen 2013",
-    "bachelorCertificate": "Bachelor-Zertifikat"
+    "degree": "Bachelor in Informatik / Softwaretechnik",
+    "degreeShort": "B.Eng. • Abschluss 2013",
+    "bachelorCertificate": "Bachelorurkunde"
   },
   "certificates": {
     "platform": "Coursera"
@@ -30,9 +30,9 @@
   "legacy": {
     "title": "LEGACY WEBSITES",
     "badge": "RETRO ARCHIV",
-    "subtitle": "Digitale Relikte vergangener Unternehmungen",
-    "description": "Websites für ehemalige Kunden & Arbeitgeber erstellt",
-    "footerText": "Diese Sammlung zeigt, wie sich meine Webdevelopment-Skills über verschiedene Technologien und Kundenanforderungen entwickelt haben.",
-    "footerHint": "// Links öffnen in neuen Tabs zum Anschauen"
+    "subtitle": "Alte Websites aus vergangenen Projekten",
+    "description": "Websites für frühere Kunden und Arbeitgeber",
+    "footerText": "Hier sieht man, wie sich meine Webentwicklung über die Jahre verändert hat — andere Technologien, andere Kunden, gleiche Leidenschaft.",
+    "footerHint": "// Links öffnen in neuen Tabs"
   }
 }

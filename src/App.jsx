@@ -10,6 +10,7 @@ import Certificates from "./components/certificates"
 import Portfolio from "./components/portfolio"
 import Legacy from "./components/legacy"
 import Footer from "./components/footer"
+import BackToTop from "./components/common/BackToTop"
 import { portfolioItems, legacySites } from "./data/portfolioData"
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Portfolio portfolioItems={portfolioItems} />
           <Legacy legacySites={legacySites} />
           <Footer />
+          <BackToTop />
         </div>
       </LanguageProvider>
     </ThemeProvider>
