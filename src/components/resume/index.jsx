@@ -4,8 +4,6 @@ import { SiContao, SiTypo3 } from "react-icons/si"
 import ResumeSectionHeader from "./ResumeSectionHeader"
 import ExperienceTimeline from "./ExperienceTimeline"
 import SkillsOverview from "./SkillsOverview"
-import { andersBjorkTranslation } from "../../data/andersBjorkData"
-import { viconTranslation } from "../../data/viconData"
 
 function Resume() {
   const { t } = useTranslation("resume")
@@ -35,13 +33,6 @@ function Resume() {
         Icon: SiContao,
         className: "w-8 h-8 shrink-0 text-amber-800 dark:text-amber-600",
       },
-      hasCertificate: true,
-      certificate: {
-        imageSrc: "/images/zeugnis-vicon.jpg",
-        imageAlt: "VICON Web Business Certificate",
-        translationContent: viconTranslation,
-        translationTitle: "",
-      },
     },
     {
       id: 3,
@@ -53,13 +44,6 @@ function Resume() {
       icon: {
         Icon: FaWordpress,
         className: "w-8 h-8 shrink-0 text-sky-600 dark:text-sky-400",
-      },
-      hasCertificate: true,
-      certificate: {
-        imageSrc: "/images/arbeitszeugnis-bjoerk.jpg",
-        imageAlt: "Anders Björk GmbH Certificate",
-        translationContent: andersBjorkTranslation,
-        translationTitle: "",
       },
     },
     {

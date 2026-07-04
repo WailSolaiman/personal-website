@@ -2,17 +2,24 @@ import { useMemo } from "react"
 import PortfolioHeader from "./PortfolioHeader"
 import ProjectsGrid from "./ProjectsGrid"
 
+const FEATURED_PROJECT_TITLES = [
+  "Cybercore",
+  "Buildplane",
+  "EchoRealm",
+  "Either AI",
+  "EVOGYM",
+  "Metaverse World",
+  "Onix",
+  "Restaura Paris",
+  "Velvet",
+  "Webbly",
+]
+
 function Portfolio({ portfolioItems }) {
   const filteredProjects = useMemo(() => {
-    const projectsToRemove = [
-      "React Crypto Universe",
-      "Web Agency React Template",
-      "React Tour Guide",
-      "Arabic Portfolio",
-    ]
-    return portfolioItems.filter(
-      (item) => !projectsToRemove.includes(item.title)
-    )
+    return FEATURED_PROJECT_TITLES.map((title) =>
+      portfolioItems.find((item) => item.title === title)
+    ).filter(Boolean)
   }, [portfolioItems])
 
   return (

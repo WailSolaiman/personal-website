@@ -7,7 +7,7 @@ export const portfolioItems = [
     description:
       "EchoRealm is a VR website for creating immersive environments with modern web tools. Built with React, TailwindCSS, and Vite, with smooth motion via Framer Motion for a fast, polished experience.",
     techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
-    link: "https://echorealm.wailsolaiman.com/",
+    link: "https://wailsolaiman.com/templates/echorealm/",
     alt: "EchoRealm",
   },
   {
@@ -18,7 +18,7 @@ export const portfolioItems = [
     description:
       "Restaura Paris creates dining experiences where design meets performance. Built with React 18, TailwindCSS, and Vite, it features smooth animations via Framer Motion and clean code with ESLint.",
     techList: "React | Framer Motion | TailwindCSS | Vite",
-    link: "https://restaura.wailsolaiman.com/",
+    link: "https://wailsolaiman.com/templates/restaura/",
     alt: "Restaura Paris",
   },
   {
@@ -29,7 +29,7 @@ export const portfolioItems = [
     description:
       "Metaverse World is a webapp with a sleek, modern interface built with React, Next.js, Tailwind CSS, and Framer Motion. It combines responsive design with smooth animations for an engaging user experience.",
     techList: "React | Next.js | TailwindCSS",
-    link: "https://metaverse.wailsolaiman.com/",
+    link: "https://wailsolaiman.com/templates/metaverse/",
     alt: "Metaverse World",
   },
   {
@@ -40,7 +40,7 @@ export const portfolioItems = [
     description:
       "EVOGYM is a modern fitness website built with React, Vite, and Tailwind CSS, with Framer Motion for engaging interactions. It showcases gym services, memberships, and training programs in a clean, responsive layout.",
     techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
-    link: "https://evogym.wailsolaiman.com/",
+    link: "https://wailsolaiman.com/templates/evogym/",
     alt: "EVOGYM",
   },
   {
@@ -51,7 +51,7 @@ export const portfolioItems = [
     description:
       "Onix is a modern web application built with React and Vite, featuring a sleek dark theme and progressive web app capabilities. The site delivers fast performance and responsive design with clean, modern aesthetics.",
     techList: "React | Vite | JavaScript",
-    link: "https://onix.wailsolaiman.com/",
+    link: "https://wailsolaiman.com/templates/onix/",
     alt: "Onix",
   },
   {
@@ -96,19 +96,8 @@ export const portfolioItems = [
     description:
       "Webbly is a sleek, one-page website showcasing web development and design services (Web Agency). Built with cutting-edge technologies for speed, responsiveness, and accessibility.",
     techList: "React | Vite | JavaScript | Framer Motion",
-    link: "https://webbly.wailsolaiman.com/",
+    link: "https://wailsolaiman.com/templates/webbly/",
     alt: "Webbly",
-  },
-  {
-    id: 10,
-    image: "/images/portfolio/atlantis.jpg",
-    title: "Atlantis Bistro",
-    tech: "WordPress Template | Restaurant",
-    description:
-      "Professional restaurant website for Atlantis Bistro in Germany, showcasing culinary excellence and dining experiences. Built with WordPress, featuring modern design and German language content for local customers.",
-    techList: "WordPress | Elementor | PHP | MySQL",
-    link: "https://t3.wailsolaiman.space/",
-    alt: "Atlantis Bistro",
   },
   {
     id: 11,
@@ -129,7 +118,7 @@ export const portfolioItems = [
     description:
       "Velvet is a polished marketing experience built with React and Vite, styled with Tailwind CSS, and brought to life with Framer Motion for smooth, responsive interactions.",
     techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
-    link: "https://velvet.wailsolaiman.com/",
+    link: "https://wailsolaiman.com/templates/velvet-ops/",
     alt: "Velvet",
   },
   {
@@ -140,7 +129,7 @@ export const portfolioItems = [
     description:
       "Cybercore is a high-impact tech landing page using React, JavaScript, and Vite, with Tailwind CSS for layout and Framer Motion for motion design.",
     techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
-    link: "https://cybercore.wailsolaiman.com/",
+    link: "https://wailsolaiman.com/templates/cyber-core/",
     alt: "Cybercore",
   },
   {
@@ -151,7 +140,7 @@ export const portfolioItems = [
     description:
       "Buildplane showcases a product-focused UI built on the modern React stack—Vite for tooling, Tailwind CSS for design tokens, and Framer Motion for engaging transitions.",
     techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
-    link: "https://buildplane.wailsolaiman.com/",
+    link: "https://wailsolaiman.com/templates/buildplane/",
     alt: "Buildplane",
   },
   {
@@ -162,7 +151,7 @@ export const portfolioItems = [
     description:
       "Either AI presents an AI-themed web experience with React and Vite, utility-first styling via Tailwind CSS, and refined motion patterns powered by Framer Motion.",
     techList: "React | JavaScript | TailwindCSS | Vite | Framer Motion",
-    link: "https://eitherai.wailsolaiman.com/",
+    link: "https://wailsolaiman.com/templates/either-ai/",
     alt: "Either AI",
   },
 ]
