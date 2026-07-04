@@ -8,48 +8,59 @@ function HeroContent() {
 
   return (
     <>
-      {/* Badge */}
       <motion.div
-        className="mb-8"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <span className="inline-block px-4 py-2 bg-white/85 dark:bg-black/50 backdrop-blur-sm rounded-full border border-white/20 dark:border-white/10 text-sm font-bold text-purple-900 dark:text-purple-200 mb-6 animate-fade-in">
+        <span className="inline-block rounded-full border border-white/20 bg-white/85 px-4 py-2 text-sm font-bold text-purple-900 backdrop-blur-sm dark:border-white/10 dark:bg-black/50 dark:text-purple-200">
           {t("hero:badge")}
         </span>
       </motion.div>
 
-      {/* Title */}
-      <motion.h1
-        className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
-        initial={{ y: 60, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-      >
-        <span className="bg-gradient-to-r from-gray-900 via-purple-600 to-purple-800 dark:from-purple-100 dark:via-purple-200 dark:to-purple-300 bg-clip-text text-transparent">
-          {t("hero:title")}
-        </span>
-      </motion.h1>
+      {/* Identity block: photo + name */}
+      <div className="mt-6 flex flex-col items-center gap-4 md:mt-8 md:gap-5">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.15, duration: 0.6, ease: "easeOut" }}
+        >
+          <img
+            src="/images/profile-pic2.jpg"
+            alt=""
+            className="h-32 w-32 rounded-full border-4 border-white object-cover shadow-lg ring-2 ring-purple-400/30 dark:border-gray-800 dark:ring-purple-300/20 sm:h-36 sm:w-36 md:h-40 md:w-40"
+          />
+        </motion.div>
 
-      {/* Subtitle and Divider */}
+        <motion.h1
+          className="text-4xl font-bold leading-tight md:text-6xl lg:text-7xl"
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.25, duration: 0.8, ease: "easeOut" }}
+        >
+          <span className="bg-gradient-to-r from-gray-900 via-purple-600 to-purple-800 bg-clip-text text-transparent dark:from-purple-100 dark:via-purple-200 dark:to-purple-300">
+            {t("hero:title")}
+          </span>
+        </motion.h1>
+      </div>
+
       <motion.div
-        className="mb-10"
-        initial={{ y: 40, opacity: 0 }}
+        className="mt-6 max-w-2xl md:mt-8"
+        initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.7 }}
+        transition={{ delay: 0.4, duration: 0.7 }}
       >
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-800 dark:text-gray-200 mb-4">
+        <h2 className="mb-4 text-2xl font-light text-gray-800 dark:text-gray-200 md:text-3xl lg:text-4xl">
           {t("hero:subtitle")}
         </h2>
         <div
-          className={`w-16 h-1 mx-auto rounded-full mb-6 ${
+          className={`mx-auto mb-5 h-1 w-16 rounded-full ${
             theme === "light"
               ? "bg-gradient-to-r from-purple-400 to-purple-600"
               : "bg-gradient-to-r from-white to-gray-300"
           }`}
-        ></div>
-        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        />
+        <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300 md:text-xl">
           {t("hero:description")}
         </p>
       </motion.div>

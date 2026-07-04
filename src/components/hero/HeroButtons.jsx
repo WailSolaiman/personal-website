@@ -5,10 +5,10 @@ function HeroButtons() {
   const { t } = useTranslation("ui")
   return (
     <motion.div
-      className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 xl:mb-8"
+      className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row md:mt-10"
       initial={{ y: 40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.7, duration: 0.6 }}
+      transition={{ delay: 0.55, duration: 0.6 }}
     >
       <a
         href="#portfolio"
