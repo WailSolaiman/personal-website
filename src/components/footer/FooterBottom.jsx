@@ -78,6 +78,16 @@ function FooterBottom() {
         </button>
       </div>
 
+      <div className="mb-6 flex justify-center">
+        <img
+          src="/images/logo2.webp"
+          alt=""
+          width={80}
+          height={80}
+          className="h-16 w-16 rounded-xl object-contain opacity-90 sm:h-20 sm:w-20"
+        />
+      </div>
+
       {/* Copyright */}
       <div className="text-text-secondary/60 text-sm">
         <p>

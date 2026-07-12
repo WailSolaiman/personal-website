@@ -26,9 +26,11 @@ function HeroContent() {
           transition={{ delay: 0.15, duration: 0.6, ease: "easeOut" }}
         >
           <img
-            src="/images/profile-pic2.jpg"
+            src="/images/logo2.webp"
             alt=""
-            className="h-32 w-32 rounded-full border-4 border-white object-cover shadow-lg ring-2 ring-purple-400/30 dark:border-gray-800 dark:ring-purple-300/20 sm:h-36 sm:w-36 md:h-40 md:w-40"
+            width={160}
+            height={160}
+            className="h-32 w-32 rounded-2xl object-contain shadow-lg ring-2 ring-purple-400/20 sm:h-36 sm:w-36 md:h-40 md:w-40"
           />
         </motion.div>
 
