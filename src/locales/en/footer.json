@@ -3,15 +3,11 @@
   "description": "Got a project in mind? Send me a message — I'd love to hear about it and see how we can make it happen.",
   "copyright": "Built with ❤️ and modern web tech.",
   "builtWith": "Built with React, Vite, and Tailwind CSS",
+  "backToHome": "Back to home",
   "privacy": {
-    "label": "Privacy",
-    "title": "Privacy",
-    "intro": "This portfolio has no ads or invasive trackers. Basic visit stats help me improve the site.",
-    "points": [
-      "Analytics: Plausible (self-hosted subdomain, EU infrastructure), no cookies — aggregate page views and similar metrics only; outbound link clicks may be counted in aggregate. See https://plausible.io/privacy.",
-      "No contact form — if you email me, it goes through your email provider.",
-      "Your theme and language choice may be saved locally in your browser (localStorage).",
-      "External links (e.g. GitHub/LinkedIn) follow their own privacy policies."
-    ]
+    "label": "Privacy"
+  },
+  "imprint": {
+    "label": "Imprint"
   }
 }

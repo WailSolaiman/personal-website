@@ -3,11 +3,13 @@ import SocialLinksGrid from "./SocialLinksGrid"
 import QuickStats from "./QuickStats"
 import FooterBottom from "./FooterBottom"
 
-function Footer() {
+function Footer({ minimal = false }) {
   return (
     <footer
       id="footer"
-      className="py-16 lg:py-24 px-6 bg-card md:bg-card/40 border-t border-border/20 relative overflow-hidden"
+      className={`py-16 lg:py-24 px-6 bg-card md:bg-card/40 relative overflow-hidden ${
+        minimal ? "border-none" : "border-t border-border/20"
+      }`}
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 -z-10 overflow-hidden hidden md:block">
@@ -16,9 +18,13 @@ function Footer() {
       </div>
 
       <div className="container mx-auto relative z-10">
-        <FooterHeader />
-        <SocialLinksGrid />
-        <QuickStats />
+        {!minimal && (
+          <>
+            <FooterHeader />
+            <SocialLinksGrid />
+            <QuickStats />
+          </>
+        )}
         <FooterBottom />
       </div>
     </footer>

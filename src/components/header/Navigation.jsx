@@ -6,11 +6,11 @@ function Navigation() {
   const { t } = useTranslation("ui")
 
   const navItems = [
-    { href: "#home", label: t("navigation.home") },
-    { href: "#about", label: t("navigation.about") },
-    { href: "#resume", label: t("navigation.resume") },
-    { href: "#portfolio", label: t("navigation.portfolio") },
-    { href: "#legacy", label: t("navigation.legacy"), extraClasses: "pe-12" },
+    { href: "/#home", label: t("navigation.home") },
+    { href: "/#about", label: t("navigation.about") },
+    { href: "/#resume", label: t("navigation.resume") },
+    { href: "/#portfolio", label: t("navigation.portfolio") },
+    { href: "/#legacy", label: t("navigation.legacy"), extraClasses: "pe-12" },
   ]
 
   const baseClasses =

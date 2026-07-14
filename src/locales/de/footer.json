@@ -3,15 +3,11 @@
   "description": "Du hast ein Projekt im Kopf? Schreib mir — ich höre gern zu und wir schauen, wie wir deine Idee umsetzen können.",
   "copyright": "Mit ❤️ und modernen Web-Technologien gebaut.",
   "builtWith": "Gebaut mit React, Vite und Tailwind CSS",
+  "backToHome": "Zur Startseite",
   "privacy": {
-    "label": "Datenschutz",
-    "title": "Datenschutz",
-    "intro": "Dieses Portfolio verzichtet auf Werbung und invasive Tracker. Aggregierte Besucherstatistiken helfen mir, die Seite zu verbessern.",
-    "points": [
-      "Analyse: Plausible (eigene Subdomain, EU-Infrastruktur), ohne Cookies — nur aggregierte Kennzahlen wie Seitenaufrufe; Klicks auf ausgehende Links können ebenfalls aggregiert erfasst werden. Details: https://plausible.io/privacy.",
-      "Kein Kontaktformular — wenn du mir schreibst, läuft das über deinen E-Mail-Anbieter.",
-      "Theme- und Spracheinstellung können lokal im Browser gespeichert werden (localStorage).",
-      "Externe Links (z. B. GitHub/LinkedIn) unterliegen deren eigenen Datenschutzrichtlinien."
-    ]
+    "label": "Datenschutz"
+  },
+  "imprint": {
+    "label": "Impressum"
   }
 }
