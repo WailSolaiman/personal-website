@@ -154,6 +154,17 @@ export const portfolioItems = [
     link: "https://wailsolaiman.com/templates/either-ai/",
     alt: "Either AI",
   },
+  {
+    id: 17,
+    image: "/images/portfolio/the-cut.png",
+    title: "The Cut",
+    tech: "HTML | Restaurant Website",
+    description:
+      "The Cut is a fine steakhouse landing page demo - open-fire dining, signature cuts, and reservations. Built as an animated HTML template for WebAnimate.",
+    techList: "HTML | CSS | JavaScript | WebAnimate",
+    link: "https://webanimate.site/demos/p8f2k1/",
+    alt: "The Cut - Fine Steakhouse",
+  },
 ]
 
 export const legacySites = [

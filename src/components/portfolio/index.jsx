@@ -13,6 +13,7 @@ const FEATURED_PROJECT_TITLES = [
   "Restaura Paris",
   "Velvet",
   "Webbly",
+  "The Cut",
 ]
 
 function Portfolio({ portfolioItems }) {

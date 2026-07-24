@@ -1,0 +1,13 @@
+{
+  "badge": "Gründer",
+  "brand": "WebAnimate",
+  "headline": "Eine wachsende Bibliothek animierter Templates",
+  "description": "WebAnimate ist eine wachsende Bibliothek vollständig editierbarer HTML- und React-Templates - zum Rebranden und Ausliefern für private und kommerzielle Projekte. Bibliothek durchstöbern, Dateien laden und mit beliebigen KI-Tools anpassen - Cursor, Claude Code, v0 und mehr.",
+  "features": [
+    "HTML- & React-Templates",
+    "Editierbare Projektdateien",
+    "Privat & kommerziell nutzbar"
+  ],
+  "cta": "WebAnimate öffnen",
+  "imageAlt": "Vorschau der WebAnimate-Website"
+}

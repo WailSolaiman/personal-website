@@ -7,6 +7,7 @@ import Resume from "../components/resume"
 import AITools from "../components/aiTools"
 import Certificates from "../components/certificates"
 import Portfolio from "../components/portfolio"
+import WebAnimate from "../components/webanimate"
 import Legacy from "../components/legacy"
 import Footer from "../components/footer"
 import BackToTop from "../components/common/BackToTop"
@@ -33,6 +34,7 @@ function HomePage() {
       <AITools />
       <Certificates />
       <Portfolio portfolioItems={portfolioItems} />
+      <WebAnimate />
       <Legacy legacySites={legacySites} />
       <Footer />
       <BackToTop />

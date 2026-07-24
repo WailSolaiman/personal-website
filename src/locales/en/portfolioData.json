@@ -59,6 +59,11 @@
       "title": "Either AI",
       "tech": "React | AI Experience",
       "description": "AI-themed web experience with React and Vite — Tailwind for styling, Framer Motion for motion."
+    },
+    "17": {
+      "title": "The Cut",
+      "tech": "HTML | Restaurant Website",
+      "description": "Fine steakhouse landing page - open fire, signature cuts, and reservations. Animated HTML demo for WebAnimate."
     }
   }
 }
