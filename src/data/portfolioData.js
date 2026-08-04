@@ -160,8 +160,8 @@ export const portfolioItems = [
     title: "The Cut",
     tech: "HTML | Restaurant Website",
     description:
-      "The Cut is a fine steakhouse landing page demo - open-fire dining, signature cuts, and reservations. Built as an animated HTML template for WebAnimate.",
-    techList: "HTML | CSS | JavaScript | WebAnimate",
+      "The Cut is a fine steakhouse landing page demo - open-fire dining, signature cuts, and reservations. Built as an animated HTML template for HeroFrame.",
+    techList: "HTML | CSS | JavaScript | HeroFrame",
     link: "https://webanimate.site/demos/p8f2k1/",
     alt: "The Cut - Fine Steakhouse",
   },

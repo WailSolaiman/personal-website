@@ -8,7 +8,7 @@ import enResume from "../locales/en/resume.json"
 import enPortfolio from "../locales/en/portfolio.json"
 import enCertificates from "../locales/en/certificates.json"
 import enAITools from "../locales/en/aiTools.json"
-import enWebAnimate from "../locales/en/webanimate.json"
+import enHeroFrame from "../locales/en/heroframe.json"
 import enFooter from "../locales/en/footer.json"
 import enPortfolioData from "../locales/en/portfolioData.json"
 import enLegacyData from "../locales/en/legacyData.json"
@@ -20,7 +20,7 @@ import deResume from "../locales/de/resume.json"
 import dePortfolio from "../locales/de/portfolio.json"
 import deCertificates from "../locales/de/certificates.json"
 import deAITools from "../locales/de/aiTools.json"
-import deWebAnimate from "../locales/de/webanimate.json"
+import deHeroFrame from "../locales/de/heroframe.json"
 import deFooter from "../locales/de/footer.json"
 import dePortfolioData from "../locales/de/portfolioData.json"
 import deLegacyData from "../locales/de/legacyData.json"
@@ -32,7 +32,7 @@ import arResume from "../locales/ar/resume.json"
 import arPortfolio from "../locales/ar/portfolio.json"
 import arCertificates from "../locales/ar/certificates.json"
 import arAITools from "../locales/ar/aiTools.json"
-import arWebAnimate from "../locales/ar/webanimate.json"
+import arHeroFrame from "../locales/ar/heroframe.json"
 import arFooter from "../locales/ar/footer.json"
 import arPortfolioData from "../locales/ar/portfolioData.json"
 import arLegacyData from "../locales/ar/legacyData.json"
@@ -50,7 +50,7 @@ i18n
         portfolio: enPortfolio,
         certificates: enCertificates,
         aiTools: enAITools,
-        webanimate: enWebAnimate,
+        heroframe: enHeroFrame,
         footer: enFooter,
         portfolioData: enPortfolioData,
         legacyData: enLegacyData,
@@ -64,7 +64,7 @@ i18n
         portfolio: dePortfolio,
         certificates: deCertificates,
         aiTools: deAITools,
-        webanimate: deWebAnimate,
+        heroframe: deHeroFrame,
         footer: deFooter,
         portfolioData: dePortfolioData,
         legacyData: deLegacyData,
@@ -78,7 +78,7 @@ i18n
         portfolio: arPortfolio,
         certificates: arCertificates,
         aiTools: arAITools,
-        webanimate: arWebAnimate,
+        heroframe: arHeroFrame,
         footer: arFooter,
         portfolioData: arPortfolioData,
         legacyData: arLegacyData,
@@ -100,7 +100,7 @@ i18n
       "portfolio",
       "certificates",
       "aiTools",
-      "webanimate",
+      "heroframe",
       "footer",
       "portfolioData",
       "legacyData",
